@@ -1,0 +1,29 @@
+<h1>mise à jour</h1>
+{{ form_start(form) }}
+<table>
+    <tr>
+        <td>nom</td>
+        <td>{{ form_widget(form.nom) }}</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>{{ form_widget(form.description) }}</td>
+    </tr>
+    <tr>
+        <td>date</td>
+        <td>{{ form_widget(form.date) }}</td>
+    </tr>
+    <tr>
+        <td>path</td>
+        <td>{{ form_widget(form.path) }}</td>
+    </tr>
+    <tr>
+        <td>user</td>
+        <td>{{ form_widget(form.idUser) }}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>{{ form_widget(form.save) }}</td>
+    </tr>
+</table>
+{{ form_end(form) }}
