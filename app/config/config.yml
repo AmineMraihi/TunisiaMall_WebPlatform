@@ -77,4 +77,7 @@ fos_user:
     from_email:
         address: yourmail@yourdomain.com
         sender_name: demo
+    registration:
+                form:
+                    type: TunisiaMallBundle\Form\UserRegistrationType
 

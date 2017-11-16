@@ -1,1 +1,160 @@
+{% block signup %}
+    {#{{ form_start(form) }}#}
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body modal-body-sub_agile">
+                    <div class="col-md-8 modal_body_left modal_body_left1">
+                        <h3 class="agileinfo_sign">Sign Up <span>Now</span></h3>
 
+                        <form action="#" method="POST">
+
+                            <div class="styled-input">
+                                <input type="email" name="email" required="">
+                                <label>Email</label>
+                                {#{{ form_widget(form.email) }}#}
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="username" required="">
+                                <label>UserName</label>
+                                {#{{ form_widget(form.username) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input">
+                                <input type="password" name="password" required="">
+                                <label>Password</label>
+                                {#{{ form_widget(form.nom) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input">
+                                <input type="password" name="confirm Password" required="">
+                                <label>Confirm Password</label>
+                                {#{{ form_widget(form.prenom) }}#}
+
+                                <span></span>
+                            </div>
+                            {#copy start#}
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="nom" required="">
+                                <label>Nom</label>
+                                {#{{ form_widget(form.date_naissance) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="prenom" required="">
+                                <label>prenom</label>
+                                {#{{ form_widget(form.sexe) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="date" name="date_naissance" required="">
+                                <label>date naissance</label>
+                                {#{{ form_widget(form.numero_telephone) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="sexe" required="">
+                                <label>sexe</label>
+                                {#{{ form_widget(form.adresse) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="number" name="numero_telephone" required="">
+                                <label>numero</label>
+                                {#{{ form_widget(form.salaire) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="adresse" required="">
+                                <label>adresse</label>
+                                {#{{ form_widget(form.date_embauche) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="number" name="salaire" required="">
+                                <label>salaire</label>
+                                {#{{ form_widget(form.date_expiration) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="date" name="date_embauche" required="">
+                                <label>date embauche</label>
+                                {#{{ form_widget(form.path) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="date" name="date_expiration" required="">
+                                <label>date expiration</label>
+                                {#{{ form_widget(form.id_boutique) }}#}
+
+                                <span></span>
+                            </div>
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="text" name="path" required="">
+                                <label>path</label>
+                                {#{{ form_widget(form.email) }}#}
+
+                                <span></span>
+                            </div>
+
+                            <div class="styled-input agile-styled-input-top">
+                                <input type="number" name="id_boutique" required="">
+                                <label>id boutique</label>
+                                {#{{ form_widget(form.email) }}#}
+
+                                <span></span>
+                            </div>
+                            {#copy end#}
+
+
+                            <input type="submit" value="Sign Up">
+                        </form>
+                        <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
+                            <li><a href="#" class="facebook">
+                                    <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                                </a></li>
+                            <li><a href="#" class="twitter">
+                                    <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                                </a></li>
+                            <li><a href="#" class="instagram">
+                                    <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                                </a></li>
+                            <li><a href="#" class="pinterest">
+                                    <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                    <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                                </a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                        <p><a href="#">By clicking register, I agree to your terms</a></p>
+
+
+                    </div>
+                    <div class="col-md-4 modal_body_right modal_body_right1">
+                        <img src="images/log_pic.jpg" alt=" "/>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- //Modal content-->
+        </div>
+    </div>
+    {#{{ form_end(form) }}#}
+{% endblock %}
