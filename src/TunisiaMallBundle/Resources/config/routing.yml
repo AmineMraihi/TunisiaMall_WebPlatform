@@ -42,3 +42,9 @@ tunisia_mall_admin_evenement:
 tunisia_mall_contactinternaute:
     path:     /contacti
     defaults: { _controller: TunisiaMallBundle:Default:iContact }
+tunisia_mall_GBoutiqueCA:
+    path:     /GestionBoutique
+    defaults: { _controller: TunisiaMallBundle:Boutique:ajoutboutique }
+tunisia_mall_list_boutique:
+        path:     /listboutique
+        defaults: { _controller: TunisiaMallBundle:Boutique:afficherboutiques }

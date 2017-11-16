@@ -30,6 +30,10 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::adminindex.html.twig');
     }
+    public function GBoutiqueCAAction()
+    {
+        return $this->render('TunisiaMallBundle::GestionBoutique.html.twig');
+    }
 
     public function signupAction(Request $request)
     {
