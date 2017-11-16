@@ -19,7 +19,7 @@ tunisia_mall_ajout_evenement:
     defaults: { _controller: TunisiaMallBundle:Evenement:ajoutevenement }
 
 tunisia_mall_list_evenement:
-    path:     /listevenement
+    path:     /adminevenement
     defaults: { _controller: TunisiaMallBundle:Evenement:listevenement }
 
 tunisia_mall_modifier_evenement:
