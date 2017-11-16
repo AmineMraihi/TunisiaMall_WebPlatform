@@ -7,4 +7,6 @@ tunisia_mall_signup:
 tunisia_mall_contact:
     path:     /contact
     defaults: { _controller: TunisiaMallBundle:Default:Contact }
-
+tunisia_mall_contactinternaute:
+    path:     /contacti
+    defaults: { _controller: TunisiaMallBundle:Default:iContact }

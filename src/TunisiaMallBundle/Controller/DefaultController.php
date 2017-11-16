@@ -14,6 +14,10 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle:Default:Contact.html.twig');
     }
+    public function iContactAction()
+    {
+        return $this->render('TunisiaMallBundle:Default:Contactinternaute.html.twig');
+    }
 
 }
 
