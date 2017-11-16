@@ -1,0 +1,10 @@
+tunisia_mall_homepage:
+    path:     /
+    defaults: { _controller: TunisiaMallBundle:Default:index }
+tunisia_mall_signup:
+    path:     /signup
+    defaults: { _controller: TunisiaMallBundle::signup }
+tunisia_mall_contact:
+    path:     /contact
+    defaults: { _controller: TunisiaMallBundle:Default:Contact }
+
