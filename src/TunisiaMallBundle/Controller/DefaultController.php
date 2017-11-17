@@ -8,8 +8,23 @@ use TunisiaMallBundle\Entity\User;
 
 class DefaultController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
+        $user=new User();
+        if($request->isMethod('POST')){
+            $user->setNom($request->get('Name'));
+            $user->setPrenom($request->get('LastName'));
+//            $user->setDateNaissance($request->get('DateNaissance'));
+            $user->setNumeroTelephone($request->get("Numerotel"));
+            $user->setAdresse($request->get("Adresse"));
+            $user->setEmail($request->get('Email'));
+            $user->setPassword($request->get('password'));
+            $user->setUsername($request->get('Username'));
+            $user->setSexe($request->get('sexe'));
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($user);
+            $em->flush();
+        }
         return $this->render('TunisiaMallBundle:Default:index.html.twig');
     }
     public function ContactAction()
@@ -26,6 +41,17 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::adminindex.html.twig');
     }
+
+    public function clientevenementAction()
+    {
+        $em=$this->getDoctrine()->getManager();
+        $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        return $this->render("TunisiaMallBundle::clientevenement.html.twig",array(
+            "evenements"=>$evenements
+        ));
+    }
+
+
 
     public function signupAction(Request $request)
     {

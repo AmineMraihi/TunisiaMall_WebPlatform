@@ -38,3 +38,7 @@ tunisia_mall_admin_evenement:
     path:     /adminevenement
     defaults: { _controller: TunisiaMallBundle:Default:adminevenement }
 
+tunisia_mall_client_evenement:
+    path:     /clientevenement
+    defaults: { _controller: TunisiaMallBundle:Default:clientevenement }
+

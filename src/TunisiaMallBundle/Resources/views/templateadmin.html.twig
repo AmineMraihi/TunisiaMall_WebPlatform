@@ -1404,16 +1404,16 @@
             oTable.draw();
         }
 
-        function editRow(oTable, nRow) {
-            var aData = oTable.row(nRow).data();
-            var jqTds = $('>td', nRow);
-            jqTds[0].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[0] + '">';
-            jqTds[1].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[1] + '">';
-            jqTds[2].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[2] + '">';
-            jqTds[3].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[3] + '">';
-            jqTds[4].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[4] + '">';
-            jqTds[5].innerHTML = '<a role="button" tabindex="0" class="edit text-success text-uppercase text-strong text-sm mr-10">Save</a><a role="button" tabindex="0" class="cancel text-warning text-uppercase text-strong text-sm mr-10">Cancel</a>';
-        }
+//        function editRow(oTable, nRow) {
+//            var aData = oTable.row(nRow).data();
+//            var jqTds = $('>td', nRow);
+//            jqTds[0].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[0] + '">';
+//            jqTds[1].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[1] + '">';
+//            jqTds[2].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[2] + '">';
+//            jqTds[3].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[3] + '">';
+//            jqTds[4].innerHTML = '<input type="text" class="form-control input-sm" value="' + aData[4] + '">';
+//            jqTds[5].innerHTML = '<a role="button" tabindex="0" class="edit text-success text-uppercase text-strong text-sm mr-10">Save</a><a role="button" tabindex="0" class="cancel text-warning text-uppercase text-strong text-sm mr-10">Cancel</a>';
+//        }
 
         function saveRow(oTable, nRow) {
             var jqInputs = $('input', nRow);
@@ -1437,31 +1437,31 @@
         var nEditing = null;
         var nNew = false;
 
-        $('#add-entry').click(function (e) {
-            e.preventDefault();
-
-            if (nNew && nEditing) {
-                if (confirm("Previous row is not saved yet. Save it ?")) {
-                    saveRow(oTable, nEditing); // save
-                    $(nEditing).find("td:first").html("Untitled");
-                    nEditing = null;
-                    nNew = false;
-
-                } else {
-                    oTable.row(nEditing).remove().draw(); // cancel
-                    nEditing = null;
-                    nNew = false;
-
-                    return;
-                }
-            }
-
-            var aiNew = oTable.row.add(['', '', '', '', '', '', '']).draw();
-            var nRow = oTable.row(aiNew[0]).node();
-            editRow(oTable, nRow);
-            nEditing = nRow;
-            nNew = true;
-        });
+//        $('#add-entry').click(function (e) {
+//            e.preventDefault();
+//
+//            if (nNew && nEditing) {
+//                if (confirm("Previous row is not saved yet. Save it ?")) {
+//                    saveRow(oTable, nEditing); // save
+//                    $(nEditing).find("td:first").html("Untitled");
+//                    nEditing = null;
+//                    nNew = false;
+//
+//                } else {
+//                    oTable.row(nEditing).remove().draw(); // cancel
+//                    nEditing = null;
+//                    nNew = false;
+//
+//                    return;
+//                }
+//            }
+//
+//            var aiNew = oTable.row.add(['', '', '', '', '', '', '']).draw();
+//            var nRow = oTable.row(aiNew[0]).node();
+//            editRow(oTable, nRow);
+//            nEditing = nRow;
+//            nNew = true;
+//        });
 
         table2.on('click', '.delete', function (e) {
 //            e.preventDefault();
@@ -1487,47 +1487,47 @@
                 }
             });
 
-            table2.on('click', '.edit', function (e) {
-                e.preventDefault();
-
-                /* Get the row as a parent of the link that was clicked on */
-                var nRow = $(this).parents('tr')[0];
-
-                if (nEditing !== null && nEditing != nRow) {
-                    /* Currently editing - but not this row - restore the old before continuing to edit mode */
-                    restoreRow(oTable, nEditing);
-                    editRow(oTable, nRow);
-                    nEditing = nRow;
-                } else if (nEditing == nRow && this.innerHTML == "Save") {
-                    /* Editing this row and want to save it */
-                    saveRow(oTable, nEditing);
-                    nEditing = null;
-                    alert("Updated!");
-                } else {
-                    /* No edit in progress - let's start one */
-                    editRow(oTable, nRow);
-                    nEditing = nRow;
-                }
-            });
+//            table2.on('click', '.edit', function (e) {
+//                e.preventDefault();
+//
+//                /* Get the row as a parent of the link that was clicked on */
+//                var nRow = $(this).parents('tr')[0];
+//
+//                if (nEditing !== null && nEditing != nRow) {
+//                    /* Currently editing - but not this row - restore the old before continuing to edit mode */
+//                    restoreRow(oTable, nEditing);
+//                    editRow(oTable, nRow);
+//                    nEditing = nRow;
+//                } else if (nEditing == nRow && this.innerHTML == "Save") {
+//                    /* Editing this row and want to save it */
+//                    saveRow(oTable, nEditing);
+//                    nEditing = null;
+//                    alert("Updated!");
+//                } else {
+//                    /* No edit in progress - let's start one */
+//                    editRow(oTable, nRow);
+//                    nEditing = nRow;
+//                }
+//            });
             //*initialize editable datatable
 
             //initialize responsive datatable
-            var table3 = $('#responsive-usage').DataTable({
-                "ajax": 'assets/extras/datatables-responsive.json',
-                "columns": [
-                    {"data": "id"},
-                    {"data": "firstName"},
-                    {"data": "lastName"},
-                    {"data": "tel"},
-                    {"data": "address"},
-                    {"data": "city"},
-                    {"data": "state"},
-                    {"data": "zip"}
-                ],
-                "aoColumnDefs": [
-                    {'bSortable': false, 'aTargets': ["no-sort"]}
-                ]
-            });
+//            var table3 = $('#responsive-usage').DataTable({
+//                "ajax": 'assets/extras/datatables-responsive.json',
+//                "columns": [
+//                    {"data": "id"},
+//                    {"data": "firstName"},
+//                    {"data": "lastName"},
+//                    {"data": "tel"},
+//                    {"data": "address"},
+//                    {"data": "city"},
+//                    {"data": "state"},
+//                    {"data": "zip"}
+//                ],
+//                "aoColumnDefs": [
+//                    {'bSortable': false, 'aTargets': ["no-sort"]}
+//                ]
+//            });
             //*initialize responsive datatable
 
             //initialize responsive datatable
