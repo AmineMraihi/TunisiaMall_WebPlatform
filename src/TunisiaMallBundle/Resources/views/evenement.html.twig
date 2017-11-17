@@ -26,7 +26,8 @@
                             <h1 class="custom-font"><strong>Evenement</strong> Liste</h1>
                             <ul class="controls">
                                 <li>
-                                    <a href="{{ path('tunisia_mall_ajout_evenement') }}" role="button" tabindex="0" ><i class="fa fa-plus mr-5"></i> Add
+                                    <a href="{{ path('tunisia_mall_ajout_evenement') }}" role="button" tabindex="0"><i
+                                                class="fa fa-plus mr-5"></i> Add
                                         Entry</a>
                                 </li>
                                 <li class="dropdown">
@@ -83,7 +84,12 @@
                                             <td>{{ evenement.nom }}</td>
                                             <td>{{ evenement.description }}</td>
                                             <td>{{ evenement.date | date("d-m-y") }}</td>
-                                            <td>{{ evenement.path }}</td>
+                                            <td><img src="{{ asset('images/amine/') ~ evenement.path }}"
+                                                     alt=""
+                                                     width="75"
+                                                     height="75"
+                                                >
+                                            </td>
                                             <td>{{ evenement.idUser.nom }}</td>
                                             <td class="actions">
                                                 <a role="button" tabindex="0"
@@ -94,7 +100,8 @@
                                                 <a role="button" tabindex="0"
                                                    class="delete text-danger text-uppercase text-strong text-sm mr-10"
                                                    href="{{ path('tunisia_mall_supprimer_evenement',
-                                                   {'id':evenement.idEvenement}) }}">Remove
+                                                   {'id':evenement.idEvenement}
+                                                   ) }}">Remove
                                                 </a>
                                             </td>
                                         </tr>
