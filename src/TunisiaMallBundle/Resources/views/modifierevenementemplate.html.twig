@@ -1,0 +1,106 @@
+{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{#{% block debuttemplate %}#}
+{% block robots %}
+    {{ form_start(form) }}
+
+    <section id="content">
+
+        <div class="page page-forms-common">
+
+
+            <!-- row -->
+            <div class="row">
+
+
+                <!-- col -->
+                <div class="col-md-6">
+
+                    <!-- tile -->
+                    <section class="tile">
+
+                        <!-- tile header -->
+                        <div class="tile-header dvd dvd-btm">
+                            <h1 class="custom-font"><strong>Vertical </strong>Form</h1>
+                            <ul class="controls">
+                                <li class="dropdown">
+
+                                    <a role="button" tabindex="0" class="dropdown-toggle settings"
+                                       data-toggle="dropdown">
+                                        <i class="fa fa-cog"></i>
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-toggle">
+                                                <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                                <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-refresh">
+                                                <i class="fa fa-refresh"></i> Refresh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-fullscreen">
+                                                <i class="fa fa-expand"></i> Fullscreen
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="remove"><a role="button" tabindex="0" class="tile-close"><i
+                                                class="fa fa-times"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- /tile header -->
+
+                        <!-- tile body -->
+                        <div class="tile-body">
+
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                           placeholder="Password">
+                                </div>
+                                <label class="checkbox checkbox-custom">
+                                    <input type="checkbox" checked disabled><i></i>
+                                    Check me out
+                                </label>
+                                <button type="submit" class="btn btn-rounded btn-success btn-sm">Submit</button>
+                            </form>
+
+                        </div>
+                        <!-- /tile body -->
+
+                    </section>
+                    <!-- /tile -->
+
+                </div>
+                <!-- /col -->
+
+
+            </div>
+            <!-- /row -->
+
+
+        </div>
+        <!-- /tile body -->
+
+    </section>
+    <!-- /tile -->
+
+
+
+
+    <!--/ CONTENT -->
+    {{ form_end(form) }}
+{% endblock robots %}
+{#{% block fintemplate %}#}

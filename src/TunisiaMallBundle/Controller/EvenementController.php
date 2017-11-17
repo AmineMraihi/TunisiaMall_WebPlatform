@@ -57,7 +57,7 @@ class EvenementController extends Controller
             $em->flush();
         }
 
-        return $this->render("TunisiaMallBundle::modifierevenement.html.twig",array(
+        return $this->render("TunisiaMallBundle::modifierevenementemplate.html.twig",array(
             "form"=>$form->createView()
         ));
 
