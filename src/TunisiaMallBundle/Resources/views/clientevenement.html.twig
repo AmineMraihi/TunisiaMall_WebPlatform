@@ -1,0 +1,27 @@
+{% extends "TunisiaMallBundle::layout.html.twig" %}
+{% block client_event %}
+    <table class="table table-custom" id="editable-usage">
+        <thead>
+        <tr>
+            <th>nom</th>
+            <th>description</th>
+            <th>date</th>
+            <th>path</th>
+            <th>user</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for evenement in evenements %}
+            <tr class="odd gradeX">
+                <td>{{ evenement.nom }}</td>
+                <td>{{ evenement.description }}</td>
+                <td>{{ evenement.date | date("d-m-y") }}</td>
+                <td>{{ evenement.path }}</td>
+                <td>{{ evenement.idUser.nom }}</td>
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock client_event %}

@@ -3,12 +3,16 @@
 namespace TunisiaMallBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Evenement
  *
  * @ORM\Table(name="evenement", indexes={@ORM\Index(name="id_user", columns={"id_user"})})
  * @ORM\Entity
+ * @Vich\Uploadable
  */
 class Evenement
 {
@@ -45,7 +49,7 @@ class Evenement
     /**
      * @var string
      *
-     * @ORM\Column(name="path", type="string", length=50, nullable=false)
+     * @ORM\Column(name="path", type="string", length=250, nullable=false)
      */
     private $path;
 
@@ -59,6 +63,46 @@ class Evenement
      */
     private $idUser;
 
+
+//    Vich modification start
+
+
+    /**
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="path")
+     * @Assert\File(maxSize="1200k",mimeTypes={"image/png", "image/jpeg", "image/pjpeg"})
+     *
+     * @var File
+     */
+    private $imageFile;
+
+    /**
+     * @ORM\Column(type="datetime")
+     * @var \DateTime
+     */
+    private $updatedAt;
+
+    // ...
+
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
+
+
+//    Vich modification end
 
 
     /**

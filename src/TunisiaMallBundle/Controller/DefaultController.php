@@ -10,7 +10,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-
         return $this->render('TunisiaMallBundle:Default:index.html.twig');
     }
     public function ContactAction()
@@ -35,6 +34,17 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::GestionBoutique.html.twig');
     }
+
+    public function clientevenementAction()
+    {
+        $em=$this->getDoctrine()->getManager();
+        $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        return $this->render("TunisiaMallBundle::clientevenement.html.twig",array(
+            "evenements"=>$evenements
+        ));
+    }
+
+
 
     public function signupAction(Request $request)
     {

@@ -1,7 +1,8 @@
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{#{% block debuttemplate %}#}
 {% block robots %}
+    {{ form_start(form) }}
 
-{{ form_start(formulaire) }}
     <section id="content">
 
         <div class="page page-forms-common">
@@ -19,7 +20,7 @@
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Evenement </strong>Ajout</h1>
+                            <h1 class="custom-font"><strong>Evenement </strong>Modification</h1>
                             <ul class="controls">
                                 <li class="dropdown">
 
@@ -61,29 +62,28 @@
                             <thead>
                             <tr class="odd gradeX">
                                 <th>nom</th>
-                                <td>{{ form_widget(formulaire.nom) }}</td>
+                                <td>{{ form_widget(form.nom) }}</td>
                             </tr>
                             <tr class="odd gradeX">
                                 <th>description</th>
-                                <td>{{ form_widget(formulaire.description) }}</td>
+                                <td>{{ form_widget(form.description) }}</td>
                             </tr>
                             <tr class="odd gradeX">
                                 <th>date</th>
-                                <td>{{ form_widget(formulaire.date) }}</td>
+                                <td>{{ form_widget(form.date) }}</td>
                             </tr>
                             <tr class="odd gradeX">
                                 <th>path</th>
-                                <td>{{ form_widget(formulaire.imageFile) }}</td>
-                                {#<td><input type="file" name="files[]" "></td>#}
+                                <td>{{ form_widget(form.path) }}</td>
                             </tr>
-                            <tr class="odd gradeX">
-                                <th>user</th>
-                                <td>{{ form_widget(formulaire.idUser) }}</td>
-                            </tr>
+                            {#<tr class="odd gradeX">#}
+                            {#<th>user</th>#}
+                            {#<td>{{ form_widget(form.idUser) }}</td>#}
 
+                            {#</tr>#}
                             <tr>
                                 <th style="width: 160px;" class="no-sort">Actions</th>
-                                <td>{{ form_widget(formulaire.ajouter) }}</td>
+                                <td>{{ form_widget(form.save) }}</td>
                             </tr>
                             </thead>
                             <tbody>
@@ -114,6 +114,6 @@
 
 
     <!--/ CONTENT -->
-{{ form_end(formulaire) }}
-
+    {{ form_end(form) }}
 {% endblock robots %}
+{#{% block fintemplate %}#}
