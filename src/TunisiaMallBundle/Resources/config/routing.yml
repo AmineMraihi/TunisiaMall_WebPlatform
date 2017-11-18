@@ -42,3 +42,18 @@ tunisia_mall_client_evenement:
     path:     /clientevenement
     defaults: { _controller: TunisiaMallBundle:Default:clientevenement }
 
+tunisia_mall_admin_publicite:
+    path:     /adminpub
+    defaults: { _controller: TunisiaMallBundle:Publicite:listpub }
+
+tunisia_mall_admin_ajout_publicite:
+    path:     /ajoutpub
+    defaults: { _controller: TunisiaMallBundle:Publicite:ajoutpub }
+
+tunisia_mall_modifier_publicite:
+    path:     /modifierpublicite/{id}
+    defaults: { _controller: TunisiaMallBundle:Publicite:modifierpub }
+
+tunisia_mall_supprimer_publicite:
+    path:     /supprimerpublicite/{id}
+    defaults: { _controller: TunisiaMallBundle:Publicite:supprimerpublicte }

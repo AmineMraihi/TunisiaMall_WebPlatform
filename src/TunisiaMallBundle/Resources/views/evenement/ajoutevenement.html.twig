@@ -1,7 +1,7 @@
-{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{% extends "TunisiaMallBundle:admin:templateadmin.html.twig" %}
 {% block robots %}
 
-{{ form_start(formulaire) }}
+    {{ form_start(formulaire) }}
     <section id="content">
 
         <div class="page page-forms-common">
@@ -12,7 +12,7 @@
 
 
                 <!-- col -->
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <!-- tile -->
                     <section class="tile">
@@ -57,11 +57,11 @@
 
                         <!-- tile body -->
 
-                        <table class="table table-custom" >
+                        <table class="table table-custom">
                             <thead>
                             <tr class="odd gradeX">
                                 <th>nom</th>
-                                <td>{{ form_widget(formulaire.nom) }}</td>
+                                <td >{{ form_widget(formulaire.nom) }}</td>
                             </tr>
                             <tr class="odd gradeX">
                                 <th>description</th>
@@ -91,6 +91,7 @@
                             </tbody>
                         </table>
 
+
                         <!-- /tile body -->
 
                     </section>
@@ -108,12 +109,11 @@
         <!-- /tile body -->
 
     </section>
-    <!-- /tile -->
 
 
 
 
-    <!--/ CONTENT -->
-{{ form_end(formulaire) }}
+
+    {{ form_end(formulaire) }}
 
 {% endblock robots %}

@@ -3,6 +3,7 @@
 namespace TunisiaMallBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Entity\User;
 
@@ -39,8 +40,15 @@ class DefaultController extends Controller
 
     public function adminindexAction()
     {
-        return $this->render('TunisiaMallBundle::adminindex.html.twig');
+        return $this->render('TunisiaMallBundle:admin:templateadmin.html.twig');
     }
+
+    public function adminpubliciteAction()
+    {
+        return $this->render('TunisiaMallBundle::publicite.html.twig');
+    }
+
+
 
     public function clientevenementAction()
     {

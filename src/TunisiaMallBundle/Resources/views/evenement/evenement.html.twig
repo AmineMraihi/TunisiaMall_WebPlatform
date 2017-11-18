@@ -1,4 +1,4 @@
-{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{% extends "TunisiaMallBundle:admin:templateadmin.html.twig" %}
 {#{% block debuttemplate %}#}
 {% block robots %}
 
@@ -26,7 +26,7 @@
                             <h1 class="custom-font"><strong>Evenement</strong> Liste</h1>
                             <ul class="controls">
                                 <li>
-                                    <a href="{{ path('tunisia_mall_ajout_evenement') }}" role="button" tabindex="0"><i
+                                    <a id="add-entry" href="{{ path('tunisia_mall_ajout_evenement') }}" role="button" tabindex="0"><i
                                                 class="fa fa-plus mr-5"></i> Add
                                         Entry</a>
                                 </li>
