@@ -1,0 +1,18 @@
+<h2>liste des Boutiques</h2>
+<table border="1px">
+    <tr>
+        <td>nom</td>
+        <td>Type</td>
+        <td>Position</td>
+
+
+    </tr>
+    {% for boutique in boutiques %}
+        <tr>
+            <td>{{ boutique.nom}}</td>
+            <td>{{ boutique.type }}</td>
+            <td>{{ boutique.position }}</td>
+
+        </tr>
+    {% endfor %}
+</table>

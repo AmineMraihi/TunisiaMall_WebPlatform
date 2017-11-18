@@ -48,3 +48,9 @@ tunisia_mall_GBoutiqueCA:
 tunisia_mall_list_boutique:
         path:     /listboutique
         defaults: { _controller: TunisiaMallBundle:Boutique:afficherboutiques }
+tunisia_mall_supprimer_boutique:
+    path:     /supprimerboutique/{id}
+    defaults: { _controller: TunisiaMallBundle:Boutique:supprimerboutique }
+tunisia_mall_modifier_boutique:
+    path:     /modifierboutique/{id}
+    defaults: { _controller: TunisiaMallBundle:Boutique:modifierBoutique }

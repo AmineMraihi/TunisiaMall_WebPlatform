@@ -10,6 +10,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
+
         return $this->render('TunisiaMallBundle:Default:index.html.twig');
     }
     public function ContactAction()

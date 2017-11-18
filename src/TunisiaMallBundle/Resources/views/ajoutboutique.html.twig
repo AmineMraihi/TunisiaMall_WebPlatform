@@ -1,0 +1,61 @@
+{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+
+{% block robots %}
+
+    <section id="content">
+ <br>
+ <br>
+ <br>
+ <div></div>
+ {{ form_start(formulaire) }}
+
+     <table>
+         <tr></tr>
+         <tr></tr>
+         <tr></tr>
+         <tr></tr>
+         <tr>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>
+                 {{ form_label(formulaire.nom) }}
+             </td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>
+                 {{ form_widget(formulaire.nom) }}
+             </td>
+         </tr>
+         <tr>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>
+                 {{ form_label(formulaire.type) }}
+             </td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>
+
+                 {{ form_widget(formulaire.type) }}
+             </td>
+         </tr>
+         <tr>
+             <td></td><td></td><td></td>
+             <td>
+                 {{ form_label(formulaire.position) }}
+             </td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>
+
+                 {{ form_widget(formulaire.position) }}
+             </td>
+         </tr>
+     </table>
+ {{ form_end(formulaire) }}
+        {% endblock robots %}
