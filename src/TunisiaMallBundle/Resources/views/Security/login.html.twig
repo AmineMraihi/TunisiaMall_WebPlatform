@@ -1,0 +1,8 @@
+{% block userconnecte %}
+    {{ include('TunisiaMallBundle::User_connecte.html.twig') }}
+{% endblock userconnecte %}
+
+{% block fos_user_content %}
+    {{ include('@FOSUser/Security/login_content.html.twig') }}
+
+{% endblock fos_user_content %}

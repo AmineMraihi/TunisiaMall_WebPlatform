@@ -1,14 +1,13 @@
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
-{#{% block debuttemplate %}#}
+
 {% block robots %}
 
     <section id="content">
-
         <div class="page page-tables-datatables">
 
             <div class="pageheader">
 
-                <h2>Evenements <span>liste</span></h2>
+                <h2>Boutiques <span>// You can place subtitle here</span></h2>
 
 
             </div>
@@ -23,10 +22,10 @@
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Evenement</strong> Liste</h1>
+                            <h1 class="custom-font"><strong>Editable</strong> Usage</h1>
                             <ul class="controls">
                                 <li>
-                                    <a href="{{ path('tunisia_mall_ajout_evenement') }}" role="button" tabindex="0" ><i class="fa fa-plus mr-5"></i> Add
+                                    <a role="button" tabindex="0" id="add-entry"><i class="fa fa-plus mr-5"></i> Add
                                         Entry</a>
                                 </li>
                                 <li class="dropdown">
@@ -70,33 +69,24 @@
                                     <thead>
                                     <tr>
                                         <th>nom</th>
-                                        <th>description</th>
-                                        <th>date</th>
-                                        <th>path</th>
-                                        <th>user</th>
+                                        <th>type</th>
+                                        <th>position</th>
+
+
                                         <th style="width: 160px;" class="no-sort">Actions</th>
+                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {% for evenement in evenements %}
+                                    {% for boutique in boutiques %}
                                         <tr class="odd gradeX">
-                                            <td>{{ evenement.nom }}</td>
-                                            <td>{{ evenement.description }}</td>
-                                            <td>{{ evenement.date | date("d-m-y") }}</td>
-                                            <td>{{ evenement.path }}</td>
-                                            <td>{{ evenement.idUser.nom }}</td>
-                                            <td class="actions">
-                                                <a role="button" tabindex="0"
-                                                   class="edit text-primary text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_modifier_evenement',
-                                                   {'id':evenement.idEvenement}) }}">Edit
-                                                </a>
-                                                <a role="button" tabindex="0"
-                                                   class="delete text-danger text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_supprimer_evenement',
-                                                   {'id':evenement.idEvenement}) }}">Remove
-                                                </a>
-                                            </td>
+                                            <td>{{ boutique.nom}}</td>
+                                            <td>{{ boutique.type }}</td>
+                                            <td>{{ boutique.position }}</td>
+                                            <td><a href="{{ path('tunisia_mall_modifier_boutique',
+                                                {'id':boutique.idBoutique}) }}">mise à jour</a></td>
+                                            <td><a href="{{ path('tunisia_mall_supprimer_boutique',
+                                                {'id':boutique.idBoutique}) }}">suppression</a></td>
                                         </tr>
                                     {% endfor %}
 
@@ -111,11 +101,5 @@
             </div>
         </div>
 
-
     </section>
-
-
-
-    <!--/ Page Specific Scripts -->
-{% endblock robots %}
-{#{% block fintemplate %}#}
+{% endblock robots%}

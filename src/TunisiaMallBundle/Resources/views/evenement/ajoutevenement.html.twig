@@ -1,7 +1,9 @@
+{#{% extends "TunisiaMallBundle:admin:templateadmin.html.twig" %}#}
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+
 {% block robots %}
 
-{{ form_start(formulaire) }}
+    {{ form_start(formulaire) }}
     <section id="content">
 
         <div class="page page-forms-common">
@@ -12,7 +14,7 @@
 
 
                 <!-- col -->
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <!-- tile -->
                     <section class="tile">
@@ -57,11 +59,11 @@
 
                         <!-- tile body -->
 
-                        <table class="table table-custom" >
+                        <table class="table table-custom">
                             <thead>
                             <tr class="odd gradeX">
                                 <th>nom</th>
-                                <td>{{ form_widget(formulaire.nom) }}</td>
+                                <td >{{ form_widget(formulaire.nom) }}</td>
                             </tr>
                             <tr class="odd gradeX">
                                 <th>description</th>
@@ -73,15 +75,14 @@
                             </tr>
                             <tr class="odd gradeX">
                                 <th>path</th>
-                                <td>{{ form_widget(formulaire.path) }}</td>
+                                <td>{{ form_widget(formulaire.imageFile) }}</td>
                                 {#<td><input type="file" name="files[]" "></td>#}
-
                             </tr>
                             <tr class="odd gradeX">
                                 <th>user</th>
                                 <td>{{ form_widget(formulaire.idUser) }}</td>
-
                             </tr>
+
                             <tr>
                                 <th style="width: 160px;" class="no-sort">Actions</th>
                                 <td>{{ form_widget(formulaire.ajouter) }}</td>
@@ -91,6 +92,7 @@
 
                             </tbody>
                         </table>
+
 
                         <!-- /tile body -->
 
@@ -109,12 +111,11 @@
         <!-- /tile body -->
 
     </section>
-    <!-- /tile -->
 
 
 
 
-    <!--/ CONTENT -->
-{{ form_end(formulaire) }}
+
+    {{ form_end(formulaire) }}
 
 {% endblock robots %}

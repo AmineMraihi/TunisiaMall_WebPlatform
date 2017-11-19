@@ -31,7 +31,7 @@ class EvenementController extends Controller
             return $this->redirectToRoute('tunisia_mall_list_evenement');
 
         }
-        return $this->render("@TunisiaMall/ajoutevenement.html.twig",array(
+        return $this->render("TunisiaMallBundle:evenement:ajoutevenement.html.twig",array(
             "formulaire"=>$form->createView()
         ));
     }
@@ -40,7 +40,7 @@ class EvenementController extends Controller
     {
         $em=$this->getDoctrine()->getManager();
         $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
-        return $this->render("TunisiaMallBundle::evenement.html.twig",array(
+        return $this->render("TunisiaMallBundle:evenement:evenement.html.twig",array(
             "evenements"=>$evenements
         ));
 
@@ -61,7 +61,7 @@ class EvenementController extends Controller
 
         }
 
-        return $this->render("TunisiaMallBundle::modifierevenementemplate.html.twig",array(
+        return $this->render("TunisiaMallBundle:evenement:modifierevenementemplate.html.twig",array(
             "form"=>$form->createView()
         ));
 

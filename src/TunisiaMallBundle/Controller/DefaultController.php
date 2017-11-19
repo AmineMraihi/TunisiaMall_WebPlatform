@@ -3,33 +3,23 @@
 namespace TunisiaMallBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Entity\User;
 
 class DefaultController extends Controller
 {
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        $user=new User();
-        if($request->isMethod('POST')){
-            $user->setNom($request->get('Name'));
-            $user->setPrenom($request->get('LastName'));
-//            $user->setDateNaissance($request->get('DateNaissance'));
-            $user->setNumeroTelephone($request->get("Numerotel"));
-            $user->setAdresse($request->get("Adresse"));
-            $user->setEmail($request->get('Email'));
-            $user->setPassword($request->get('password'));
-            $user->setUsername($request->get('Username'));
-            $user->setSexe($request->get('sexe'));
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($user);
-            $em->flush();
-        }
         return $this->render('TunisiaMallBundle:Default:index.html.twig');
     }
     public function ContactAction()
     {
         return $this->render('TunisiaMallBundle:Default:Contact.html.twig');
+    }
+    public function iContactAction()
+    {
+        return $this->render('TunisiaMallBundle:Default:Contactinternaute.html.twig');
     }
 
     public function adminevenementAction()
@@ -39,8 +29,19 @@ class DefaultController extends Controller
 
     public function adminindexAction()
     {
-        return $this->render('TunisiaMallBundle::adminindex.html.twig');
+        return $this->render('TunisiaMallBundle:admin:templateadmin.html.twig');
     }
+    public function GBoutiqueCAAction()
+    {
+        return $this->render('TunisiaMallBundle::GestionBoutique.html.twig');
+    }
+
+    public function adminpubliciteAction()
+    {
+        return $this->render('TunisiaMallBundle::publicite.html.twig');
+    }
+
+
 
     public function clientevenementAction()
     {

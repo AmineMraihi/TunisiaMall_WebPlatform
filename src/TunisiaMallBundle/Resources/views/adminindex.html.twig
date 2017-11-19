@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>TunisiaMall - Admin Dashboard</title>
-    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <link rel="icon" type="image/ico" href="{{ asset('assets/images/favicon.ico') }}" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -497,6 +497,13 @@
                                         <a role="button" tabindex="0"><i class=""></i> <span>Gestion des employers</span> <span class=""></span></a>
                                     </li>
                                     <li>
+                                        <a role="button" tabindex="0"><i class=""></i> <span>Gestion des Boutiques</span> <span class=""></span></a>
+                                        <ul>
+                                            <li><a href="{{ path('tunisia_mall_GBoutiqueCA') }}"><i class=""></i> Ajout Boutique</a></li>
+                                            <li><a href="{{ path('tunisia_mall_list_boutique') }}"><i class=""></i> Liste Boutique</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span> <span class=""></span></a>
                                     </li>
                                     <li>
@@ -526,6 +533,7 @@
                                     <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Liste demande publicité</span> <span class=""></span></a>
                                     </li>
+                                </ul>
 
 
                                     <!-- ===================================================

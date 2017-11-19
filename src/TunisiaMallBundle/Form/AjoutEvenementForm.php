@@ -9,6 +9,8 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Form\Type\VichImageType;
 
 class AjoutEvenementForm extends AbstractType
 {
@@ -17,13 +19,18 @@ class AjoutEvenementForm extends AbstractType
         $builder
             ->add("nom")
             ->add("description")
-            ->add("date",DateType::class)
-            ->add("path")
-            ->add('path',VichImageType)
-            ->add("idUser",EntityType::class,array(
-                'class'=>"TunisiaMallBundle\Entity\User",
+            ->add("date", DateType::class)
+//            ->add("path")
+//                ->add('path',VichImageType)
+            ->add("idUser", EntityType::class, array(
+                'class' => "TunisiaMallBundle\Entity\User",
                 'choice_label' => 'nom',
-                'multiple'=>false,
+                'multiple' => false,
+            ))
+            ->add("imageFile",VichImageType::class,array(
+                'required' => false,
+                'allow_delete'  => true,
+                'download_link' => true,
             ))
             ->add("ajouter", SubmitType::class);
 
