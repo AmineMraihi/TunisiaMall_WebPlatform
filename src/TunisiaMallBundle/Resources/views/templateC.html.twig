@@ -105,7 +105,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                             <ul class="dropdown-menu agile_short_dropdown">
                                                 <li><a href="Events.html.twig">Shop Events</a></li>
-                                                <li><a href="Events.html.twig">Mall Events</a></li>
+                                                <li><a href="{{ path('tunisia_mall_client_evenement') }}">Mall Events</a></li>
                                                 <li><a href="Events.html.twig">Kids Events</a></li>
 
                                             </ul>
@@ -148,6 +148,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //banner-top -->
 <!-- Modal1 -->
+{% block client_event %}
+{% endblock client_event %}
 {#
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
         <div class="modal-dialog">

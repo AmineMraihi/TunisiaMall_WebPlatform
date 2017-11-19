@@ -1,4 +1,6 @@
-{% extends "TunisiaMallBundle::layout.html.twig" %}
+{#{% extends "TunisiaMallBundle::layout.html.twig" %}#}
+{% extends "TunisiaMallBundle::templateC.html.twig" %}
+
 {% block client_event %}
     <table class="table table-custom" id="editable-usage">
         <thead>
@@ -16,7 +18,12 @@
                 <td>{{ evenement.nom }}</td>
                 <td>{{ evenement.description }}</td>
                 <td>{{ evenement.date | date("d-m-y") }}</td>
-                <td>{{ evenement.path }}</td>
+                <td><img src="{{ asset('images/amine/') ~ evenement.path }}"
+                         alt=""
+                         width="75"
+                         height="75"
+                    >
+                </td>
                 <td>{{ evenement.idUser.nom }}</td>
 
             </tr>
