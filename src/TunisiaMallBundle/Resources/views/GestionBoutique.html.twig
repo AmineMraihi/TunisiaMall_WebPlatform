@@ -1,26 +1,33 @@
-{#{% extends "TunisiaMallBundle:admin:templateadmin.html.twig" %}#}
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+
 {% block robots %}
-    {{ form_start(formulaire) }}
+
     <section id="content">
+        <div class="page page-tables-datatables">
 
-        <div class="page page-forms-common">
+            <div class="pageheader">
 
+                <h2>Boutiques <span>// You can place subtitle here</span></h2>
+
+
+            </div>
 
             <!-- row -->
             <div class="row">
-
-
                 <!-- col -->
                 <div class="col-md-12">
 
-                    <!-- tile -->
+
                     <section class="tile">
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Evenement </strong>Ajout</h1>
+                            <h1 class="custom-font"><strong>Editable</strong> Usage</h1>
                             <ul class="controls">
+                                <li>
+                                    <a role="button" tabindex="0" id="add-entry"><i class="fa fa-plus mr-5"></i> Add
+                                        Entry</a>
+                                </li>
                                 <li class="dropdown">
 
                                     <a role="button" tabindex="0" class="dropdown-toggle settings"
@@ -56,67 +63,43 @@
                         <!-- /tile header -->
 
                         <!-- tile body -->
-
-                        <table class="table table-custom">
-                            <thead>
-                            <tr class="odd gradeX">
-                                <th>date debut</th>
-                                <td >{{ form_widget(formulaire.date_debut) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>date fin</th>
-                                <td>{{ form_widget(formulaire.date_fin) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>prix</th>
-                                <td>{{ form_widget(formulaire.prix) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>page</th>
-                                <td>{{ form_widget(formulaire.page) }}</td>
-                                {#<td><input type="file" name="files[]" "></td>#}
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>path</th>
-                                <td>{{ form_widget(formulaire.imageFile) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>boutique</th>
-                                <td>{{ form_widget(formulaire.idBoutique) }}</td>
-                            </tr>
-
-                            <tr>
-                                <th style="width: 160px;" class="no-sort">Actions</th>
-                                <td>{{ form_widget(formulaire.ajouter) }}</td>
-                            </tr>
-                            </thead>
-                            <tbody>
-
-                            </tbody>
-                        </table>
+                        <div class="tile-body">
+                            <div class="table-responsive">
+                                <table class="table table-custom" id="editable-usage">
+                                    <thead>
+                                    <tr>
+                                        <th>nom</th>
+                                        <th>type</th>
+                                        <th>position</th>
 
 
+                                        <th style="width: 160px;" class="no-sort">Actions</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for boutique in boutiques %}
+                                        <tr class="odd gradeX">
+                                            <td>{{ boutique.nom}}</td>
+                                            <td>{{ boutique.type }}</td>
+                                            <td>{{ boutique.position }}</td>
+                                            <td><a href="{{ path('tunisia_mall_modifier_boutique',
+                                                {'id':boutique.idBoutique}) }}">mise à jour</a></td>
+                                            <td><a href="{{ path('tunisia_mall_supprimer_boutique',
+                                                {'id':boutique.idBoutique}) }}">suppression</a></td>
+                                        </tr>
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                         <!-- /tile body -->
 
                     </section>
-                    <!-- /tile -->
-
                 </div>
-                <!-- /col -->
-
-
             </div>
-            <!-- /row -->
-
-
         </div>
-        <!-- /tile body -->
 
     </section>
-
-
-
-
-
-    {{ form_end(formulaire) }}
-{% endblock robots %}
+{% endblock robots%}

@@ -1,10 +1,10 @@
 tunisia_mall:
     resource: "@TunisiaMallBundle/Resources/config/routing.yml"
-    prefix:   /ab
+    prefix:   /
 
 first:
     resource: "@FirstBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /abc
 
 app:
     resource: '@AppBundle/Controller/'

@@ -57,3 +57,19 @@ tunisia_mall_modifier_publicite:
 tunisia_mall_supprimer_publicite:
     path:     /supprimerpublicite/{id}
     defaults: { _controller: TunisiaMallBundle:Publicite:supprimerpublicte }
+
+tunisia_mall_contactinternaute:
+    path:     /contacti
+    defaults: { _controller: TunisiaMallBundle:Default:iContact }
+tunisia_mall_GBoutiqueCA:
+    path:     /GestionBoutique
+    defaults: { _controller: TunisiaMallBundle:Boutique:ajoutboutique }
+tunisia_mall_list_boutique:
+        path:     /listboutique
+        defaults: { _controller: TunisiaMallBundle:Boutique:afficherboutiques }
+tunisia_mall_supprimer_boutique:
+    path:     /supprimerboutique/{id}
+    defaults: { _controller: TunisiaMallBundle:Boutique:supprimerboutique }
+tunisia_mall_modifier_boutique:
+    path:     /modifierboutique/{id}
+    defaults: { _controller: TunisiaMallBundle:Boutique:modifierBoutique }
