@@ -19,7 +19,7 @@ class AjoutEvenementForm extends AbstractType
             ->add("description")
             ->add("date",DateType::class)
             ->add("path")
-//                ->add('path',VichImageType)
+            ->add('path',VichImageType)
             ->add("idUser",EntityType::class,array(
                 'class'=>"TunisiaMallBundle\Entity\User",
                 'choice_label' => 'nom',

@@ -42,3 +42,26 @@ tunisia_mall_client_evenement:
     path:     /clientevenement
     defaults: { _controller: TunisiaMallBundle:Default:clientevenement }
 
+offreAdmin:
+    path:     /offreAdmin
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:affichAll }
+
+ToAjout:
+    path:     /ToAjout
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:ToAjout }
+
+ajoutOffreAdmin:
+    path:     /ajoutOffreAdmin
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:ajout }
+
+modifOffreAdmin:
+    path:     /modifOffreAdmin/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:modifier }
+
+suppOffreAdmin:
+    path:     /suppOffreAdmin/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:supprimer }
+
+demandeAdmin:
+    path:     /demandeAdmin
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:afficherAll }

@@ -4,6 +4,10 @@ namespace TunisiaMallBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+/*
+ *@ORM\Entity
+ */
+
 /**
  * OffreEmploi
  *
@@ -22,18 +26,19 @@ class OffreEmploi
     private $idOffre;
 
     /**
-     * @var integer
-     *
-     * @ORM\Column(name="id_user_fk", type="integer", nullable=false)
+     *  @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_user_fk", referencedColumnName="id_user")
+     * })
      */
-    private $idUserFk;
+    private $User;
 
     /**
      * @var integer
-     *
-     * @ORM\Column(name="id_boutique_fk", type="integer", nullable=false)
+     * @ORM\ManyToOne(targetEntity="Boutique")
+     * @ORM\JoinColumn(name="id_boutique_fk",referencedColumnName="id_boutique")
      */
-    private $idBoutiqueFk;
+    private $Boutique;
 
     /**
      * @var string
@@ -61,7 +66,7 @@ class OffreEmploi
      *
      * @ORM\Column(name="nbr_demandÃ©", type="integer", nullable=true)
      */
-    private $nbrDemandã©;
+    private $nbrDemande;
 
     /**
      * @var \DateTime
@@ -70,12 +75,8 @@ class OffreEmploi
      */
     private $dateExpiration;
 
-
-
     /**
-     * Get idOffre
-     *
-     * @return integer
+     * @return int
      */
     public function getIdOffre()
     {
@@ -83,70 +84,46 @@ class OffreEmploi
     }
 
     /**
-     * Set idUserFk
-     *
-     * @param integer $idUserFk
-     *
-     * @return OffreEmploi
+     * @param int $idOffre
      */
-    public function setIdUserFk($idUserFk)
+    public function setIdOffre($idOffre)
     {
-        $this->idUserFk = $idUserFk;
-
-        return $this;
+        $this->idOffre = $idOffre;
     }
 
     /**
-     * Get idUserFk
-     *
-     * @return integer
+     * @return mixed
      */
-    public function getIdUserFk()
+    public function getUser()
     {
-        return $this->idUserFk;
+        return $this->User;
     }
 
     /**
-     * Set idBoutiqueFk
-     *
-     * @param integer $idBoutiqueFk
-     *
-     * @return OffreEmploi
+     * @param mixed $User
      */
-    public function setIdBoutiqueFk($idBoutiqueFk)
+    public function setUser($User)
     {
-        $this->idBoutiqueFk = $idBoutiqueFk;
-
-        return $this;
+        $this->User = $User;
     }
 
     /**
-     * Get idBoutiqueFk
-     *
-     * @return integer
+     * @return int
      */
-    public function getIdBoutiqueFk()
+    public function getBoutique()
     {
-        return $this->idBoutiqueFk;
+        return $this->Boutique;
     }
 
     /**
-     * Set poste
-     *
-     * @param string $poste
-     *
-     * @return OffreEmploi
+     * @param int $Boutique
      */
-    public function setPoste($poste)
+    public function setBoutique($Boutique)
     {
-        $this->poste = $poste;
-
-        return $this;
+        $this->Boutique = $Boutique;
     }
 
     /**
-     * Get poste
-     *
      * @return string
      */
     public function getPoste()
@@ -155,22 +132,14 @@ class OffreEmploi
     }
 
     /**
-     * Set specialite
-     *
-     * @param string $specialite
-     *
-     * @return OffreEmploi
+     * @param string $poste
      */
-    public function setSpecialite($specialite)
+    public function setPoste($poste)
     {
-        $this->specialite = $specialite;
-
-        return $this;
+        $this->poste = $poste;
     }
 
     /**
-     * Get specialite
-     *
      * @return string
      */
     public function getSpecialite()
@@ -179,22 +148,14 @@ class OffreEmploi
     }
 
     /**
-     * Set salaire
-     *
-     * @param float $salaire
-     *
-     * @return OffreEmploi
+     * @param string $specialite
      */
-    public function setSalaire($salaire)
+    public function setSpecialite($specialite)
     {
-        $this->salaire = $salaire;
-
-        return $this;
+        $this->specialite = $specialite;
     }
 
     /**
-     * Get salaire
-     *
      * @return float
      */
     public function getSalaire()
@@ -203,50 +164,46 @@ class OffreEmploi
     }
 
     /**
-     * Set nbrDemandã©
-     *
-     * @param integer $nbrDemandã©
-     *
-     * @return OffreEmploi
+     * @param float $salaire
      */
-    public function setNbrDemandã©($nbrDemandã©)
+    public function setSalaire($salaire)
     {
-        $this->nbrDemandã© = $nbrDemandã©;
-
-        return $this;
+        $this->salaire = $salaire;
     }
 
     /**
-     * Get nbrDemandã©
-     *
-     * @return integer
+     * @return int
      */
-    public function getNbrDemandã©()
+    public function getNbrDemande()
     {
-        return $this->nbrDemandã©;
+        return $this->nbrDemande;
     }
 
     /**
-     * Set dateExpiration
-     *
-     * @param \DateTime $dateExpiration
-     *
-     * @return OffreEmploi
+     * @param int $nbrDemande
      */
-    public function setDateExpiration($dateExpiration)
+    public function setNbrDemande($nbrDemande)
     {
-        $this->dateExpiration = $dateExpiration;
-
-        return $this;
+        $this->nbrDemande = $nbrDemande;
     }
 
     /**
-     * Get dateExpiration
-     *
      * @return \DateTime
      */
     public function getDateExpiration()
     {
         return $this->dateExpiration;
     }
+
+    /**
+     * @param \DateTime $dateExpiration
+     */
+    public function setDateExpiration($dateExpiration)
+    {
+        $this->dateExpiration = $dateExpiration;
+    }
+
+
+
+
 }

@@ -1,0 +1,175 @@
+{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{#{% block debuttemplate %}#}
+{% block robots %}
+
+    <section id="content">
+
+        <div class="page page-tables-datatables">
+
+            <div class="pageheader">
+
+                <h2>Offre emploi <span>liste</span></h2>
+
+
+            </div>
+
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-md-12">
+
+
+                    <section class="tile">
+
+                        <!-- tile header -->
+                        <div class="tile-header dvd dvd-btm">
+                            <h1 class="custom-font"><strong>Offre emploi</strong> Liste</h1>
+
+                            <ul class="controls">
+                                <li>
+                                    <a href="{{ path('ajoutOffreAdmin') }}" role="button" tabindex="0" ><i class="fa fa-plus mr-5"></i> Ajouter
+                                        </a>
+
+                                </li>
+
+                                <li class="dropdown">
+
+                                    <a role="button" tabindex="0" class="dropdown-toggle settings"
+                                       data-toggle="dropdown">
+                                        <i class="fa fa-cog"></i>
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-toggle">
+                                                <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                                <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-refresh">
+                                                <i class="fa fa-refresh"></i> Refresh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-fullscreen">
+                                                <i class="fa fa-expand"></i> Fullscreen
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- /tile header -->
+
+                        <!-- tile body -->
+                        <div class="tile-body">
+                            <div class="table-responsive">
+                                <table class="table table-custom" id="editable-usage">
+                                    <thead>
+                                    <tr>
+                                        <th>Poste</th>
+                                        <th>Specialité</th>
+                                        <th>Salaire</th>
+                                        <th>Nombre demandé</th>
+                                        <th>Date expiration</th>
+                                        <th>Boutique</th>
+                                        <th></th>
+                                       {# <th style="width: 160px;" class="no-sort">Actions</th> #}
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                        {% for offreEmploi in offreEmplois %}
+                                            <tr>
+                                              {#  <a href="{{ path('offre_show', { 'idOffre': offreEmploi.idOffre }) }}" hidden>{{ offreEmploi.idOffre }}</a> #}
+
+                                                <td>{{ offreEmploi.poste }}</td>
+                                                <td>{{ offreEmploi.specialite }}</td>
+                                                <td>{{ offreEmploi.salaire }}</td>
+                                                <td>{{ offreEmploi.nbrDemande }}</td>
+                                                <td>{% if offreEmploi.dateExpiration  %}{{ offreEmploi.dateExpiration|date('Y-m-d') }}{% endif %}</td>
+                                            <td>{{  offreEmploi.Boutique.nom }}</td>
+                                            <td><div class="pull-right mt-10">
+                                                    <a href="{{ path('modifOffreAdmin',{ 'idOffre': offreEmploi.idOffre }) }}"> <button type="button" class="btn btn-rounded-20 btn-default btn-sm mr-5" style="width:30px;"><i class="fa fa-pencil"></i></button> </a>
+
+                                                    <a href="{{ path('suppOffreAdmin',{ 'idOffre': offreEmploi.idOffre }) }}"> <button type="button" class="btn btn-rounded-20 btn-default btn-sm mr-5" style="width:30px;" ><i class="fa fa-times"></i></button> </a>
+
+                                                </div></td>
+
+                                        </tr>
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /tile body -->
+
+                    </section>
+                </div>
+            </div>
+        </div>
+        <table>
+    {% for offreEmploi in offreEmplois %}
+        <tr> <div class="card-container col-lg-3 col-sm-6 col-sm-12">
+            <div class="card">
+                <div class="front bg-lightred">
+
+                    <!-- row -->
+                    <div class="row">
+                        <!-- col -->
+                        <div class="col-xs-4">
+                            <i class="fa fa-shopping-cart fa-4x"></i>
+                        </div>
+                        <!-- /col -->
+                        <!-- col -->
+                        <div class="col-xs-8">
+
+                            <p class="text-elg text-strong mb-0">{{  offreEmploi.Boutique.nom }}</p>
+                            <span>{{ offreEmploi.poste }}</span>
+                        </div>
+                        <!-- /col -->
+                    </div>
+                    <!-- /row -->
+
+                </div>
+                <div class="back bg-lightred">
+
+                    <!-- row -->
+                    <div class="row">
+                        <!-- col -->
+                        <div class="col-xs-4">
+                            <a href=#><i class="fa fa-cog fa-2x"></i> Settings</a>
+                        </div>
+                        <!-- /col -->
+                        <!-- col -->
+                        <div class="col-xs-4">
+                            <a href=#><i class="fa fa-chain-broken fa-2x"></i> Content</a>
+                        </div>
+                        <!-- /col -->
+                        <!-- col -->
+                        <div class="col-xs-4">
+                            <a href=#><i class="fa fa-ellipsis-h fa-2x"></i> More</a>
+                        </div>
+                        <!-- /col -->
+                    </div>
+                    <!-- /row -->
+
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+        </tr>
+        </table>
+    </section>
+
+
+
+    <!--/ Page Specific Scripts -->
+
+{#{% block fintemplate %}#}
+{% endblock %}
