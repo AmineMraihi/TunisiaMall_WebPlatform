@@ -13,10 +13,21 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle:Default:index.html.twig');
     }
+
+    public function shopownerevenementAction()
+    {
+        $em=$this->getDoctrine()->getManager();
+        $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        return $this->render("TunisiaMallBundle:evenement:shopownerevenement.html.twig",array(
+            "evenements"=>$evenements
+        ));
+    }
+
     public function ContactAction()
     {
         return $this->render('TunisiaMallBundle:Default:Contact.html.twig');
     }
+
     public function iContactAction()
     {
         return $this->render('TunisiaMallBundle:Default:Contactinternaute.html.twig');
@@ -31,6 +42,7 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle:admin:templateadmin.html.twig');
     }
+
     public function GBoutiqueCAAction()
     {
         return $this->render('TunisiaMallBundle::GestionBoutique.html.twig');
@@ -42,16 +54,17 @@ class DefaultController extends Controller
     }
 
 
-
     public function clientevenementAction()
     {
-        $em=$this->getDoctrine()->getManager();
-        $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
-        return $this->render("TunisiaMallBundle::clientevenement.html.twig",array(
-            "evenements"=>$evenements
+        $em = $this->getDoctrine()->getManager();
+        $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        return $this->render("TunisiaMallBundle::clientevenement.html.twig", array(
+            "evenements" => $evenements,
+            "publicites" => $publicites
+
         ));
     }
-
 
 
     public function signupAction(Request $request)
