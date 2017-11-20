@@ -77,6 +77,7 @@ class DefaultController extends Controller
     }
 
 
+
     public function clientevenementAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -142,6 +143,9 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::templateC.html.twig');
     }
+
+
+
 
 }
 
