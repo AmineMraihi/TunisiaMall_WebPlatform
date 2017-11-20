@@ -10,6 +10,7 @@ imports:
 parameters:
     locale: en
     app.path.product_images: web/images/amine
+    app.path.ahmed_images: web/images/ahmed
 
 framework:
     #esi: ~
@@ -92,3 +93,15 @@ vich_uploader:
                 delete_on_update:   false
                 delete_on_remove:   true
                 namer:   vich_uploader.namer_origname
+
+
+
+
+            ahmed_images:
+                uri_prefix:         '%app.path.ahmed_images%'
+                upload_destination: '%kernel.root_dir%/../web/images/ahmed'
+                inject_on_load:     true
+                delete_on_update:   false
+                delete_on_remove:   true
+                namer:   vich_uploader.namer_origname
+

@@ -1,0 +1,131 @@
+{% include "TunisiaMallBundle:shop:templateshopowner.html.twig" %}
+{% block robots %}
+    <section id="content">
+        <link rel="stylesheet" href="{{ asset('assets/css/vendor/promotion.css') }}">
+        <div class="page page-tables-datatables">
+
+            <div class="pageheader">
+
+
+
+                <marquee id="titre">liste des promotions</marquee>
+
+
+            </div>
+
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-md-12">
+
+
+                    <section class="tile">
+
+                        <!-- tile header -->
+                        <div class="tile-header dvd dvd-btm">
+                            <h1 class="custom-font"><strong>Editable</strong> Usage</h1>
+                            <ul class="controls">
+
+                                <li>
+                                    <a role="button" tabindex="0" id="add-entry"><i class="fa fa-plus mr-5"></i> Ajouter un produit
+                                    </a>
+                                </li>
+                                <li class="dropdown">
+
+                                    <a role="button" tabindex="0" class="dropdown-toggle settings"
+                                       data-toggle="dropdown">
+                                        <i class="fa fa-cog"></i>
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-toggle">
+                                                <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                                <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-refresh">
+                                                <i class="fa fa-refresh"></i> Refresh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-fullscreen">
+                                                <i class="fa fa-expand"></i> Fullscreen
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+                                <li class="remove"><a role="button" tabindex="0" class="tile-close"><i
+                                                class="fa fa-times"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- /tile header -->
+
+
+
+                        <div class="tile-body">
+                            <div class="table-responsive">
+                                <table class="table table-custom" id="editable-usage">
+                                    <thead>
+                                    <tr>
+                                        <th>nom de produit</th>
+                                        <th>Taux de Reduction</th>
+                                        <th>Date Debut</th>
+                                        <th>Date Fin</th>
+                                        <th>image</th>
+
+
+                                        <th style="width: 160px;" class="no-sort">Actions</th>
+                                    </tr>
+
+                                    {% for P in Promotions %}
+                                        <tr class="odd gradeX">
+
+                                            <td>{{ P.IdProduit.nom }}</td>
+                                            <td>{{ P.tauxReduction}}</td>
+                                            <td>{{ P.dateDebut | date("d-m-y")}}</td>
+                                            <td>{{ P.dateFin | date("d-m-y")}}</td>
+
+
+                                            <td> <img src=" {{ asset('images/ahmed/' ~ P.path) }}" width="75" height="75" /></td>
+                                            <td class="actions">
+                                                <a role="button20" tabindex="0" id="produitupdate"
+                                                   >Edit
+                                                </a>
+                                                <a role="button" id="remove"
+
+                                                </a>
+
+
+                                            </td>
+
+
+
+                                        </tr>
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- /tile body -->
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!--/ Page Specific Scripts -->
+{% endblock robots %}
+{#{% block fintemplate %}#}

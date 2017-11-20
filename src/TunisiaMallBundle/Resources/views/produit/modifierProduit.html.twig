@@ -1,0 +1,125 @@
+
+
+
+
+
+{% include "TunisiaMallBundle:shop:templateshopowner.html.twig" %}
+{% block robots %}
+    <section id="content">
+        <link rel="stylesheet" href="{{ asset('assets/css/vendor/promotion.css') }}">
+        <div class="page page-tables-datatables">
+
+            <div class="pageheader">
+                <br>
+
+
+                <div id="titreajout">Modifier votre Produit</div>
+
+
+            </div>
+
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-md-12">
+
+
+                    <section class="tile">
+
+                        <!-- tile header -->
+                        <div >
+
+
+                        </div>
+                        <!-- /tile header -->
+
+
+
+                        <div class="content">
+                            {{ form_start(formulaire) }}
+
+                            <div>
+
+                                {{ form_label(formulaire.nom) }} :
+                                {{ form_widget( formulaire.nom,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+                            <div>
+
+                                {{ form_label(formulaire.type) }} :
+                                {{ form_widget( formulaire.type,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+
+
+
+                            <div>
+                                {{ form_label(formulaire.prix) }} :
+                                {{ form_widget( formulaire.prix,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+                            <div>
+
+                                {{ form_label(formulaire.quantite) }} :
+                                {{ form_widget( formulaire.quantite,{'attr': {'class':'form-control'}}   ) }}
+
+                            </div>
+
+                            <div>
+                                {{ form_label(formulaire.prixAchatGros) }} :
+                                {{ form_widget( formulaire.prixAchatGros,{'attr': {'class':'form-control'}}   ) }}
+
+                            </div>
+
+                            <div>
+                                {{ form_label(formulaire.nbVente) }} :
+                                {{ form_widget( formulaire.nbVente,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                image file :   <span></span>
+                                <{{ form_widget(formulaire.imageFile) }}>
+                            </div>
+
+                            <div>
+
+                                {{ form_label(formulaire.description) }} :
+                                {{ form_widget( formulaire.description,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+                            <div>
+
+                                Id de boutique :   <span></span>
+                                {{ form_widget(formulaire.id_boutique)}}
+
+                            </div>
+
+
+                            <div>
+                                {{ form_widget( formulaire.Modifier,{'attr': {'class':'form_ajouter'}}  ) }}
+
+                            </div>
+                            {{ form_end(formulaire) }}
+
+                        </div>
+
+                        <!-- /tile body -->
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!--/ Page Specific Scripts -->
+{% endblock robots %}
+{#{% block fintemplate %}#}

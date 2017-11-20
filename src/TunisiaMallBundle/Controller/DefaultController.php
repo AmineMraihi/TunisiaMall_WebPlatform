@@ -7,16 +7,50 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Entity\User;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('TunisiaMallBundle:Default:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+
+        return $this->render('TunisiaMallBundle:Default:index.html.twig', array(
+            "publicites" => $publicites,
+            "produits" => $produits
+
+        ));
+
     }
+
+    public function clientproduitAction()
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $produits = $em->getRepository("TunisiaMallBundle\\Entity\\Produit")->findAll();
+        return $this->render("TunisiaMallBundle:Default:index.html.twig", array(
+            "Produits " => $produits
+
+
+        ));
+    }
+
+    public function shopownerevenementAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        return $this->render("TunisiaMallBundle:evenement:shopownerevenement.html.twig", array(
+            "evenements" => $evenements
+        ));
+    }
+
     public function ContactAction()
     {
         return $this->render('TunisiaMallBundle:Default:Contact.html.twig');
     }
+
     public function iContactAction()
     {
         return $this->render('TunisiaMallBundle:Default:Contactinternaute.html.twig');
@@ -29,8 +63,9 @@ class DefaultController extends Controller
 
     public function adminindexAction()
     {
-        return $this->render('TunisiaMallBundle::templateadmin.html.twig');
+        return $this->render('TunisiaMallBundle:admin:templateadmin.html.twig');
     }
+
     public function GBoutiqueCAAction()
     {
         return $this->render('TunisiaMallBundle::GestionBoutique.html.twig');
@@ -42,13 +77,18 @@ class DefaultController extends Controller
     }
 
 
-
     public function clientevenementAction()
     {
-        $em=$this->getDoctrine()->getManager();
-        $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
-        return $this->render("TunisiaMallBundle::clientevenement.html.twig",array(
-            "evenements"=>$evenements
+        $em = $this->getDoctrine()->getManager();
+        $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+
+        return $this->render("TunisiaMallBundle::clientevenement.html.twig", array(
+            "evenements" => $evenements,
+            "publicites" => $publicites,
+            "produits" => $produits
+
         ));
     }
 
@@ -84,13 +124,24 @@ class DefaultController extends Controller
         return $this->render('TunisiaMallBundle:Default:about.html.twig');
     }
 
+
+    ///////////////this code is added by ahmed merzoug
+
+    /**
+     * @Route("/", name="homepage")
+     */
+    public function tryfosmesageAction()
+    {
+        $repository = $this->get('fos_message.repository');
+        $sender = $this->get('fos_message.sender');
+
+        return $this->render('default/index.html.twig');
+    }
+
     public function templateclientAction()
     {
         return $this->render('TunisiaMallBundle::templateC.html.twig');
     }
-
-
-
 
 }
 
