@@ -171,3 +171,6 @@ tunisia_mall_modifierproduit:
     defaults: { _controller: TunisiaMallBundle:Produit:modifierProduit }
 
 
+tunisia_mall_client_produitaffichage:
+    path:     /clientprodaffichage
+    defaults: { _controller: TunisiaMallBundle:Default:clientproduit }

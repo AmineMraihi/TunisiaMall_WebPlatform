@@ -6,13 +6,34 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Entity\User;
+
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('TunisiaMallBundle:Default:index.html.twig');
+
+        $em = $this->getDoctrine()->getManager();
+        $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+
+        return $this->render("TunisiaMallBundle:Default:index.html.twig", array(
+            "produits" => $produits
+
+
+        ));
+    }
+
+    public function clientproduitAction()
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $produits = $em->getRepository("TunisiaMallBundle\\Entity\\Produit")->findAll();
+        return $this->render("TunisiaMallBundle:Default:index.html.twig", array(
+            "Produits " => $produits
+
+
+        ));
     }
 
     public function shopownerevenementAction()

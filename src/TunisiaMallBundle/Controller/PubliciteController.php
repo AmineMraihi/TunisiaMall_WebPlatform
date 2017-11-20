@@ -21,11 +21,12 @@ class PubliciteController extends Controller
 
     public function listpubAction()
     {
-        $em = $this->getDoctrine()->getManager();
-        $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
-        return $this->render("TunisiaMallBundle::publicite.html.twig", array(
-            "publicites" => $publicites
-        ));
+
+            $em=$this->getDoctrine()->getManager();
+            $Produits=$em->getRepository("TunisiaMallBundle\\Entity\\Produit")->findAll();
+            return $this->render("TunisiaMallBundle:Default:index.html.twig",array(
+                "Produits" => $Produits
+            ));
     }
 
     public function modifierpubAction(Request $request, $id)

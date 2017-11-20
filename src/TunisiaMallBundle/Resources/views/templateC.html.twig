@@ -149,10 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //banner-top -->
 <!-- Modal1 -->
-{% block client_event %}
-{% endblock client_event %}
-{% block client_pub %}
-{% endblock client_pub %}
+
 {#
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
@@ -212,6 +209,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
+
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body modal-body-sub_agile">
@@ -486,16 +484,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li> Bags</li>
                 <li> Footwear</li>
             </ul>
+
             <div class="resp-tabs-container">
                 <!--/tab_one-->
+
                 <div class="tab1">
+                    {% for prod in produits %}
+
+
                     <div class="col-md-3 product-men">
                         <div class="men-pro-item simpleCart_shelfItem">
                             <div class="men-thumb-item">
-                                <img src="{{ asset('images/m1.jpg') }}" alt="" class="pro-image-front">
-                                <img src="{{ asset('images/m1.jpg') }}" alt="" class="pro-image-back">
+                                <img src="{{ asset('images/ahmed/') ~ prod.path }}" alt=""   width="500"
+                                     height="175" class="pro-image-front">
+                                <img src="{{ asset('images/ahmed/') ~ prod.path }}" alt="" width="500"
+                                     height="175"  class="pro-image-back">
                                 <div class="men-cart-pro">
                                     <div class="inner-men-cart-pro">
+
                                         <a href="single.html" class="link-product-add-cart">Quick View</a>
                                     </div>
                                 </div>
@@ -503,10 +509,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                             </div>
                             <div class="item-info-product ">
-                                <h4><a href="single.html">Formal Blue Shirt</a></h4>
+                                <h4><a href="single.html">{{ prod.nom }}</a></h4>
+
                                 <div class="info-product-price">
-                                    <span class="item_price">TND90.99</span>
+
+                                    <span class="item_price">{{ prod.prix }} TND</span>
                                     <del>TND140.99</del>
+                                </div>
+                                <div class="info-product-price">
+
+                                    <span >Description : {{ prod.description }} </span>
+
                                 </div>
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
@@ -528,6 +541,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+
+
                     <div class="col-md-3 product-men">
                         <div class="men-pro-item simpleCart_shelfItem">
                             <div class="men-thumb-item">
