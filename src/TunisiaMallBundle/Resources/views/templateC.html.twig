@@ -563,8 +563,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <!--/tab_one-->
 
                     <div class="tab1">
-                        {% include 'TunisiaMallBundle::merzoug_change_nomfichier.html.twig' %}
-
+                        {% block produit_merzoug %}
+                            {% include 'TunisiaMallBundle::merzoug_change_nomfichier.html.twig' %}
+                        {% endblock produit_merzoug %}
 
                         <div class="col-md-3 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
