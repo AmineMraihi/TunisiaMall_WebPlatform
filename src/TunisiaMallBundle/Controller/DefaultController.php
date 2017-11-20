@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Entity\User;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 class DefaultController extends Controller
 {
@@ -22,6 +23,7 @@ class DefaultController extends Controller
             "evenements"=>$evenements
         ));
     }
+
 
     public function ContactAction()
     {
@@ -95,6 +97,19 @@ class DefaultController extends Controller
     public function aboutAction()
     {
         return $this->render('TunisiaMallBundle:Default:about.html.twig');
+    }
+
+
+    ///////////////this code is added by ahmed merzoug
+    /**
+     * @Route("/", name="homepage")
+     */
+    public function tryfosmesageAction()
+    {
+        $repository = $this->get('fos_message.repository');
+        $sender = $this->get('fos_message.sender');
+
+        return $this->render('default/index.html.twig');
     }
 
 }

@@ -18,24 +18,7 @@ use TunisiaMallBundle\Form\ProduitType;
 
 class ProduitController extends Controller
 {
-    public function AjoutProduitAction(Request $request)
-    {
-        $Produit = new Produit();
-        $this->getUser();
-        $form = $this->createForm(AjoutProduitForum::class, $Produit);
-        $form->handleRequest($request);
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($Produit);
-            $em->flush();
-            return $this->redirectToRoute("tunisia_mall_listProduit") ;
 
-        }
-
-        return $this->render('@TunisiaMall/produit/NewProduit.html.twig', array(
-            'formulaire' => $form->createView()
-        ));
-    }
 
     public function listProduitAction(){
         $em=$this->getDoctrine()->getManager();
@@ -44,6 +27,8 @@ class ProduitController extends Controller
             "Produits" => $Produits
         ));
     }
+
+
 
     public function SuppprodAction($id_produit)
     {
@@ -79,13 +64,29 @@ class ProduitController extends Controller
             $em=$this->getDoctrine()->getManager() ;
             $em->persist($produit) ;
             $em->flush() ;
-
-
         return $this->redirectToRoute("tunisia_mall_listProduit"); }
 
                return $this->render('TunisiaMallBundle:produit:modifierProduit.html.twig', array('formulaire'=>$Form->createView())) ;
-
-
-
     }
+
+    public function AjoutProduitAction(Request $request)
+    {
+        $Produit = new Produit();
+
+        $form = $this->createForm(AjoutProduitForum::class, $Produit);
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($Produit);
+            $em->flush();
+            return $this->redirectToRoute("tunisia_mall_listProduit") ;
+
+        }
+
+        return $this->render('@TunisiaMall/produit/NewProduit.html.twig', array(
+            'formulaire' => $form->createView()
+        ));
+    }
+
+
 }
