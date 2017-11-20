@@ -96,3 +96,7 @@ tunisia_mall_supprimer_boutique:
 tunisia_mall_modifier_boutique:
     path:     /modifierboutique/{id}
     defaults: { _controller: TunisiaMallBundle:Boutique:modifierBoutique }
+
+templateclient:
+    path:     /templateclient
+    defaults: { _controller: TunisiaMallBundle:Default:templateclient }
