@@ -2,33 +2,47 @@
 
 namespace TunisiaMallBundle\Controller;
 
-use SMSApi\Exception\SmsapiException;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Entity\User;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-        $message = new \DocDocDoc\NexmoBundle\Message\Simple("Amine Mraihi", "+21650852234", "content of your sms");
-        $nexmoResponse = $this->container->get('doc_doc_doc_nexmo')->send($message);
-
         $em = $this->getDoctrine()->getManager();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
 
         return $this->render('TunisiaMallBundle:Default:index.html.twig', array(
-            "publicites" => $publicites
+            "publicites" => $publicites,
+            "produits" => $produits
+
+        ));
+
+    }
+
+    public function clientproduitAction()
+    {
+
+        $em = $this->getDoctrine()->getManager();
+        $produits = $em->getRepository("TunisiaMallBundle\\Entity\\Produit")->findAll();
+        return $this->render("TunisiaMallBundle:Default:index.html.twig", array(
+            "Produits " => $produits
+
+
         ));
     }
 
     public function shopownerevenementAction()
     {
-        $em=$this->getDoctrine()->getManager();
-        $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
-        return $this->render("TunisiaMallBundle:evenement:shopownerevenement.html.twig",array(
-            "evenements"=>$evenements
+        $em = $this->getDoctrine()->getManager();
+        $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        return $this->render("TunisiaMallBundle:evenement:shopownerevenement.html.twig", array(
+            "evenements" => $evenements
         ));
     }
 
@@ -68,9 +82,12 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+
         return $this->render("TunisiaMallBundle::clientevenement.html.twig", array(
             "evenements" => $evenements,
-            "publicites" => $publicites
+            "publicites" => $publicites,
+            "produits" => $produits
 
         ));
     }
@@ -104,6 +121,20 @@ class DefaultController extends Controller
     public function aboutAction()
     {
         return $this->render('TunisiaMallBundle:Default:about.html.twig');
+    }
+
+
+    ///////////////this code is added by ahmed merzoug
+
+    /**
+     * @Route("/", name="homepage")
+     */
+    public function tryfosmesageAction()
+    {
+        $repository = $this->get('fos_message.repository');
+        $sender = $this->get('fos_message.sender');
+
+        return $this->render('default/index.html.twig');
     }
 
 }
