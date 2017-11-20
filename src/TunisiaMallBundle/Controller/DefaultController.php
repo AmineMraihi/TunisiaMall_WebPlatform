@@ -2,6 +2,7 @@
 
 namespace TunisiaMallBundle\Controller;
 
+use SMSApi\Exception\SmsapiException;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -11,7 +12,15 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('TunisiaMallBundle:Default:index.html.twig');
+        $message = new \DocDocDoc\NexmoBundle\Message\Simple("Amine Mraihi", "+21650852234", "content of your sms");
+        $nexmoResponse = $this->container->get('doc_doc_doc_nexmo')->send($message);
+
+        $em = $this->getDoctrine()->getManager();
+        $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+
+        return $this->render('TunisiaMallBundle:Default:index.html.twig', array(
+            "publicites" => $publicites
+        ));
     }
 
     public function shopownerevenementAction()

@@ -126,3 +126,7 @@ tunisia_mall_shopowner_modifier_evenement:
 tunisia_mall_shopowner_supprimer_evenement:
     path:     /shopownersupprimerevenement/{id}
     defaults: { _controller: TunisiaMallBundle:EvenementShopowner:supprimerevenement }
+
+tunisia_mall_exemple_evenement:
+    path:     /exempleevenement/{id}
+    defaults: { _controller: TunisiaMallBundle:Evenement:exempleevenement }

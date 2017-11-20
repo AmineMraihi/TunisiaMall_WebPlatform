@@ -4,6 +4,8 @@
 {% block client_event %}
 
 
+
+
     <div class="new_arrivals_agile_w3ls_info">
         <div class="container">
             <h3 class="wthree_text_info">Evenement <span>Liste</span></h3>
@@ -33,7 +35,8 @@
 
                                     </div>
                                     <div class="item-info-product ">
-                                        <h4><a href="single.html">{{ evenement.nom }}</a></h4>
+                                        <h4><a href="{{ path('tunisia_mall_exemple_evenement',
+                                            {'id':evenement.idEvenement}) }}">{{ evenement.nom }}</a></h4>
                                         <div class="info-product-price">
                                             {#<span class="item_price">{{ evenement.description }}</span>#}
                                             {#<del>TND140.99</del>#}

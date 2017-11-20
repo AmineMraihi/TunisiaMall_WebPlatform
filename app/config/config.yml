@@ -92,3 +92,9 @@ vich_uploader:
                 delete_on_update:   false
                 delete_on_remove:   true
                 namer:   vich_uploader.namer_origname
+
+doc_doc_doc_nexmo:
+    api_key: c0237fa8
+    api_secret: 0c667a711379e598
+    provider: doc_doc_doc_nexmo.noop
+

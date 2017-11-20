@@ -4,19 +4,26 @@
     <title>{% block title %}{% endblock %} Tunisia Mall</title>
     <!--/tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-        function hideURLbar(){ window.scrollTo(0,1); } </script>
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        } </script>
     <!--//tags -->
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all"/>
     <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset('css/easy-responsive-tabs.css') }}" rel='stylesheet' type='text/css'/>
     <!-- //for bootstrap working -->
-    <link href="{{ asset('//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800') }}" rel="stylesheet">
-    <link href='{{ asset('//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic') }}' rel='stylesheet' type='text/css'>
+    <link href="{{ asset('//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800') }}"
+          rel="stylesheet">
+    <link href='{{ asset('//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic') }}'
+          rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -24,12 +31,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <div class="header" id="home">
     <div class="container">
-        {% block content%}
+        {% block content %}
         <ul>
-            <li> <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Sign In </a></li>
-            <li> <a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sign Up </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-unlock-alt"
+                                                                          aria-hidden="true"></i> Sign In </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal2"><i class="fa fa-pencil-square-o"
+                                                                           aria-hidden="true"></i> Sign Up </a></li>
             <li><i class="fa fa-phone" aria-hidden="true"></i> Call : +216 71 968 043</li>
-            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">tunisiamalla@gmail.com</a></li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">tunisiamalla@gmail.com</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -41,6 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 {% endblock userconnecte %}
 <!-- //header -->
 <!-- header-bot -->
+
 <div class="header-bot">
     <div class="header-bot_inner_wthreeinfo_header_mid">
         <div class="col-md-4 header-middle">
@@ -52,27 +63,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <!-- header-bot -->
         <div class="col-md-4 logo_agile">
-            <h1><a href="index.html"><span>T</span>unisia Mall <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+            <h1><a href="index.html"><span>T</span>unisia Mall <i class="fa fa-shopping-bag top_logo_agile_bag"
+                                                                  aria-hidden="true"></i></a></h1>
         </div>
         <!-- header-bot -->
-        {% endblock %}
+        {% endblock content %}
         <div class="col-md-4 agileits-social top_content">
             <ul class="social-nav model-3d-0 footer-social w3_agile_social">
-                <li class="share">Share On : </li>
+                <li class="share">Share On :</li>
                 <li><a href="#" class="facebook">
                         <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a></li>
                 <li><a href="#" class="twitter">
                         <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    </a></li>
                 <li><a href="#" class="instagram">
                         <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a></li>
                 <li><a href="#" class="pinterest">
                         <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a></li>
             </ul>
-
 
 
         </div>
@@ -88,7 +103,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -98,37 +114,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav menu__list">
-                            <li class="active menu__item menu__item--current"><a class="menu__link" href="{{ path('tunisia_mall_homepage') }}">Home <span class="sr-only">(current)</span></a></li>
+                            <li class="active menu__item menu__item--current"><a class="menu__link"
+                                                                                 href="{{ path('tunisia_mall_homepage') }}">Home
+                                    <span class="sr-only">(current)</span></a></li>
                             <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
                             <li class=" menu__item"><a class="menu__link" href="Brands.html.twig">Brands</a></li>
                             <li class="dropdown menu__item">
-                                <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 
-                                            <ul class="dropdown-menu agile_short_dropdown">
-                                                <li><a href="Events.html.twig">Shop Events</a></li>
-                                                <li><a href="{{ path('tunisia_mall_client_evenement') }}">Mall Events</a></li>
-                                                <li><a href="Events.html.twig">Kids Events</a></li>
+                                <ul class="dropdown-menu agile_short_dropdown">
+                                    <li><a href="Events.html.twig">Shop Events</a></li>
+                                    <li><a href="{{ path('tunisia_mall_client_evenement') }}">Mall Events</a></li>
+                                    <li><a href="Events.html.twig">Kids Events</a></li>
 
-                                            </ul>
+                                </ul>
 
                             </li>
                             <li class="menu__item dropdown">
-                                <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Job Offer <b class="caret"></b></a>
+                                <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Job Offer
+                                    <b class="caret"></b></a>
                                 <ul class="dropdown-menu agile_short_dropdown">
                                     <li><a href="Job.html.twig">Consult Job Offers</a></li>
                                     <li><a href="Job.html">Send Job Request</a></li>
                                 </ul>
                             </li>
                             <li class="menu__item dropdown">
-                                <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Other<b class="caret"></b></a>
+                                <a class="menu__link" href="#" class="dropdown-toggle" data-toggle="dropdown">Other<b
+                                            class="caret"></b></a>
                                 <ul class="dropdown-menu agile_short_dropdown">
                                     <li><a href="Kids.html.twig">KinderGarten</a></li>
                                     <li><a href="Parking.html.twig">Car Park</a></li>
-                                    <li><a  href="#" data-toggle="modal" data-target="#myModalR">Reclamation</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#myModalR">Reclamation</a></li>
                                     <li><a href="Forum.html.twig">Forum</a></li>
                                 </ul>
                             </li>
-                            <li class=" menu__item"><a class="menu__link" href="{{ path('tunisia_mall_contact') }}">Contact</a></li>
+                            <li class=" menu__item"><a class="menu__link" href="{{ path('tunisia_mall_contact') }}">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -139,7 +161,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <form action="#" method="post" class="last">
                     <input type="hidden" name="cmd" value="_cart">
                     <input type="hidden" name="display" value="1">
-                    <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+                    <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down"
+                                                                                        aria-hidden="true"></i></button>
                 </form>
 
             </div>
@@ -149,10 +172,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //banner-top -->
 <!-- Modal1 -->
+
+{#amine test pub debut#}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="{{ asset('images/amine/') ~ "5a104fd30f616_background.png" }}"
+                 width="1920"
+                 height="250" alt="Los Angeles">
+        </div>
+
+        {% for publicite in publicites %}
+            <div class="item ">
+                <img src="{{ asset('images/amine/') ~ publicite.path }} "
+                     width="1920"
+                     height="250" alt="Los Angeles">
+            </div>
+        {% endfor %}
+        {#<div class="item ">#}
+        {#<img src="{{ asset('images/amine/') ~ "5a0f54c6eb88b_goodbadugly.jpg" }}" alt="Los Angeles">#}
+        {#</div>#}
+
+
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+{#amine test pub fin #}
+
 {% block client_event %}
 {% endblock client_event %}
 {% block client_pub %}
 {% endblock client_pub %}
+{% block pleasework %}
 {#
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
         <div class="modal-dialog">
@@ -265,16 +330,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
                         <li><a href="#" class="facebook">
                                 <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                                <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+                                <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                            </a></li>
                         <li><a href="#" class="twitter">
                                 <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                                <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+                                <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                            </a></li>
                         <li><a href="#" class="instagram">
                                 <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-                                <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
+                                <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                            </a></li>
                         <li><a href="#" class="pinterest">
                                 <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                                <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
+                                <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                            </a></li>
                     </ul>
                     <div class="clearfix"></div>
                     <p><a href="#">By clicking register, I agree to your terms</a></p>
@@ -328,7 +397,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="carousel-caption">
                     <h3>The Biggest <span>Sale</span></h3>
                     <p>Special for today</p>
-                    <a class="hvr-outline-out button2"href="{{ asset('#') }}">Shop Now </a>
+                    <a class="hvr-outline-out button2" href="{{ asset('#') }}">Shop Now </a>
                 </div>
             </div>
         </div>
@@ -367,7 +436,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="banner_bottom_agile_info_inner_w3ls">
             <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
                 <figure class="effect-roxy">
-                    <img src="{{ asset('images/bottom1.jpg') }}" alt=" " class="img-responsive" />
+                    <img src="{{ asset('images/bottom1.jpg') }}" alt=" " class="img-responsive"/>
                     <figcaption>
                         <h3><span>F</span>all Ahead</h3>
                         <p>New Arrivals</p>
@@ -376,7 +445,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
                 <figure class="effect-roxy">
-                    <img src="{{ asset('images/bottom2.jpg') }}" alt=" " class="img-responsive" />
+                    <img src="{{ asset('images/bottom2.jpg') }}" alt=" " class="img-responsive"/>
                     <figcaption>
                         <h3><span>F</span>all Ahead</h3>
                         <p>New Arrivals</p>
@@ -390,12 +459,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- schedule-bottom -->
 <div class="schedule-bottom">
     <div class="col-md-6 agileinfo_schedule_bottom_left">
-        <img src="{{ asset('images/tunisiamall.png') }}" alt=" " class="img-responsive" />
+        <img src="{{ asset('images/tunisiamall.png') }}" alt=" " class="img-responsive"/>
     </div>
     <div class="col-md-6 agileits_schedule_bottom_right">
         <div class="w3ls_schedule_bottom_right_grid">
             <h3>Save up to <span>50%</span> in this week</h3>
-            <p>Come discover the largest mall in Tunisia. You will find several shops for shopping, eating, relaxing and having a good time with the family.
+            <p>Come discover the largest mall in Tunisia. You will find several shops for shopping, eating, relaxing and
+                having a good time with the family.
             </p>
             <div class="col-md-4 w3l_schedule_bottom_right_grid1">
                 <i class="fa fa-user-o" aria-hidden="true"></i>
@@ -412,10 +482,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <h4>Awards</h4>
                 <h5 class="counter">45</h5>
             </div>
-            <div class="clearfix"> </div>
+            <div class="clearfix"></div>
         </div>
     </div>
-    <div class="clearfix"> </div>
+    <div class="clearfix"></div>
 </div>
 <!-- //schedule-bottom -->
 <!-- banner-bootom-w3-agileits -->
@@ -427,7 +497,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="womens.html">
                 <div class="bb-left-agileits-w3layouts-inner grid">
                     <figure class="effect-roxy">
-                        <img src="{{ asset('images/bb1.jpg') }}" alt=" " class="img-responsive" />
+                        <img src="{{ asset('images/bb1.jpg') }}" alt=" " class="img-responsive"/>
                         <figcaption>
                             <h3><span>S</span>ale </h3>
                             <p>Up to 55%</p>
@@ -440,7 +510,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <a href="mens.html">
                 <div class="bb-middle-agileits-w3layouts grid">
                     <figure class="effect-roxy">
-                        <img src="{{ asset('images/bottom3.jpg') }}" alt=" " class="img-responsive" />
+                        <img src="{{ asset('images/bottom3.jpg') }}" alt=" " class="img-responsive"/>
                         <figcaption>
                             <h3><span>S</span>ale </h3>
                             <p>Upto 55%</p>
@@ -466,11 +536,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--/grids-->
 <div class="agile_last_double_sectionw3ls">
     <div class="col-md-6 multi-gd-img multi-gd-text ">
-        <a href="womens.html"><img src="{{ asset('images/bot_1.jpg') }}" alt=" "><h4>Flat <span>50%</span> offer</h4></a>
+        <a href="womens.html"><img src="{{ asset('images/bot_1.jpg') }}" alt=" "><h4>Flat <span>50%</span> offer</h4>
+        </a>
 
     </div>
     <div class="col-md-6 multi-gd-img multi-gd-text ">
-        <a href="womens.html"><img src="{{ asset('images/bot_2.jpg') }}" alt=" "><h4>Flat <span>50%</span> offer</h4></a>
+        <a href="womens.html"><img src="{{ asset('images/bot_2.jpg') }}" alt=" "><h4>Flat <span>50%</span> offer</h4>
+        </a>
     </div>
     <div class="clearfix"></div>
 </div>
@@ -511,16 +583,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Formal Blue Shirt" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Formal Blue Shirt"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -550,16 +622,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Sweatshirt" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Sweatshirt"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -589,16 +661,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Dark Blue Track Pants" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Dark Blue Track Pants"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -628,16 +700,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Black T-Shirt" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Black T-Shirt"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -667,16 +739,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Men's Black Jeans" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Men's Black Jeans"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -706,16 +778,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Analog Watch" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Analog Watch"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -745,16 +817,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Reversible Belt" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Reversible Belt"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -784,16 +856,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Party Men's Blazer" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Party Men's Blazer"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -828,16 +900,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="A-line Black Skirt" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="A-line Black Skirt"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -867,16 +939,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Sleeveless Solid Blue Top" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Sleeveless Solid Blue Top"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -906,16 +978,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Skinny Jeans " />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Skinny Jeans "/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -945,16 +1017,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Black Basic Shorts" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="USD" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Black Basic Shorts"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="USD"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -984,16 +1056,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Pink Track Pants" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Pink Track Pants"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1023,16 +1095,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Analog Watch" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Analog Watch"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1062,16 +1134,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Ankle Length Socks" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Ankle Length Socks"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1101,16 +1173,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Reebok Women's Tights" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Reebok Women's Tights"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1145,16 +1217,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value=" Laptop Messenger Bag" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value=" Laptop Messenger Bag"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1184,16 +1256,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Puma Backpack" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Puma Backpack"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1223,16 +1295,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value=" Laptop Backpack" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value=" Laptop Backpack"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1262,16 +1334,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Travel Duffel Bag " />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Travel Duffel Bag "/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1301,16 +1373,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value=" Hand-held Bag " />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value=" Hand-held Bag "/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1340,16 +1412,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Butterflies Bag" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Butterflies Bag"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1379,16 +1451,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Costa Swiss Bag" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Costa Swiss Bag"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1418,16 +1490,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Noble Designs Bag " />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Noble Designs Bag "/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1461,16 +1533,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Running Shoes" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Running Shoes"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1500,16 +1572,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Shoetopia Lace Up" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Shoetopia Lace Up"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1539,16 +1611,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Steemo Casuals (Black)" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Steemo Casuals (Black)"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1578,16 +1650,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Benetton Flip Flops" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Benetton Flip Flops"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1617,16 +1689,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Moonwalk Bellies" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Moonwalk Bellies"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1648,7 +1720,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                             </div>
                             <div class="item-info-product ">
-                                <h4><a href="single.html">Aero Canvas Loafers  </a></h4>
+                                <h4><a href="single.html">Aero Canvas Loafers </a></h4>
                                 <div class="info-product-price">
                                     <span class="item_price">TND120.99</span>
                                     <del>TND199.71</del>
@@ -1656,16 +1728,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Aero Canvas Loafers" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Aero Canvas Loafers"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1695,16 +1767,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Sparx Sporty Canvas Shoes" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Sparx Sporty Canvas Shoes"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1734,16 +1806,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                                     <form action="#" method="post">
                                         <fieldset>
-                                            <input type="hidden" name="cmd" value="_cart" />
-                                            <input type="hidden" name="add" value="1" />
-                                            <input type="hidden" name="business" value=" " />
-                                            <input type="hidden" name="item_name" value="Women BLACK Heels" />
-                                            <input type="hidden" name="amount" value="30.99" />
-                                            <input type="hidden" name="discount_amount" value="1.00" />
-                                            <input type="hidden" name="currency_code" value="TND" />
-                                            <input type="hidden" name="return" value=" " />
-                                            <input type="hidden" name="cancel_return" value=" " />
-                                            <input type="submit" name="submit" value="Add to cart" class="button" />
+                                            <input type="hidden" name="cmd" value="_cart"/>
+                                            <input type="hidden" name="add" value="1"/>
+                                            <input type="hidden" name="business" value=" "/>
+                                            <input type="hidden" name="item_name" value="Women BLACK Heels"/>
+                                            <input type="hidden" name="amount" value="30.99"/>
+                                            <input type="hidden" name="discount_amount" value="1.00"/>
+                                            <input type="hidden" name="currency_code" value="TND"/>
+                                            <input type="hidden" name="return" value=" "/>
+                                            <input type="hidden" name="cancel_return" value=" "/>
+                                            <input type="submit" name="submit" value="Add to cart" class="button"/>
                                         </fieldset>
                                     </form>
                                 </div>
@@ -1807,38 +1879,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 </div>
             </div>
-            <div class="clearfix"> </div>
+            <div class="clearfix"></div>
         </div>
 
     </div>
 </div>
 <!--grids-->
-
+{% endblock pleasework %}
 <!-- footer -->
 <div class="footer">
     <div class="footer_agile_inner_info_w3l">
         <div class="col-md-3 footer-left">
             <h2><a href="index.html"><span>T</span>unisia Mall </a></h2>
-            <p>Come discover the largest mall in Tunisia. You will find several shops for shopping, eating, relaxing and having a good time with the family.</p>
+            <p>Come discover the largest mall in Tunisia. You will find several shops for shopping, eating, relaxing and
+                having a good time with the family.</p>
             <ul class="social-nav model-3d-0 footer-social w3_agile_social two">
                 <li><a href="#" class="facebook">
                         <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                    </a></li>
                 <li><a href="#" class="twitter">
                         <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                    </a></li>
                 <li><a href="#" class="instagram">
                         <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    </a></li>
                 <li><a href="#" class="pinterest">
                         <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
+                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+                    </a></li>
             </ul>
         </div>
         <div class="col-md-9 footer-right">
             <div class="sign-grds">
                 <div class="col-md-4 sign-gd">
-                    <h4>Our <span>Information</span> </h4>
+                    <h4>Our <span>Information</span></h4>
                     <ul>
                         <li><a href="{{ path('tunisia_mall_homepage') }}">Home</a></li>
                         <li><a href="mens.html">About</a></li>
@@ -1861,7 +1938,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <h6>Phone Number</h6>
                                 <p>+216 71 968 043</p>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
                         </div>
                         <div class="w3-address-grid">
                             <div class="w3-address-left">
@@ -1871,7 +1948,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <h6>Email Address</h6>
                                 <p>Email :<a href="mailto:example@email.com"> tunisiamalla@gmail.com</a></p>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
                         </div>
                         <div class="w3-address-grid">
                             <div class="w3-address-left">
@@ -1883,7 +1960,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 </p>
                             </div>
-                            <div class="clearfix"> </div>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
@@ -1894,9 +1971,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="clearfix"></div>
         <div class="agile_newsletter_footer">
 
-        <p class="copy-right">&copy 2017 Tunisia Mall. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            <p class="copy-right">&copy 2017 Tunisia Mall. All rights reserved | Design by <a
+                        href="http://w3layouts.com/">W3layouts</a></p>
+        </div>
     </div>
-</div>
 </div>
 <!-- //footer -->
 
@@ -1905,7 +1983,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-info">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body modal-spa">
                 <div class="login-grids">
@@ -1915,20 +1994,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <form>
                                 <div class="sign-up">
                                     <h4>Email :</h4>
-                                    <input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+                                    <input type="text" value="Type here" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Type here';}" required="">
                                 </div>
                                 <div class="sign-up">
                                     <h4>Password :</h4>
-                                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Password';}" required="">
 
                                 </div>
                                 <div class="sign-up">
                                     <h4>Re-type Password :</h4>
-                                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Password';}" required="">
 
                                 </div>
                                 <div class="sign-up">
-                                    <input type="submit" value="REGISTER NOW" >
+                                    <input type="submit" value="REGISTER NOW">
                                 </div>
 
                             </form>
@@ -1938,74 +2020,77 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <form>
                                 <div class="sign-in">
                                     <h4>Email :</h4>
-                                    <input type="text" value="Type here" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type here';}" required="">
+                                    <input type="text" value="Type here" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Type here';}" required="">
                                 </div>
                                 <div class="sign-in">
                                     <h4>Password :</h4>
-                                    <input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+                                    <input type="password" value="Password" onfocus="this.value = '';"
+                                           onblur="if (this.value == '') {this.value = 'Password';}" required="">
                                     <a href="#">Forgot password?</a>
                                 </div>
                                 <div class="single-bottom">
-                                    <input type="checkbox"  id="brand" value="">
+                                    <input type="checkbox" id="brand" value="">
                                     <label for="brand"><span></span>Remember Me.</label>
                                 </div>
                                 <div class="sign-in">
-                                    <input type="submit" value="SIGNIN" >
+                                    <input type="submit" value="SIGNIN">
                                 </div>
                             </form>
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+                    <p>By logging in you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy
+                            Policy</a></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- //login -->
-    <!-- POP UP Reclamation -->
-    <div class="modal fade" id="myModalR" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body modal-body-sub_agile">
-                    <div class="col-md-8 modal_body_left modal_body_left1">
-                        <h3 class="agileinfo_sign">Send a <span>Reclamation</span></h3>
-                        <form action="#" method="post"><!---------- -->
-                            <div class="styled-input agile-styled-input-top">
-                                <input type="text" name="type" required="required">
-                                <label>Type</label>
-                                <span></span>
-                            </div>
-                            <div class="styled-input">
-                                <input type="text" name="description" required="required">
-                                <label>Description</label>
-                                <span></span>
-                            </div>
-                            <div class="styled-input">
-                                <input type="text" name="boutique" required="required">
-                                <label>Boutique réclamée</label>
-                                <span></span>
-                            </div>
-                            <input type="submit" value="Send">
-                        </form>
-
-                        <div class="clearfix"></div>
-
-
-                    </div>
+<!-- POP UP Reclamation -->
+<div class="modal fade" id="myModalR" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body modal-body-sub_agile">
+                <div class="col-md-8 modal_body_left modal_body_left1">
+                    <h3 class="agileinfo_sign">Send a <span>Reclamation</span></h3>
+                    <form action="#" method="post"><!---------- -->
+                        <div class="styled-input agile-styled-input-top">
+                            <input type="text" name="type" required="required">
+                            <label>Type</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="text" name="description" required="required">
+                            <label>Description</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="text" name="boutique" required="required">
+                            <label>Boutique réclamée</label>
+                            <span></span>
+                        </div>
+                        <input type="submit" value="Send">
+                    </form>
 
                     <div class="clearfix"></div>
-                </div>
-            </div>
-            <!-- //Modal content-->
-        </div>
 
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //Modal content-->
     </div>
-    <!-- //POP UP Reclamation -->
+
+</div>
+<!-- //POP UP Reclamation -->
 
 
 <!-- FOS USER-->
@@ -2017,7 +2102,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- FOS USER-->
 
-    <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover"
+                                                                         style="opacity: 1;"> </span></a>
 
 <!-- js -->
 <script type="text/javascript" src="{{ asset('js/jquery-2.1.4.min.js') }}"></script>
@@ -2047,7 +2133,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             width: 'auto', //auto or any width like 600px
             fit: true,   // 100% fit in a container
             closed: 'accordion', // Start closed if in accordion view
-            activate: function(event) { // Callback function if tab is switched
+            activate: function (event) { // Callback function if tab is switched
                 var $tab = $(this);
                 var $info = $('#tabInfo');
                 var $name = $('span', $info);
@@ -2074,16 +2160,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="text/javascript" src="{{ asset('js/move-top.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.easing.min.js') }}"></script>
 <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event){
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
             event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
         });
     });
 </script>
 <!-- here stars scrolling icon -->
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         /*
             var defaults = {
             containerID: 'toTop', // fading element id
@@ -2093,7 +2179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             };
         */
 
-        $().UItoTop({ easingType: 'easeOutQuart' });
+        $().UItoTop({easingType: 'easeOutQuart'});
 
     });
 </script>
