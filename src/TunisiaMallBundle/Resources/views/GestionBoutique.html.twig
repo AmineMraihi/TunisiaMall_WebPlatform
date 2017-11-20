@@ -71,6 +71,8 @@
                                         <th>nom</th>
                                         <th>type</th>
                                         <th>position</th>
+                                        <th>Date création</th>
+                                        <th>Date expiration</th>
 
 
                                         <th style="width: 160px;" class="no-sort">Actions</th>
@@ -83,6 +85,8 @@
                                             <td>{{ boutique.nom}}</td>
                                             <td>{{ boutique.type }}</td>
                                             <td>{{ boutique.position }}</td>
+                                            <td>{{ boutique.datecreation| date("d-m-y") }}</td>
+                                            <td>{{ boutique.dateexpiration | date("d-m-y")}}</td>
                                             <td><a href="{{ path('tunisia_mall_modifier_boutique',
                                                 {'id':boutique.idBoutique}) }}">mise à jour</a></td>
                                             <td><a href="{{ path('tunisia_mall_supprimer_boutique',

@@ -4,12 +4,30 @@ namespace TunisiaMallBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use TunisiaMallBundle\Entity\Reclamation;
 use TunisiaMallBundle\Entity\User;
+use TunisiaMallBundle\Entity\Boutique;
+
 
 class DefaultController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
+        if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
+
+        $user=$this->getUser();
+
+        $reclamation=new Reclamation();
+        if($request->isMethod('POST'))
+        {
+            $reclamation->setText($request->get('description'));
+            $reclamation->setType($request->get('type'));
+            $reclamation->setIdReclamant( $user->getId());
+            $reclamation->setIdPReclame($this->rechercheshopowner($this->Rechercheboutique($request->get('nomB'))));
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($reclamation);
+            $em->flush();
+        }}
         return $this->render('TunisiaMallBundle:Default:index.html.twig');
     }
     public function ContactAction()
@@ -37,14 +55,27 @@ class DefaultController extends Controller
 
     public function clientevenementAction()
     {
+
         $em=$this->getDoctrine()->getManager();
         $evenements=$em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         return $this->render("TunisiaMallBundle::clientevenement.html.twig",array(
             "evenements"=>$evenements
         ));
     }
+    public function Rechercheboutique($nom)
+    {
 
-
+        $em = $this->getDoctrine()->getManager();
+        $boutique = $em->getRepository("TunisiaMallBundle:Boutique")->findBynom($nom);
+        return $boutique;
+    }
+    public function rechercheshopowner($boutique)
+    {
+        $idBoutique=$boutique[0]->getIdBoutique();
+        $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository("TunisiaMallBundle:User")->findByidBoutique($idBoutique);
+        return $user[0];
+    }
 
     public function signupAction(Request $request)
     {

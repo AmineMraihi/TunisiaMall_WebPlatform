@@ -4,6 +4,7 @@ namespace TunisiaMallBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -33,6 +34,8 @@ class ModifierBoutiqueForm extends AbstractType
                     'niveau 3' => 'niveau3',
 
                 ),))
+            ->add("datecreation", DateType::class)
+            ->add("dateexpiration", DateType::class)
 
             ->add("save", SubmitType::class);
     }

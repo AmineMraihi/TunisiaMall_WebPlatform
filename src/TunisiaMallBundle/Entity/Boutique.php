@@ -42,6 +42,22 @@ class Boutique
      */
     private $position;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation",type="date", nullable=true)
+     */
+    private $datecreation;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_expiration",type="date", nullable=true)
+     */
+    private $dateexpiration;
+
+
+
 
 
     /**
@@ -125,4 +141,37 @@ class Boutique
     {
         return $this->position;
     }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDatecreation()
+    {
+        return $this->datecreation;
+    }
+
+    /**
+     * @param \DateTime $datecreation
+     */
+    public function setDatecreation($datecreation)
+    {
+        $this->datecreation = $datecreation;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateexpiration()
+    {
+        return $this->dateexpiration;
+    }
+
+    /**
+     * @param \DateTime $dateexpiration
+     */
+    public function setDateexpiration($dateexpiration)
+    {
+        $this->dateexpiration = $dateexpiration;
+    }
+
 }

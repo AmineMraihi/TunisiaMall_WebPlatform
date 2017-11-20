@@ -1968,7 +1968,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="modal-body modal-body-sub_agile">
                     <div class="col-md-8 modal_body_left modal_body_left1">
                         <h3 class="agileinfo_sign">Send a <span>Reclamation</span></h3>
-                        <form action="#" method="post"><!---------- -->
+                        <form action="#" method="POST"><!---------- -->
                             <div class="styled-input agile-styled-input-top">
                                 <input type="text" name="type" required="required">
                                 <label>Type</label>
@@ -1979,9 +1979,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <label>Description</label>
                                 <span></span>
                             </div>
-                            <div class="styled-input">
-                                <input type="text" name="boutique" required="required">
-                                <label>Boutique réclamée</label>
+                            <div class="styled-input ">
+                               <select required="required"  class="styled-input" name="nomB">
+                                   <option value="lufian"> Lufian</option>
+                                   <option value="massimo dutti"> massimo dutti</option>
+                                   <option value="ZARA">ZARA</option>
+                               </select>
+                                <label>Boutique Reclamée</label>
                                 <span></span>
                             </div>
                             <input type="submit" value="Send">
