@@ -2,6 +2,9 @@
 
 namespace TunisiaMallBundle\Controller;
 
+use FOS\UserBundle\Event\GetResponseUserEvent;
+use FOS\UserBundle\FOSUserEvents;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -77,6 +80,9 @@ class DefaultController extends Controller
 //        $this->denyAccessUnlessGranted('ROLE_ADMIN', null, 'Unable to access this page!');
 
         return $this->render('TunisiaMallBundle::templateadmin.html.twig');
+//        $this->denyAccessUnlessGranted('ROLE_ADMIN', null, 'Unable to access this page!');
+
+      //  return $this->render('TunisiaMallBundle::templateadmin.html.twig');
     }
 
     public function GBoutiqueCAAction()
@@ -203,6 +209,10 @@ class DefaultController extends Controller
         return $this->render('TunisiaMallBundle::templateadmin.html.twig');
 
     }
+
+
+
+
 
 }
 

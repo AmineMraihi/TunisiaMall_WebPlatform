@@ -258,7 +258,6 @@ class User extends BaseUser
     }
 
 
-
     /**
      * Set numeroTelephone
      *
