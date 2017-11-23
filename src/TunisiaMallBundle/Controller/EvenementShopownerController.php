@@ -26,6 +26,7 @@ class EvenementShopownerController extends Controller
         $form = $this->createForm(AjoutevenementShopownerForm::class,$evenement);
         $form->handleRequest($request);
         if ($form->isValid()) {
+
             $em = $this->getDoctrine()->getManager();
             $em->persist($evenement);
             $em->flush();

@@ -56,8 +56,7 @@
 
 
 <body id="minovate" class="appWrapper">
-
-
+    {#{% if is_granted('ROLE_ADMIN') %}#}
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -358,16 +357,12 @@
                                     </li>
                                     <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span> <span class=""></span></a>
-                                        <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span>
-                                            <span class=""></span></a>
+
                                     </li>
                                     <li>
-                                        <a role="button" tabindex="0"><i class=""></i>
+                                        <a href="{{ path('tunisia_mall_admin_liste_responsable_boutique') }}" role="button" tabindex="0"><i class=""></i>
                                             <span>Gestion des responsables </span> <span class=""></span></a>
-                                        <ul>
-                                            <li><a href="#"><i class=""></i> Liste</a></li>
-                                            <li><a href="#"><i class=""></i> Ajout responsable</a></li>
-                                        </ul>
+
                                     </li>
                                     <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Reclamation</span> <span
@@ -394,8 +389,12 @@
                                                     class=""></span></a>
                                     </li>
                                     <li>
-                                        <a role="button" tabindex="0"><i class=""></i>
+                                        <a href="{{ path('tunisia_mall_admin_liste_demande_publicite') }}" role="button" tabindex="0"><i class=""></i>
                                             <span>Liste demande publicité</span> <span class=""></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('tunisia_mall_compose_sms') }}" role="button" tabindex="0"><i class=""></i>
+                                            <span>composer sms</span> <span class=""></span></a>
                                     </li>
 
 
@@ -1012,7 +1011,7 @@
     ga('send', 'pageview');
 </script>
 
-
+    {#{% endif %}#}
 </body>
 </html>
 {% endblock fintemplate %}

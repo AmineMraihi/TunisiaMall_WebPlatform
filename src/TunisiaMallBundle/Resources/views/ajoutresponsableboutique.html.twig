@@ -1,4 +1,3 @@
-{#{% extends "TunisiaMallBundle:admin:templateadmin.html.twig" %}#}
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
 {% block robots %}
     {{ form_start(formulaire) }}
@@ -19,7 +18,7 @@
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Publicite </strong>Ajout</h1>
+                            <h1 class="custom-font"><strong>Responsable Boutique </strong>Ajout</h1>
                             <ul class="controls">
                                 <li class="dropdown">
 
@@ -60,25 +59,40 @@
                         <table class="table table-custom">
                             <thead>
                             <tr class="odd gradeX">
-                                <th>date debut</th>
-                                <td >{{ form_widget(formulaire.date_debut) }}</td>
+                                <th>nom</th>
+                                <td >{{ form_widget(formulaire.nom) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>date fin</th>
-                                <td>{{ form_widget(formulaire.date_fin) }}</td>
+                                <th>prenom</th>
+                                <td>{{ form_widget(formulaire.prenom) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>prix</th>
-                                <td>{{ form_widget(formulaire.prix) }}</td>
+                                <th>username</th>
+                                <td>{{ form_widget(formulaire.username) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>page</th>
-                                <td>{{ form_widget(formulaire.page) }}</td>
-                                {#<td><input type="file" name="files[]" "></td>#}
+                                <th>email</th>
+                                <td>{{ form_widget(formulaire.email) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>path</th>
-                                <td>{{ form_widget(formulaire.imageFile) }}</td>
+                                <th>numero telephone</th>
+                                <td>{{ form_widget(formulaire.numero_telephone) }}</td>
+                            </tr>
+                            <tr class="odd gradeX">
+                                <th>password</th>
+                                <td>{{ form_widget(formulaire.plainPassword) }}</td>
+                            </tr>
+                            <tr class="odd gradeX">
+                                <th>sexe</th>
+                                <td>{{ form_widget(formulaire.Sexe) }}</td>
+                            </tr>
+                            <tr class="odd gradeX">
+                                <th>adresse</th>
+                                <td>{{ form_widget(formulaire.adresse) }}</td>
+                            </tr>
+                            <tr class="odd gradeX">
+                                <th>date expiration</th>
+                                <td>{{ form_widget(formulaire.date_expiration) }}</td>
                             </tr>
                             <tr class="odd gradeX">
                                 <th>boutique</th>
