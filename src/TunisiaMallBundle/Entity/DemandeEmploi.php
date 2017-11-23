@@ -92,24 +92,20 @@ class DemandeEmploi
      *   @ORM\JoinColumn(name="id_user_fk", referencedColumnName="id_user")
      * })
      */
-    private $idUserFk;
+    private $User;
 
     /**
      * @var \OffreEmploi
      *
      * @ORM\ManyToOne(targetEntity="OffreEmploi")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_offre_fk", referencedColumnName="id_offre")
+     * @ORM\JoinColumn(name="id_offre_fk", referencedColumnName="id_offre")
      * })
      */
-    private $idOffreFk;
-
-
+    private $Offre;
 
     /**
-     * Get idDemande
-     *
-     * @return integer
+     * @return int
      */
     public function getIdDemande()
     {
@@ -117,22 +113,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set nomEmp
-     *
-     * @param string $nomEmp
-     *
-     * @return DemandeEmploi
+     * @param int $idDemande
      */
-    public function setNomEmp($nomEmp)
+    public function setIdDemande($idDemande)
     {
-        $this->nomEmp = $nomEmp;
-
-        return $this;
+        $this->idDemande = $idDemande;
     }
 
     /**
-     * Get nomEmp
-     *
      * @return string
      */
     public function getNomEmp()
@@ -141,22 +129,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set prenomEmp
-     *
-     * @param string $prenomEmp
-     *
-     * @return DemandeEmploi
+     * @param string $nomEmp
      */
-    public function setPrenomEmp($prenomEmp)
+    public function setNomEmp($nomEmp)
     {
-        $this->prenomEmp = $prenomEmp;
-
-        return $this;
+        $this->nomEmp = $nomEmp;
     }
 
     /**
-     * Get prenomEmp
-     *
      * @return string
      */
     public function getPrenomEmp()
@@ -165,22 +145,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set dateNaissance
-     *
-     * @param \DateTime $dateNaissance
-     *
-     * @return DemandeEmploi
+     * @param string $prenomEmp
      */
-    public function setDateNaissance($dateNaissance)
+    public function setPrenomEmp($prenomEmp)
     {
-        $this->dateNaissance = $dateNaissance;
-
-        return $this;
+        $this->prenomEmp = $prenomEmp;
     }
 
     /**
-     * Get dateNaissance
-     *
      * @return \DateTime
      */
     public function getDateNaissance()
@@ -189,22 +161,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set adresse
-     *
-     * @param string $adresse
-     *
-     * @return DemandeEmploi
+     * @param \DateTime $dateNaissance
      */
-    public function setAdresse($adresse)
+    public function setDateNaissance($dateNaissance)
     {
-        $this->adresse = $adresse;
-
-        return $this;
+        $this->dateNaissance = $dateNaissance;
     }
 
     /**
-     * Get adresse
-     *
      * @return string
      */
     public function getAdresse()
@@ -213,22 +177,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set sexe
-     *
-     * @param string $sexe
-     *
-     * @return DemandeEmploi
+     * @param string $adresse
      */
-    public function setSexe($sexe)
+    public function setAdresse($adresse)
     {
-        $this->sexe = $sexe;
-
-        return $this;
+        $this->adresse = $adresse;
     }
 
     /**
-     * Get sexe
-     *
      * @return string
      */
     public function getSexe()
@@ -237,22 +193,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return DemandeEmploi
+     * @param string $sexe
      */
-    public function setEmail($email)
+    public function setSexe($sexe)
     {
-        $this->email = $email;
-
-        return $this;
+        $this->sexe = $sexe;
     }
 
     /**
-     * Get email
-     *
      * @return string
      */
     public function getEmail()
@@ -261,22 +209,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set numTel
-     *
-     * @param string $numTel
-     *
-     * @return DemandeEmploi
+     * @param string $email
      */
-    public function setNumTel($numTel)
+    public function setEmail($email)
     {
-        $this->numTel = $numTel;
-
-        return $this;
+        $this->email = $email;
     }
 
     /**
-     * Get numTel
-     *
      * @return string
      */
     public function getNumTel()
@@ -285,22 +225,14 @@ class DemandeEmploi
     }
 
     /**
-     * Set qualification
-     *
-     * @param string $qualification
-     *
-     * @return DemandeEmploi
+     * @param string $numTel
      */
-    public function setQualification($qualification)
+    public function setNumTel($numTel)
     {
-        $this->qualification = $qualification;
-
-        return $this;
+        $this->numTel = $numTel;
     }
 
     /**
-     * Get qualification
-     *
      * @return string
      */
     public function getQualification()
@@ -309,23 +241,15 @@ class DemandeEmploi
     }
 
     /**
-     * Set experience
-     *
-     * @param integer $experience
-     *
-     * @return DemandeEmploi
+     * @param string $qualification
      */
-    public function setExperience($experience)
+    public function setQualification($qualification)
     {
-        $this->experience = $experience;
-
-        return $this;
+        $this->qualification = $qualification;
     }
 
     /**
-     * Get experience
-     *
-     * @return integer
+     * @return int
      */
     public function getExperience()
     {
@@ -333,50 +257,46 @@ class DemandeEmploi
     }
 
     /**
-     * Set idUserFk
-     *
-     * @param \TunisiaMallBundle\Entity\User $idUserFk
-     *
-     * @return DemandeEmploi
+     * @param int $experience
      */
-    public function setIdUserFk(\TunisiaMallBundle\Entity\User $idUserFk = null)
+    public function setExperience($experience)
     {
-        $this->idUserFk = $idUserFk;
-
-        return $this;
+        $this->experience = $experience;
     }
 
     /**
-     * Get idUserFk
-     *
-     * @return \TunisiaMallBundle\Entity\User
+     * @return \User
      */
-    public function getIdUserFk()
+    public function getUser()
     {
-        return $this->idUserFk;
+        return $this->User;
     }
 
     /**
-     * Set idOffreFk
-     *
-     * @param \TunisiaMallBundle\Entity\OffreEmploi $idOffreFk
-     *
-     * @return DemandeEmploi
+     * @param \User $User
      */
-    public function setIdOffreFk(\TunisiaMallBundle\Entity\OffreEmploi $idOffreFk = null)
+    public function setUser($User)
     {
-        $this->idOffreFk = $idOffreFk;
-
-        return $this;
+        $this->User = $User;
     }
 
     /**
-     * Get idOffreFk
-     *
-     * @return \TunisiaMallBundle\Entity\OffreEmploi
+     * @return \OffreEmploi
      */
-    public function getIdOffreFk()
+    public function getOffre()
     {
-        return $this->idOffreFk;
+        return $this->Offre;
     }
+
+    /**
+     * @param \OffreEmploi $Offre
+     */
+    public function setOffre($Offre)
+    {
+        $this->Offre = $Offre;
+    }
+
+
+
+
 }

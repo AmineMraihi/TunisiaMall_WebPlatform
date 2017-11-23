@@ -3,12 +3,16 @@
 namespace TunisiaMallBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\Validator\Constraints\DateTime;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * DemandePub
  *
  * @ORM\Table(name="demande_pub", indexes={@ORM\Index(name="id_boutique", columns={"id_boutique"})})
  * @ORM\Entity
+ * @Vich\Uploadable
  */
 class DemandePub
 {
@@ -52,7 +56,7 @@ class DemandePub
     /**
      * @var string
      *
-     * @ORM\Column(name="path", type="blob", nullable=false)
+     * @ORM\Column(name="path", type="string", length=50, nullable=false)
      */
     private $path;
 
@@ -66,7 +70,39 @@ class DemandePub
      */
     private $idBoutique;
 
+    /**
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="path")
+     * @Assert\File(maxSize="1200k",mimeTypes={"image/png", "image/jpeg", "image/pjpeg"})
+     *
+     * @var File
+     */
+    private $imageFile;
 
+    /**
+     * @ORM\Column(type="datetime")
+     * @var \DateTime
+     */
+    private $updatedAt;
+
+
+
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+        if ($image) {
+            // if 'updatedAt' is not defined in your entity, use another property
+            $this->updatedAt = new \DateTime('now');
+        }
+    }
+
+    public function getImageFile()
+    {
+        return $this->imageFile;
+    }
 
     /**
      * Get idPub
@@ -221,4 +257,6 @@ class DemandePub
     {
         return $this->idBoutique;
     }
+
+
 }

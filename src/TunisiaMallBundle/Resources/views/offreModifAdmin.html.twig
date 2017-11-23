@@ -1,7 +1,8 @@
-{#{% extends "TunisiaMallBundle:admin:templateadmin.html.twig" %}#}
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{#{% block debuttemplate %}#}
 {% block robots %}
-    {{ form_start(formulaire) }}
+    {{ form_start(form) }}
+
     <section id="content">
 
         <div class="page page-forms-common">
@@ -12,14 +13,14 @@
 
 
                 <!-- col -->
-                <div class="col-md-12">
+                <div class="col-md-6">
 
                     <!-- tile -->
                     <section class="tile">
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Publicite </strong>Ajout</h1>
+                            <h1 class="custom-font"><strong>Offre emploi </strong>Modification</h1>
                             <ul class="controls">
                                 <li class="dropdown">
 
@@ -57,44 +58,47 @@
 
                         <!-- tile body -->
 
-                        <table class="table table-custom">
+                        <table class="table table-custom" >
                             <thead>
                             <tr class="odd gradeX">
-                                <th>date debut</th>
-                                <td >{{ form_widget(formulaire.date_debut) }}</td>
+                                <th>Poste</th>
+                                <td>{{ form_widget(form.poste) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>date fin</th>
-                                <td>{{ form_widget(formulaire.date_fin) }}</td>
+                                <th>Spécialité</th>
+                                <td>{{ form_widget(form.specialite) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>prix</th>
-                                <td>{{ form_widget(formulaire.prix) }}</td>
+                                <th>Salaire</th>
+                                <td>{{ form_widget(form.salaire) }}</td>
+                            </tr>
+
+                            <tr class="odd gradeX">
+                                <th>Nombre demandé</th>
+                                <td>{{ form_widget(form.nbrDemande) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>page</th>
-                                <td>{{ form_widget(formulaire.page) }}</td>
-                                {#<td><input type="file" name="files[]" "></td>#}
+                                <th>Date expiration</th>
+                                <td>{{ form_widget(form.dateExpiration) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>path</th>
-                                <td>{{ form_widget(formulaire.imageFile) }}</td>
+                                <th>Boutique</th>
+                                <td>{{ form_widget(form.Boutique) }}</td>
                             </tr>
                             <tr class="odd gradeX">
-                                <th>boutique</th>
-                                <td>{{ form_widget(formulaire.idBoutique) }}</td>
+                                <th>User</th>
+                                <td>{{ form_widget(form.User) }}</td>
                             </tr>
 
                             <tr>
-                                <th style="width: 160px;" class="no-sort">Actions</th>
-                                <td>{{ form_widget(formulaire.ajouter) }}</td>
+
+                                <td><input type="submit" value="Modifier"></td>
                             </tr>
                             </thead>
                             <tbody>
 
                             </tbody>
                         </table>
-
 
                         <!-- /tile body -->
 
@@ -113,10 +117,12 @@
         <!-- /tile body -->
 
     </section>
+    <!-- /tile -->
 
 
 
 
-
-    {{ form_end(formulaire) }}
+    <!--/ CONTENT -->
+    {{ form_end(form) }}
 {% endblock robots %}
+{#{% block fintemplate %}#}

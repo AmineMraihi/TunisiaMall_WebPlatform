@@ -7,7 +7,7 @@ use FOS\UserBundle\Model\User as BaseUser;
 
 /**
  * @ORM\Table(name="user", indexes={@ORM\Index(name="id_boutique", columns={"id_boutique"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="TunisiaMallBundle\Repository\ResponsableBoutiqueRepository")
  */
 class User extends BaseUser
 {
@@ -48,9 +48,6 @@ class User extends BaseUser
      * @ORM\Column(name="sexe", type="string", length=50, nullable=false)
      */
     private $sexe;
-
-
-
 
 
     /**
@@ -104,6 +101,39 @@ class User extends BaseUser
      */
 
     private $idBoutique;
+
+
+//    /**
+//     * @var array
+//     *
+//     * @ORM\Column(name="roles", type="array", nullable=false)
+//     */
+//    protected $roles;
+//
+//    /**
+//     * Set roles
+//     *
+//     * @param array $roles
+//     * @return User
+//     */
+//    public function setRoles(array $roles)
+//    {
+//        $this->roles = $roles;
+//
+//        return $this;
+//    }
+//
+//    /**
+//     * Get roles
+//     *
+//     * @return array
+//     */
+//    public function getRoles()
+//    {
+//        return $this->roles;
+//    }
+//
+
 
     public function __construct()
     {
@@ -218,7 +248,6 @@ class User extends BaseUser
     {
         return $this->sexe;
     }
-
 
 
     /**

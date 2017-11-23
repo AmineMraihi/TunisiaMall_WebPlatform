@@ -2,6 +2,9 @@
 
 namespace TunisiaMallBundle\Controller;
 
+use FOS\UserBundle\Event\GetResponseUserEvent;
+use FOS\UserBundle\FOSUserEvents;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -11,6 +14,8 @@ use TunisiaMallBundle\Entity\Boutique;
 
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use TunisiaMallBundle\Form\UserRegistrationType;
+use Twilio\Rest\Client;
 
 class DefaultController extends Controller
 {
@@ -40,8 +45,6 @@ class DefaultController extends Controller
             "produits" => $produits
 
         ));
-        //return $this->render('TunisiaMallBundle:Default:index.html.twig');
-
 
     }
 
@@ -80,10 +83,14 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::evenement.html.twig');
     }
-
+    /**
+     * @Security("has_role('ROLE_ADMIN')")
+     */
     public function adminindexAction()
     {
-        return $this->render('TunisiaMallBundle:admin:templateadmin.html.twig');
+//        $this->denyAccessUnlessGranted('ROLE_ADMIN', null, 'Unable to access this page!');
+
+        return $this->render('TunisiaMallBundle::templateadmin.html.twig');
     }
 
     public function GBoutiqueCAAction()
@@ -95,6 +102,7 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::publicite.html.twig');
     }
+
 
 
     public function clientevenementAction()
@@ -126,6 +134,7 @@ class DefaultController extends Controller
         return $user[0];
     }
 
+
     public function signupAction(Request $request)
     {
         $user = new User();
@@ -151,6 +160,8 @@ class DefaultController extends Controller
         );
     }
 
+
+
     public function aboutAction()
     {
         return $this->render('TunisiaMallBundle:Default:about.html.twig');
@@ -168,6 +179,52 @@ class DefaultController extends Controller
         $sender = $this->get('fos_message.sender');
 
         return $this->render('default/index.html.twig');
+    }
+
+    public function templateclientAction()
+    {
+        return $this->render('TunisiaMallBundle::templateC.html.twig');
+    }
+
+
+
+
+    public function composersmsAction()
+    {
+
+
+        $em = $this->getDoctrine()->getManager();
+        $responsables = $em->getRepository("TunisiaMallBundle:User")->findAll();
+
+        return $this->render('TunisiaMallBundle::composesms.html.twig', array(
+            "users" => $responsables
+        ));
+
+
+    }
+
+    public function sendsmsAction(Request $request)
+    {
+        $telephone = $request->get('select');
+        $subject=$request->get('subject');
+        $content = $request->get('content');
+
+
+        $sid = 'ACf863defe10693d3d9dc1cb4faf65ee80';
+        $token = '1771eb99469083940a29e118fa22cdbf';
+        $client = new Client($sid, $token);
+        $client->messages->create(
+        // the number you'd like to send the message to
+            '+216'.$telephone,
+            array(
+                // A Twilio phone number you purchased at twilio.com/console
+                'from' => '+13203723228',
+                // the body of the text message you'd like to send
+                'body' => $subject .":".$content
+            )
+        );
+        return $this->render('TunisiaMallBundle::templateadmin.html.twig');
+
     }
 
 }

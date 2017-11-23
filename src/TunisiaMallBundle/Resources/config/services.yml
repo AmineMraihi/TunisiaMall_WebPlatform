@@ -1,4 +1,8 @@
 services:
+    redirect.after.login:
+        class: TunisiaMallBundle\Redirection\AfterLoginRedirection
+        arguments: ['@router']
 #    tunisia_mall.example:
 #        class: TunisiaMallBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
+

@@ -42,6 +42,29 @@ tunisia_mall_client_evenement:
     path:     /clientevenement
     defaults: { _controller: TunisiaMallBundle:Default:clientevenement }
 
+offreAdmin:
+    path:     /offreAdmin
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:affichAll }
+
+ToAjout:
+    path:     /ToAjout
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:ToAjout }
+
+ajoutOffreAdmin:
+    path:     /ajoutOffreAdmin
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:ajout }
+
+modifOffreAdmin:
+    path:     /modifOffreAdmin/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:modifier }
+
+suppOffreAdmin:
+    path:     /suppOffreAdmin/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:supprimer }
+
+demandeAdmin:
+    path:     /demandeAdmin
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:afficherAll }
 tunisia_mall_admin_publicite:
     path:     /adminpub
     defaults: { _controller: TunisiaMallBundle:Publicite:listpub }
@@ -131,50 +154,6 @@ tunisia_mall_exemple_evenement:
     path:     /exempleevenement/{id}
     defaults: { _controller: TunisiaMallBundle:Evenement:exempleevenement }
 
-
-
-
-
-
-
-tunisia_mall_addProduit:
-    path:     /addproduit
-    defaults: { _controller: TunisiaMallBundle:Produit:AjoutProduit }
-
-tunisia_mall_listProduit:
-    path:     /listproduit
-    defaults: { _controller: TunisiaMallBundle:Produit:listProduit }
-
-tunisia_mall_chat:
-    path:     /chat
-    defaults: { _controller: TunisiaMallBundle:Produit:chat }
-
-tunisia_mall_chatshop:
-    path:     /shop
-    defaults: { _controller: TunisiaMallBundle:Produit:shop }
-
-tunisia_mall_promoproduitx:
-    path:     /shop/listproduit/promotionproduitx
-    defaults: { _controller: TunisiaMallBundle:promotion:AjoutPromotion }
-
-tunisia_mall_promoproduittotal:
-    path:     /shop/listproduit/promotionproduittotal
-    defaults: { _controller: TunisiaMallBundle:promotion:promoproduittotal }
-
-
-tunisia_mall_suppproduit:
-    path:     /shop/shop/listproduit/{id_produit}
-    defaults: { _controller: TunisiaMallBundle:Produit:Suppprod }
-
-
-
-
-
-tunisia_mall_modifierproduit:
-    path:     /modifierProduit/{id_produit}
-    defaults: { _controller: TunisiaMallBundle:Produit:modifierProduit }
-
-
 tunisia_mall_client_produitaffichage:
     path:     /clientprodaffichage
     defaults: { _controller: TunisiaMallBundle:Default:clientproduit }
@@ -194,3 +173,49 @@ my_app_mail_accuse:
 tunisia_mall_list_reclamation_shop:
     path:     /listreclamationshop
     defaults: { _controller: TunisiaMallBundle:Reclamation:afficherreclamationsshop}
+
+
+tunisia_mall_shopowner_demande_ajout_publicite:
+    path:     /demandeajoutpub
+    defaults: { _controller: TunisiaMallBundle:Publicite:demandeajoutpub }
+
+tunisia_mall_admin_liste_demande_publicite:
+    path:     /adminlistedemandepub
+    defaults: { _controller: TunisiaMallBundle:Publicite:listdemandepub }
+
+tunisia_mall_admin_accept_ajout_publicite:
+    path:     /acceptajoutpub/{id}
+    defaults: { _controller: TunisiaMallBundle:Publicite:acceptajoutpub }
+
+tunisia_mall_admin_supprimer_publicite:
+    path:     /refuserdemandepublicite/{id}
+    defaults: { _controller: TunisiaMallBundle:Publicite:refuserpublicte }
+
+tunisia_mall_admin_liste_responsable_boutique:
+    path:     /listeresponsableboutique
+    defaults: { _controller: TunisiaMallBundle:User:listeresponsableboutique }
+
+tunisia_mall_ajout_responsable_boutique:
+    path:     /ajoutresponsableboutique
+    defaults: { _controller: TunisiaMallBundle:User:ajoutresponsableboutique }
+
+tunisia_mall_compose_sms:
+    path:     /composersms
+    defaults: { _controller: TunisiaMallBundle:Default:composersms }
+
+tunisia_mall_send_sms:
+    path:     /sendsms
+    defaults: { _controller: TunisiaMallBundle:Default:sendsms }
+
+tunisia_mall_modifier_responsable_boutique:
+    path:     /modifierresponsableBoutique/{id}
+    defaults: { _controller: TunisiaMallBundle:User:modifierresponsable }
+
+tunisia_mall_admin_supprimer_responsable_boutique:
+    path:     /supprimerresponsableboutique/{id}
+    defaults: { _controller: TunisiaMallBundle:User:supprimerresponsable }
+
+
+templateclient:
+    path:     /templateclient
+    defaults: { _controller: TunisiaMallBundle:Default:templateclient }

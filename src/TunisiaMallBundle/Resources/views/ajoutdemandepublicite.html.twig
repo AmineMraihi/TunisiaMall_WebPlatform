@@ -1,5 +1,4 @@
-{#{% extends "TunisiaMallBundle:admin:templateadmin.html.twig" %}#}
-{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{% include "TunisiaMallBundle:shop:templateshopowner.html.twig" %}
 {% block robots %}
     {{ form_start(formulaire) }}
     <section id="content">
@@ -19,7 +18,7 @@
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Publicite </strong>Ajout</h1>
+                            <h1 class="custom-font"><strong>Publicite </strong>Demande Ajout</h1>
                             <ul class="controls">
                                 <li class="dropdown">
 
@@ -82,7 +81,7 @@
                             </tr>
                             <tr class="odd gradeX">
                                 <th>boutique</th>
-                                <td>{{ form_widget(formulaire.idBoutique) }}</td>
+                                <td>{{ app.user.idBoutique.nom}}</td>
                             </tr>
 
                             <tr>
@@ -113,10 +112,6 @@
         <!-- /tile body -->
 
     </section>
-
-
-
-
-
     {{ form_end(formulaire) }}
+
 {% endblock robots %}

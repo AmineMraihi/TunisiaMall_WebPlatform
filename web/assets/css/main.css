@@ -14007,13 +14007,13 @@ input[type="text"].ui-grid-filter-input:focus:hover {
 }
 
 .card-container .card {
-  min-height: 110px;
+  min-height: 20px;
   margin-bottom: 20px;
   position: relative;
   -webkit-perspective: 600px;
   -moz-perspective: 600px;
   perspective: 600px;
-  width: 100%;
+  width: 50%;
   cursor: pointer;
   z-index: 9;
 }
