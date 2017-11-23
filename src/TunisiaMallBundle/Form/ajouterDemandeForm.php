@@ -13,21 +13,26 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class ajouterOffreForm extends AbstractType
+class ajouterDemandeForm extends AbstractType
 {
-    public function buildForm(FormBuilderInterface $builder, array $options)
 
+
+    public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
 
-            ->add('Boutique',EntityType::class,array('class'=>'TunisiaMallBundle:Boutique','choice_label'=>'nom','multiple'=>false))
-            ->add('poste')
-            ->add('specialite')
-            ->add('salaire')
-            ->add('nbrDemande')
-            ->add('dateExpiration')
+            ->add('nomEmp')
+            ->add('prenomEmp')
+            ->add('dateNaissance')
+            ->add('adresse')
+            ->add('sexe')
+            ->add('email')
+            ->add('numTel')
+            ->add('qualification')
+            ->add('experience')
 
-        ->add("Save", SubmitType::class);
+           ;
+
 
     }
 
@@ -38,8 +43,7 @@ class ajouterOffreForm extends AbstractType
 
     public function getBlockPrefix()
     {
-        return 'offre_form';
+        return 'demande_form';
     }
-
 
 }

@@ -85,14 +85,12 @@ class DemandeEmploi
     private $experience;
 
     /**
-     * @var \User
+     * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_user_fk", referencedColumnName="id_user")
-     * })
+     * @ORM\Column(name="id_user_fk", type="integer", nullable=false)
+     *
      */
-    private $User;
+    private $IdUserFk;
 
     /**
      * @var \OffreEmploi
@@ -265,20 +263,22 @@ class DemandeEmploi
     }
 
     /**
-     * @return \User
+     * @return int
      */
-    public function getUser()
+    public function getIdUserFk()
     {
-        return $this->User;
+        return $this->IdUserFk;
     }
 
     /**
-     * @param \User $User
+     * @param int $IdUserFk
      */
-    public function setUser($User)
+    public function setIdUserFk($IdUserFk)
     {
-        $this->User = $User;
+        $this->IdUserFk = $IdUserFk;
     }
+
+
 
     /**
      * @return \OffreEmploi
@@ -295,6 +295,9 @@ class DemandeEmploi
     {
         $this->Offre = $Offre;
     }
+
+
+
 
 
 

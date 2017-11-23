@@ -42,17 +42,25 @@ class Boutique
      */
     private $position;
 
-
-
     /**
-     * Get idBoutique
-     *
-     * @return integer
+     * @return int
      */
     public function getIdBoutique()
     {
         return $this->idBoutique;
     }
+
+    /**
+     * @param int $idBoutique
+     */
+    public function setIdBoutique($idBoutique)
+    {
+        $this->idBoutique = $idBoutique;
+    }
+
+
+
+
 
     /**
      * Set nom

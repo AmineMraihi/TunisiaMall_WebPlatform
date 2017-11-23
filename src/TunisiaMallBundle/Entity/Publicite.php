@@ -14,6 +14,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @Vich\Uploadable
  *
  */
+
 class Publicite
 {
     /**

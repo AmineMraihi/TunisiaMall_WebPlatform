@@ -64,7 +64,8 @@ suppOffreAdmin:
 
 demandeAdmin:
     path:     /demandeAdmin
-    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:afficherAll }
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:affichAlladmin }
+
 tunisia_mall_admin_publicite:
     path:     /adminpub
     defaults: { _controller: TunisiaMallBundle:Publicite:listpub }
@@ -202,6 +203,51 @@ tunisia_mall_client_produitaffichage:
     path:     /clientprodaffichage
     defaults: { _controller: TunisiaMallBundle:Default:clientproduit }
 
-templateclient:
-    path:     /templateclient
-    defaults: { _controller: TunisiaMallBundle:Default:templateclient }
+offreclient:
+    path:     /offreclient
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:afficherOffre }
+
+ajouterDemande:
+    path:     /ajouterDemande/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:ajouterDemande }
+
+demandelist:
+    path:     /demandelist
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:affichAllclient }
+
+modifierdemande:
+    path:     /modifierdemande/{idDemande}
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:modifier }
+
+supprimerdemande:
+    path:     /supprimerdemande/{idDemande}
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:supprimer }
+
+
+affichShopowner:
+    path:     /affichShopowner
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:affichShopowner }
+
+ajoutShopowner:
+    path:     /ajoutShopowner
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:ajoutShopowner }
+
+supprimerShop:
+    path:     /supprimerShop/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:supprimerShop }
+
+modifierShop:
+    path:     /modifierShop/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:modifierShop }
+
+affichShopownerDemande:
+    path:     /affichShopownerDemande
+    defaults: { _controller: TunisiaMallBundle:DemandeEmploi:affichShopownerDemande }
+
+clientoffredetails:
+    path:     /clientoffredetails/{idOffre}
+    defaults: { _controller: TunisiaMallBundle:OffreEmploi:affichdetailClient }
+
+statproduit:
+    path:     /statproduit
+    defaults: { _controller: TunisiaMallBundle:Graphe:chartHistogramme }

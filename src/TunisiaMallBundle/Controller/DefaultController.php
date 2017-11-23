@@ -63,7 +63,7 @@ class DefaultController extends Controller
 
     public function adminindexAction()
     {
-        return $this->render('TunisiaMallBundle:admin:templateadmin.html.twig');
+        return $this->render('TunisiaMallBundle::templateadmin.html.twig');
     }
 
     public function GBoutiqueCAAction()
@@ -139,10 +139,12 @@ class DefaultController extends Controller
         return $this->render('default/index.html.twig');
     }
 
-    public function templateclientAction()
+
+    public function offreShopownerAction()
     {
-        return $this->render('TunisiaMallBundle::templateC.html.twig');
+        return $this->render('TunisiaMallBundle::offreshopowner.html.twig');
     }
+
 
 
 
