@@ -16,7 +16,7 @@ class User extends BaseUser
      *
      * @ORM\Column(name="id_user", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
@@ -140,6 +140,14 @@ class User extends BaseUser
         parent::__construct();
         // your own logic
 
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
 

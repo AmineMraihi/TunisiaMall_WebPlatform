@@ -1,5 +1,5 @@
-{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
-{#{% block debuttemplate %}#}
+{% include "TunisiaMallBundle:shop:templateshopowner.html.twig" %}
+
 {% block robots %}
 
     <section id="content">
@@ -8,7 +8,7 @@
 
             <div class="pageheader">
 
-                <h2>Offre emploi <span>liste</span></h2>
+                <h2>Offre emploi <span> list</span></h2>
 
 
             </div>
@@ -23,12 +23,12 @@
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Offre emploi</strong> Liste</h1>
+                            <h1 class="custom-font"><strong>Offre emploi</strong> de votre boutique</h1>
 
                             <ul class="controls">
                                 <li>
-                                    <a href="{{ path('ajoutOffreAdmin') }}" role="button" tabindex="0" ><i class="fa fa-plus mr-5"></i> Ajouter
-                                        </a>
+                                    <a href="{{ path('ajoutShopowner') }}" role="button" tabindex="0" ><i class="fa fa-plus mr-5"></i> Ajouter
+                                    </a>
 
                                 </li>
 
@@ -76,31 +76,31 @@
                                         <th>Salaire</th>
                                         <th>Nombre demandé</th>
                                         <th>Date expiration</th>
-                                        <th>Boutique</th>
+
                                         <th></th>
-                                       {# <th style="width: 160px;" class="no-sort">Actions</th> #}
+                                        {# <th style="width: 160px;" class="no-sort">Actions</th> #}
                                     </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="odd gradeX">
+                                    <tr class="odd gradeX">
                                         {% for offreEmploi in offreEmplois %}
-                                            <tr>
-                                              {#  <a href="{{ path('offre_show', { 'idOffre': offreEmploi.idOffre }) }}" hidden>{{ offreEmploi.idOffre }}</a> #}
+                                    <tr>
+                                        {#  <a href="{{ path('offre_show', { 'idOffre': offreEmploi.idOffre }) }}" hidden>{{ offreEmploi.idOffre }}</a> #}
 
-                                                <td>{{ offreEmploi.poste }}</td>
-                                                <td>{{ offreEmploi.specialite }}</td>
-                                                <td>{{ offreEmploi.salaire }}</td>
-                                                <td>{{ offreEmploi.nbrDemande }}</td>
-                                                <td>{% if offreEmploi.dateExpiration  %}{{ offreEmploi.dateExpiration|date('Y-m-d') }}{% endif %}</td>
-                                            <td>{{  offreEmploi.Boutique.nom }}</td>
-                                            <td><div class="pull-right mt-10">
-                                                    <a href="{{ path('modifOffreAdmin',{ 'idOffre': offreEmploi.idOffre }) }}"> <button type="button" class="btn btn-rounded-20 btn-default btn-sm mr-5" style="width:30px;"><i class="fa fa-pencil"></i></button> </a>
+                                        <td>{{ offreEmploi.poste }}</td>
+                                        <td>{{ offreEmploi.specialite }}</td>
+                                        <td>{{ offreEmploi.salaire }}</td>
+                                        <td>{{ offreEmploi.nbrDemande }}</td>
+                                        <td>{% if offreEmploi.dateExpiration  %}{{ offreEmploi.dateExpiration|date('Y-m-d') }}{% endif %}</td>
 
-                                                    <a href="{{ path('suppOffreAdmin',{ 'idOffre': offreEmploi.idOffre }) }}"> <button type="button" class="btn btn-rounded-20 btn-default btn-sm mr-5" style="width:30px;" ><i class="fa fa-times"></i></button> </a>
+                                        <td><div class="pull-right mt-10">
+                                                <a href="{{ path('modifierShop',{ 'idOffre': offreEmploi.idOffre }) }}"> <button type="button" class="btn btn-rounded-20 btn-default btn-sm mr-5" style="width:30px;"><i class="fa fa-pencil"></i></button> </a>
 
-                                                </div></td>
+                                                <a href="{{ path('supprimerShop',{ 'idOffre': offreEmploi.idOffre }) }}"> <button type="button" class="btn btn-rounded-20 btn-default btn-sm mr-5" style="width:30px;" ><i class="fa fa-times"></i></button> </a>
 
-                                        </tr>
+                                            </div></td>
+
+                                    </tr>
                                     {% endfor %}
 
                                     </tbody>
@@ -120,5 +120,7 @@
 
     <!--/ Page Specific Scripts -->
 
-{#{% block fintemplate %}#}
+    {#{% block fintemplate %}#}
 {% endblock %}
+
+

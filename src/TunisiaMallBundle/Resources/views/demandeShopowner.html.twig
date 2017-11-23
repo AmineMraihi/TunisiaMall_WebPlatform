@@ -1,4 +1,4 @@
-{% extends 'TunisiaMallBundle::templateadmin.html.twig' %}
+{% include "TunisiaMallBundle:shop:templateshopowner.html.twig" %}
 
 {% block robots %}
 
@@ -24,7 +24,7 @@
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Demande emploi</strong> Liste</h1>
+                            <h1 class="custom-font"><strong>Demande emploi</strong> dans votre boutique</h1>
 
                             <ul class="controls">
                                 <li>
@@ -70,46 +70,46 @@
                             <div class="table-responsive">
                                 <table class="table table-custom" id="editable-usage">
                                     <thead>
-                <tr>
-                    <th>Nom employé</th>
-                    <th>Prenom emp</th>
-                    <th>Date naissance</th>
-                    <th>Adresse</th>
-                    <th>Sexe</th>
-                    <th>Email</th>
-                    <th>Numero telephone</th>
-                    <th>Qualification</th>
-                    <th>Experience</th>
+                                    <tr>
+                                        <th>Nom employé</th>
+                                        <th>Prenom emp</th>
+                                        <th>Date naissance</th>
+                                        <th>Adresse</th>
+                                        <th>Sexe</th>
+                                        <th>Email</th>
+                                        <th>Numero telephone</th>
+                                        <th>Qualification</th>
+                                        <th>Experience</th>
 
-                </tr>
-                </thead>
-    <tbody>
-    {% for demandeEmploi in demandeEmplois %}
-        <tr>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for demandeEmploi in demandeEmplois %}
+                                    <tr>
 
-            <td>{{ demandeEmploi.nomEmp }}</td>
-            <td>{{ demandeEmploi.prenomEmp }}</td>
-            <td>{% if demandeEmploi.dateNaissance %}{{ demandeEmploi.dateNaissance|date('Y-m-d') }}{% endif %}</td>
-            <td>{{ demandeEmploi.adresse }}</td>
-            <td>{{ demandeEmploi.sexe }}</td>
-            <td>{{ demandeEmploi.email }}</td>
-            <td>{{ demandeEmploi.numTel }}</td>
-            <td>{{ demandeEmploi.qualification }}</td>
-            <td>{{ demandeEmploi.experience }}</td>
+                                        <td>{{ demandeEmploi.nomEmp }}</td>
+                                        <td>{{ demandeEmploi.prenomEmp }}</td>
+                                        <td>{% if demandeEmploi.dateNaissance %}{{ demandeEmploi.dateNaissance|date('Y-m-d') }}{% endif %}</td>
+                                        <td>{{ demandeEmploi.adresse }}</td>
+                                        <td>{{ demandeEmploi.sexe }}</td>
+                                        <td>{{ demandeEmploi.email }}</td>
+                                        <td>{{ demandeEmploi.numTel }}</td>
+                                        <td>{{ demandeEmploi.qualification }}</td>
+                                        <td>{{ demandeEmploi.experience }}</td>
 
 
 
-                            {% endfor %}
-    </tbody>
-            </table>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </section>
+                </div>
+            </div>
         </div>
-    </div>
-
-
-    </section>
-    </div>
-    </div>
-    </div>
 
     </section>
 

@@ -1,0 +1,79 @@
+{% extends 'TunisiaMallBundle::templateC.html.twig' %}
+
+{% block pleasework %}
+
+    <div class="new_arrivals_agile_w3ls_info">
+        <div class="container">
+            <h3 class="wthree_text_info">Demande emploi <span>Liste</span></h3>
+
+            <ul class="resp-tabs-list">
+                <li></li>
+            </ul>
+            <div class="resp-tabs-container">
+                <!--/tab_one-->
+                <div class="bs-docs-example">
+                    <table class="table table-hover">
+
+
+                        <thead>
+                        <tr>
+
+                            <th><div class="contact-right">
+                                    <p>Nom employé </p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Prenom employé </p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Date naissance</p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Adresse </p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Sexe </p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Email</p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Numéro telephone</p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Qualification </p> </div></th>
+                            <th><div class="contact-right">
+                                    <p>Experience </p> </div></th>
+                            <th><i class="fa fa-arrow-down"></i></th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for demandeEmploi in demandeEmplois %}
+                            <tr>
+
+                                <td>{{ demandeEmploi.nomEmp }}</td>
+                                <td>{{ demandeEmploi.prenomEmp }}</td>
+                                <td>{% if demandeEmploi.dateNaissance %}{{ demandeEmploi.dateNaissance|date('Y-m-d') }}{% endif %}</td>
+                                <td>{{ demandeEmploi.adresse }}</td>
+                                <td>{{ demandeEmploi.sexe }}</td>
+                                <td>{{ demandeEmploi.email }}</td>
+                                <td>{{ demandeEmploi.numTel }}</td>
+                                <td>{{ demandeEmploi.qualification }}</td>
+                                <td>{{ demandeEmploi.experience }}</td>
+                               <td>
+
+                                       <a href="{{ path('modifierdemande', { 'idDemande': demandeEmploi.idDemande }) }}"> <i class="fa fa-pencil"></i></a>
+
+
+
+                                       <a href="{{ path('supprimerdemande', { 'idDemande': demandeEmploi.idDemande }) }}"><i class="fa fa-trash-o"></i></a>
+
+                               </td>
+
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

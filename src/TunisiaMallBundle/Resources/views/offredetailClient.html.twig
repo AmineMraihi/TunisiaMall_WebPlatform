@@ -1,0 +1,56 @@
+{% extends 'TunisiaMallBundle::templateC.html.twig' %}
+
+{% block pleasework %}
+
+    <div class="new_arrivals_agile_w3ls_info">
+        <div class="container">
+            <h3 class="wthree_text_info">Offre emploi <span>Liste</span></h3>
+
+<table> <tr>
+       <td>     <div class="contact-right">
+                <p>Salaire </p><span>{{ offreEmplois.salaire }}</span>
+            </div> </td>
+    </tr>
+    <tr>
+        <td>  <div class="contact-right">
+                <p>Nombre demandé </p><span>{{ offreEmplois.nbrDemande }}</span>
+            </div></td>
+    </tr>
+    <tr>
+        <td>  <div class="contact-right">
+                <p>Date expiration</p><span>{% if offreEmplois.dateExpiration %}{{ offreEmplois.dateExpiration|date('Y-m-d') }}{% endif %}</span>
+            </div></td>
+    </tr>
+
+    <tr>
+        <td>    <div class="contact-right">
+                <p>Boutique </p><span>{{offreEmplois.boutique.nom}}</span>
+            </div> </td>
+    </tr>
+
+
+
+            <div class="col-md-3 w3layouts_mail_grid_left">
+                <a href="{{ path('ajouterDemande', { 'idOffre': offreEmplois.idOffre }) }}">
+                    <div class="w3layouts_mail_grid_left1 hvr-radial-out">
+                    <i aria-hidden="true"></i>
+                </div>
+                </a>
+                <div class="w3layouts_mail_grid_left2">
+                    <h3>Poster demande</h3>
+
+                </div>
+            </div>
+
+
+
+</table>
+
+
+
+    </div>
+    </div>
+
+
+
+{% endblock %}

@@ -20,11 +20,7 @@ class ModifierOffreForm extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add("User",EntityType::class,array(
-                'class'=>"TunisiaMallBundle\Entity\User",
-                'choice_label' => 'nom',
-                'multiple'=>false,
-            ))
+
             ->add('Boutique',EntityType::class,array('class'=>'TunisiaMallBundle:Boutique','choice_label'=>'nom','multiple'=>false))
             ->add('poste')
             ->add('specialite')

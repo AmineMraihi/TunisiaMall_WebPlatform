@@ -26,15 +26,15 @@ class OffreEmploi
     private $idOffre;
 
     /**
-     *  @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_user_fk", referencedColumnName="id_user")
-     * })
+     * @var integer
+     *
+     * @ORM\Column(name="id_user_fk", type="integer", nullable=false)
+     *
      */
-    private $User;
+    private $IdUserFk;
 
     /**
-     * @var integer
+     * @var Boutique
      * @ORM\ManyToOne(targetEntity="Boutique")
      * @ORM\JoinColumn(name="id_boutique_fk",referencedColumnName="id_boutique")
      */
@@ -92,23 +92,25 @@ class OffreEmploi
     }
 
     /**
-     * @return mixed
-     */
-    public function getUser()
-    {
-        return $this->User;
-    }
-
-    /**
-     * @param mixed $User
-     */
-    public function setUser($User)
-    {
-        $this->User = $User;
-    }
-
-    /**
      * @return int
+     */
+    public function getIdUserFk()
+    {
+        return $this->IdUserFk;
+    }
+
+    /**
+     * @param $IdUserFk
+     */
+    public function setIdUserFk($IdUserFk)
+    {
+        $this->IdUserFk = $IdUserFk;
+    }
+
+
+
+    /**
+     * @return Boutique
      */
     public function getBoutique()
     {
@@ -116,7 +118,7 @@ class OffreEmploi
     }
 
     /**
-     * @param int $Boutique
+     * @param Boutique $Boutique
      */
     public function setBoutique($Boutique)
     {

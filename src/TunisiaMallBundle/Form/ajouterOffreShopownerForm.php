@@ -13,21 +13,21 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
-class ajouterOffreForm extends AbstractType
+class ajouterOffreShopownerForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
 
     {
         $builder
 
-            ->add('Boutique',EntityType::class,array('class'=>'TunisiaMallBundle:Boutique','choice_label'=>'nom','multiple'=>false))
+
             ->add('poste')
             ->add('specialite')
             ->add('salaire')
             ->add('nbrDemande')
             ->add('dateExpiration')
 
-        ->add("Save", SubmitType::class);
+            ->add("Save", SubmitType::class);
 
     }
 

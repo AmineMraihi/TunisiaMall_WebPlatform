@@ -95,6 +95,9 @@ class DefaultController extends Controller
 //        $this->denyAccessUnlessGranted('ROLE_ADMIN', null, 'Unable to access this page!');
 
         return $this->render('TunisiaMallBundle::templateadmin.html.twig');
+//        $this->denyAccessUnlessGranted('ROLE_ADMIN', null, 'Unable to access this page!');
+
+      //  return $this->render('TunisiaMallBundle::templateadmin.html.twig');
     }
 
     public function GBoutiqueCAAction()
@@ -190,6 +193,10 @@ class DefaultController extends Controller
         return $this->render('TunisiaMallBundle::templateC.html.twig');
     }
 
+    public function offreShopownerAction()
+    {
+        return $this->render('TunisiaMallBundle::offreshopowner.html.twig');
+    }
 
 
 
@@ -230,6 +237,10 @@ class DefaultController extends Controller
         return $this->render('TunisiaMallBundle::templateadmin.html.twig');
 
     }
+
+
+
+
 
 }
 

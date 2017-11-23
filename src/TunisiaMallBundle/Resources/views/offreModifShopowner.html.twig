@@ -1,6 +1,7 @@
-{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
-{#{% block debuttemplate %}#}
+{% include "TunisiaMallBundle:shop:templateshopowner.html.twig" %}
+
 {% block robots %}
+
     {{ form_start(form) }}
 
     <section id="content">
@@ -81,10 +82,7 @@
                                 <th>Date expiration</th>
                                 <td>{{ form_widget(form.dateExpiration) }}</td>
                             </tr>
-                            <tr class="odd gradeX">
-                                <th>Boutique</th>
-                                <td>{{ form_widget(form.Boutique) }}</td>
-                            </tr>
+
 
                             <tr>
 
@@ -121,4 +119,3 @@
     <!--/ CONTENT -->
     {{ form_end(form) }}
 {% endblock robots %}
-{#{% block fintemplate %}#}

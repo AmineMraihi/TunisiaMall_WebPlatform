@@ -71,6 +71,18 @@ class Boutique
     }
 
     /**
+     * @param int $idBoutique
+     */
+    public function setIdBoutique($idBoutique)
+    {
+        $this->idBoutique = $idBoutique;
+    }
+
+
+
+
+
+    /**
      * Set nom
      *
      * @param string $nom
