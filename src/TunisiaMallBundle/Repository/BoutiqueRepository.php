@@ -7,9 +7,10 @@
  */
 
 namespace TunisiaMallBundle\Repository;
+use Doctrine\ORM\EntityRepository;
 
-
-class BoutiqueRepository
+class BoutiqueRepository extends EntityRepository
 {
+
 
 }

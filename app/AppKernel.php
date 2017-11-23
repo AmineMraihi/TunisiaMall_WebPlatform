@@ -22,6 +22,8 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
             new DocDocDoc\NexmoBundle\DocDocDocNexmoBundle(),
+            new MyAppMailBundle\MyAppMailBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

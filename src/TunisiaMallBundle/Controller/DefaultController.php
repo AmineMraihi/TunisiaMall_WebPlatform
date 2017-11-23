@@ -25,13 +25,12 @@ class DefaultController extends Controller
         {
             $reclamation->setText($request->get('description'));
             $reclamation->setType($request->get('type'));
-            $reclamation->setIdReclamant( $user->getId());
+            $reclamation->setIdReclamant( $user);
             $reclamation->setIdPReclame($this->rechercheshopowner($this->Rechercheboutique($request->get('nomB'))));
             $em = $this->getDoctrine()->getManager();
             $em->persist($reclamation);
             $em->flush();
         }}
-        return $this->render('TunisiaMallBundle:Default:index.html.twig');
         $em = $this->getDoctrine()->getManager();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
@@ -41,6 +40,8 @@ class DefaultController extends Controller
             "produits" => $produits
 
         ));
+        //return $this->render('TunisiaMallBundle:Default:index.html.twig');
+
 
     }
 

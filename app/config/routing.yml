@@ -1,3 +1,7 @@
+my_app_mail:
+    resource: "@MyAppMailBundle/Resources/config/routing.yml"
+    prefix:   /ab
+
 tunisia_mall:
     resource: "@TunisiaMallBundle/Resources/config/routing.yml"
     prefix:   /

@@ -2,60 +2,99 @@
 
 {% block robots %}
 
+
     <section id="content">
- <br>
- <br>
- <br>
- <div></div>
- {{ form_start(formulaire) }}
+        <link rel="stylesheet" href="{{ asset('assets/css/vendor/promotion.css') }}">
+        <div class="page page-tables-datatables">
 
-     <table>
-         <tr></tr>
-         <tr></tr>
-         <tr></tr>
-         <tr></tr>
-         <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td>
-                 {{ form_label(formulaire.nom) }}
-             </td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td>
-                 {{ form_widget(formulaire.nom) }}
-             </td>
-         </tr>
-         <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td>
-                 {{ form_label(formulaire.type) }}
-             </td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td>
+            <div class="pageheader">
+                <br>
 
-                 {{ form_widget(formulaire.type) }}
-             </td>
-         </tr>
-         <tr>
-             <td></td><td></td><td></td>
-             <td>
-                 {{ form_label(formulaire.position) }}
-             </td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td>
 
-                 {{ form_widget(formulaire.position) }}
-             </td>
-         </tr>
-     </table>
+                <div id="titreajout">Ajouter Boutique</div>
+
+
+            </div>
+
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-md-12">
+
+
+                    <section class="tile">
+
+                        <!-- tile header -->
+                        <div >
+
+
+                        </div>
+                        <!-- /tile header -->
+
+
+
+                        <div class="content">
+                            {{ form_start(formulaire) }}
+
+                            <div>
+
+                                {{ form_label(formulaire.nom) }} :
+                                {{ form_widget( formulaire.nom,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+                            <div>
+
+                                {{ form_label(formulaire.type) }} :
+                                {{ form_widget( formulaire.type,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+
+
+
+                            <div>
+                                {{ form_label(formulaire.position) }} :
+                                {{ form_widget( formulaire.position,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+                            <div>
+
+                                {{ form_label(formulaire.datecreation) }} :
+                                {{ form_widget( formulaire.datecreation,{'attr': {'class':'form-control'}}   ) }}
+
+                            </div>
+
+                            <div>
+                                {{ form_label(formulaire.dateexpiration) }} :
+                                {{ form_widget( formulaire.dateexpiration,{'attr': {'class':'form-control'}}   ) }}
+
+                            </div>
+
+
+
+
+                            <div>
+                                {{ form_widget( formulaire.ajouter,{'attr': {'class':'form_ajouter'}}  ) }}
+
+                            </div>
+                            {% if etat == -1 %}
+
+                                <script>alert("Erreur: Date creation superieur au date expiration!");</script>
+                            {% endif %}
+
+                            {{ form_end(formulaire) }}
+
+                        </div>
+
+
+                        <!-- /tile body -->
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+
+
  {{ form_end(formulaire) }}
         {% endblock robots %}

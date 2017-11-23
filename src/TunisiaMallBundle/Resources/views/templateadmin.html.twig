@@ -40,6 +40,8 @@
     <link rel="stylesheet" href="{{ asset('assets/js/vendor/chosen/chosen.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/js/vendor/summernote/summernote.css') }}">
 
+
+
     <!-- project main css files -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <!--/ stylesheets -->
@@ -354,12 +356,15 @@
                                             <span>Gestion des employers</span> <span class=""></span></a>
                                     </li>
                                     <li>
-                                        <a href="{{ path('tunisia_mall_GBoutiqueCA') }}" role="button" tabindex="0"><i class=""></i> <span>Gestion des Boutiques</span> <span class=""></span></a>
-                                    </li>
+                                        <a  role="button" tabindex="0"><i class=""></i> <span>Gestion des Boutiques</span> <span class=""></span></a>
+                                    <ul>
+                                    <li><a href="{{ path('tunisia_mall_GBoutiqueCA') }}"><i class=""></i> Ajout Boutique</a></li>
+                                    <li><a href="{{ path('tunisia_mall_list_boutique') }}"><i class=""></i> Liste Boutique</a></li>
+                                    </ul>
+                                        </li>
                                     <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span> <span class=""></span></a>
-                                        <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span>
-                                            <span class=""></span></a>
+
                                     </li>
                                     <li>
                                         <a role="button" tabindex="0"><i class=""></i>
@@ -492,6 +497,51 @@
 
 </div>
 <!--/ Application Content -->
+
+<!-- ====================================================
+============== POP UP Reponse Reclamation ===============
+===================================================== -->
+<div class="modal fade" id="myModalRR" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body modal-body-sub_agile">
+                <div class="col-md-8 modal_body_left modal_body_left1">
+                    <h3 class="agileinfo_sign">Send a <span>Reply</span></h3>
+                    <form action="#" method="POST"><!---------- -->
+                        <div class="styled-input agile-styled-input-top">
+                            <input type="text" name="type" required="required">
+                            <label>Email</label>
+                            <span></span>
+                        </div>
+                        <div class="styled-input">
+                            <input type="text" name="description" required="required">
+                            <label>Description</label>
+                            <span></span>
+                        </div>
+
+                        <input type="submit" value="Send">
+                    </form>
+
+                    <div class="clearfix"></div>
+
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //Modal content-->
+    </div>
+
+</div>
+<!-- ====================================================
+============== POP UP Reponse Reclamation ===============
+===================================================== -->
+
 
 
 <!-- ============================================
@@ -1011,6 +1061,7 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
 </script>
+
 
 
 </body>

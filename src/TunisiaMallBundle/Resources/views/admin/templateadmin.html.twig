@@ -354,6 +354,13 @@
                                             <span>Gestion des employers</span> <span class=""></span></a>
                                     </li>
                                     <li>
+                                        <a role="button" tabindex="0"><i class=""></i> <span>Gestion des Boutiques</span> <span class=""></span></a>
+                                        <ul>
+                                            <li><a href="{{ path('tunisia_mall_GBoutiqueCA') }}"><i class=""></i> Ajout Boutique</a></li>
+                                            <li><a href="{{ path('tunisia_mall_list_boutique') }}"><i class=""></i> Liste Boutique</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span>
                                             <span class=""></span></a>
                                     </li>
@@ -366,8 +373,9 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a role="button" tabindex="0"><i class=""></i> <span>Reclamation</span> <span
+                                        <a href="{{ path('tunisia_mall_list_reclamation') }}" role="button" tabindex="0"><i class=""></i> <span>Reclamation</span> <span
                                                     class=""></span></a>
+
                                     </li>
                                     <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Offre d'emploi </span>

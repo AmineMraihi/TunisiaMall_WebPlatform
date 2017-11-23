@@ -1,0 +1,81 @@
+{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+
+{% block robots %}
+
+
+    <section id="content">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/promotion.css') }}">
+    <div class="page page-tables-datatables">
+
+        <div class="pageheader">
+            <br>
+
+
+            <div id="titreajout">Send A Reply</div>
+
+
+        </div>
+
+        <!-- row -->
+        <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+
+                <section class="tile">
+
+                    <!-- tile header -->
+                    <div >
+
+
+                    </div>
+                    <!-- /tile header -->
+
+
+
+                    <div class="content">
+                        {{ form_start(form) }}
+                        <div>
+
+                            {{ form_label(form.nom) }} :
+                            {{ form_widget( form.nom,{'attr': {'class':'form-control'}}   ) }}
+                        </div>
+
+                        <div>
+
+                            {{ form_label(form.email) }} :
+                            {{ form_widget( form.email,{'attr': {'class':'form-control'}}   ) }}
+                        </div>
+
+
+                       <div>
+
+                            {{ form_label(form.text) }} :
+                            {{ form_widget(form.text ,{'attr': {'class':'form-control'}}   ) }}
+                        </div>
+
+
+
+
+
+
+
+
+                        <div>
+                            {{ form_widget( form.valider,{'attr': {'class':'form_ajouter'}}  ) }}
+
+                        </div>
+                        {{ form_end(form) }}
+
+                    </div>
+
+                    <!-- /tile body -->
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock robots %}

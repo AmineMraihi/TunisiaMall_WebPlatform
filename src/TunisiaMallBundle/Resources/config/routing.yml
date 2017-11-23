@@ -65,8 +65,8 @@ tunisia_mall_GBoutiqueCA:
     path:     /GestionBoutique
     defaults: { _controller: TunisiaMallBundle:Boutique:ajoutboutique }
 tunisia_mall_list_boutique:
-        path:     /listboutique
-        defaults: { _controller: TunisiaMallBundle:Boutique:afficherboutiques }
+    path:     /listboutique
+    defaults: { _controller: TunisiaMallBundle:Boutique:afficherboutiques }
 tunisia_mall_supprimer_boutique:
     path:     /supprimerboutique/{id}
     defaults: { _controller: TunisiaMallBundle:Boutique:supprimerboutique }
@@ -178,3 +178,19 @@ tunisia_mall_modifierproduit:
 tunisia_mall_client_produitaffichage:
     path:     /clientprodaffichage
     defaults: { _controller: TunisiaMallBundle:Default:clientproduit }
+tunisia_mall_list_reclamation:
+    path:     /listreclamation
+    defaults: { _controller: TunisiaMallBundle:Reclamation:afficherreclamations}
+tunisia_mall_supprimer_reclamation:
+    path:     /supprimerreclamation/{id}
+    defaults: { _controller: TunisiaMallBundle:Reclamation:supprimerReclamation }
+tunisia_mall_Repondre_Reclamation:
+    path:     /repondrereclamation/{id}
+    defaults: { _controller: TunisiaMallBundle:Reclamation:RepondreReclamation }
+
+my_app_mail_accuse:
+    path:     /success
+    defaults: { _controller: TunisiaMallBundle:Reclamation:success }
+tunisia_mall_list_reclamation_shop:
+    path:     /listreclamationshop
+    defaults: { _controller: TunisiaMallBundle:Reclamation:afficherreclamationsshop}
