@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new TunisiaMallBundle\TunisiaMallBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
+            new DocDocDoc\NexmoBundle\DocDocDocNexmoBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

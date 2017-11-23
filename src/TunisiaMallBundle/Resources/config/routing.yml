@@ -42,6 +42,21 @@ tunisia_mall_client_evenement:
     path:     /clientevenement
     defaults: { _controller: TunisiaMallBundle:Default:clientevenement }
 
+tunisia_mall_admin_publicite:
+    path:     /adminpub
+    defaults: { _controller: TunisiaMallBundle:Publicite:listpub }
+
+tunisia_mall_admin_ajout_publicite:
+    path:     /ajoutpub
+    defaults: { _controller: TunisiaMallBundle:Publicite:ajoutpub }
+
+tunisia_mall_modifier_publicite:
+    path:     /modifierpublicite/{id}
+    defaults: { _controller: TunisiaMallBundle:Publicite:modifierpub }
+
+tunisia_mall_supprimer_publicite:
+    path:     /supprimerpublicite/{id}
+    defaults: { _controller: TunisiaMallBundle:Publicite:supprimerpublicte }
 
 tunisia_mall_contactinternaute:
     path:     /contacti
@@ -58,3 +73,108 @@ tunisia_mall_supprimer_boutique:
 tunisia_mall_modifier_boutique:
     path:     /modifierboutique/{id}
     defaults: { _controller: TunisiaMallBundle:Boutique:modifierBoutique }
+
+tunisia_mall_addProduit:
+    path:     /addproduit
+    defaults: { _controller: TunisiaMallBundle:Produit:AjoutProduit }
+
+tunisia_mall_listProduit:
+    path:     /listproduit
+    defaults: { _controller: TunisiaMallBundle:Produit:listProduit }
+
+tunisia_mall_chat:
+    path:     /chat
+    defaults: { _controller: TunisiaMallBundle:Produit:chat }
+
+tunisia_mall_chatshop:
+    path:     /shop
+    defaults: { _controller: TunisiaMallBundle:Produit:shop }
+
+tunisia_mall_promoproduitx:
+    path:     /shop/listproduit/promotionproduitx
+    defaults: { _controller: TunisiaMallBundle:promotion:AjoutPromotion }
+
+tunisia_mall_promoproduittotal:
+    path:     /shop/listproduit/promotionproduittotal
+    defaults: { _controller: TunisiaMallBundle:promotion:promoproduittotal }
+
+tunisia_mall_suppproduit:
+    path:     /shop/shop/listproduit/{id_produit}
+    defaults: { _controller: TunisiaMallBundle:Produit:Suppprod }
+
+
+tunisia_mall_modifierproduit:
+    path:     /modifierProduit/{id_produit}
+    defaults: { _controller: TunisiaMallBundle:Produit:modifierProduit }
+
+tunisia_mall_shopowner_evenement:
+    path:     /shopownerevenement2
+    defaults: { _controller: TunisiaMallBundle:Default:shopownerevenement }
+
+tunisia_mall_shopowner_ajout_evenement:
+    path:     /shopownerajoutevenement
+    defaults: { _controller: TunisiaMallBundle:EvenementShopowner:ajouterevenement }
+
+tunisia_mall_shopowner_list_evenement:
+    path:     /shopownerevenement1
+    defaults: { _controller: TunisiaMallBundle:EvenementShopowner:listevenement }
+
+tunisia_mall_shopowner_modifier_evenement:
+    path:     /shopownermodifierevenement/{id}
+    defaults: { _controller: TunisiaMallBundle:EvenementShopowner:modifierevenement }
+
+tunisia_mall_shopowner_supprimer_evenement:
+    path:     /shopownersupprimerevenement/{id}
+    defaults: { _controller: TunisiaMallBundle:EvenementShopowner:supprimerevenement }
+
+tunisia_mall_exemple_evenement:
+    path:     /exempleevenement/{id}
+    defaults: { _controller: TunisiaMallBundle:Evenement:exempleevenement }
+
+
+
+
+
+
+
+tunisia_mall_addProduit:
+    path:     /addproduit
+    defaults: { _controller: TunisiaMallBundle:Produit:AjoutProduit }
+
+tunisia_mall_listProduit:
+    path:     /listproduit
+    defaults: { _controller: TunisiaMallBundle:Produit:listProduit }
+
+tunisia_mall_chat:
+    path:     /chat
+    defaults: { _controller: TunisiaMallBundle:Produit:chat }
+
+tunisia_mall_chatshop:
+    path:     /shop
+    defaults: { _controller: TunisiaMallBundle:Produit:shop }
+
+tunisia_mall_promoproduitx:
+    path:     /shop/listproduit/promotionproduitx
+    defaults: { _controller: TunisiaMallBundle:promotion:AjoutPromotion }
+
+tunisia_mall_promoproduittotal:
+    path:     /shop/listproduit/promotionproduittotal
+    defaults: { _controller: TunisiaMallBundle:promotion:promoproduittotal }
+
+
+tunisia_mall_suppproduit:
+    path:     /shop/shop/listproduit/{id_produit}
+    defaults: { _controller: TunisiaMallBundle:Produit:Suppprod }
+
+
+
+
+
+tunisia_mall_modifierproduit:
+    path:     /modifierProduit/{id_produit}
+    defaults: { _controller: TunisiaMallBundle:Produit:modifierProduit }
+
+
+tunisia_mall_client_produitaffichage:
+    path:     /clientprodaffichage
+    defaults: { _controller: TunisiaMallBundle:Default:clientproduit }

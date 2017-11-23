@@ -1,4 +1,9 @@
-{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{#{% extends "TunisiaMallBundle::templateadmin.html.twig" %}#}
+{#{% extends "TunisiaMallBundle:shop:templateshopowner.html.twig" %}#}
+{% include "TunisiaMallBundle:shop:templateshopowner.html.twig" %}
+
+
+
 {#{% block debuttemplate %}#}
 {% block robots %}
 
@@ -26,7 +31,7 @@
                             <h1 class="custom-font"><strong>Evenement</strong> Liste</h1>
                             <ul class="controls">
                                 <li>
-                                    <a href="{{ path('tunisia_mall_ajout_evenement') }}" role="button" tabindex="0"><i
+                                    <a id="add-entry" href="{{ path('tunisia_mall_shopowner_ajout_evenement') }}" role="button" tabindex="0"><i
                                                 class="fa fa-plus mr-5"></i> Add
                                         Entry</a>
                                 </li>
@@ -94,12 +99,12 @@
                                             <td class="actions">
                                                 <a role="button" tabindex="0"
                                                    class="edit text-primary text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_modifier_evenement',
+                                                   href="{{ path('tunisia_mall_shopowner_modifier_evenement',
                                                    {'id':evenement.idEvenement}) }}">Edit
                                                 </a>
                                                 <a role="button" tabindex="0"
                                                    class="delete text-danger text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_supprimer_evenement',
+                                                   href="{{ path('tunisia_mall_shopowner_supprimer_evenement',
                                                    {'id':evenement.idEvenement}
                                                    ) }}">Remove
                                                 </a>
