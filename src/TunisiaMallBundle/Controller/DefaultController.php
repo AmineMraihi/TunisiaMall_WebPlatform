@@ -93,6 +93,7 @@ class DefaultController extends Controller
     }
 
 
+
     public function clientevenementAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -107,6 +108,7 @@ class DefaultController extends Controller
 
         ));
     }
+
 
 
     public function signupAction(Request $request)
@@ -154,6 +156,14 @@ class DefaultController extends Controller
 
         return $this->render('default/index.html.twig');
     }
+
+    public function templateclientAction()
+    {
+        return $this->render('TunisiaMallBundle::templateC.html.twig');
+    }
+
+
+
 
     public function composersmsAction()
     {

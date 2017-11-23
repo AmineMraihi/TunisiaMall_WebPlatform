@@ -1,0 +1,119 @@
+{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+{#{% block debuttemplate %}#}
+{% block robots %}
+
+    <section id="content">
+
+        <div class="page page-tables-datatables">
+
+            <div class="pageheader">
+
+                <h2>Demande emploi <span>liste</span></h2>
+
+
+            </div>
+
+            <!-- row -->
+            <div class="row">
+                <!-- col -->
+                <div class="col-md-12">
+
+
+                    <section class="tile">
+
+                        <!-- tile header -->
+                        <div class="tile-header dvd dvd-btm">
+                            <h1 class="custom-font"><strong>Demande emploi</strong> Liste</h1>
+
+                            <ul class="controls">
+
+                                <li class="dropdown">
+
+                                    <a role="button" tabindex="0" class="dropdown-toggle settings"
+                                       data-toggle="dropdown">
+                                        <i class="fa fa-cog"></i>
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-toggle">
+                                                <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                                <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-refresh">
+                                                <i class="fa fa-refresh"></i> Refresh
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a role="button" tabindex="0" class="tile-fullscreen">
+                                                <i class="fa fa-expand"></i> Fullscreen
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- /tile header -->
+
+                        <!-- tile body -->
+                        <div class="tile-body">
+                            <div class="table-responsive">
+                                <table class="table table-custom" id="editable-usage">
+                                    <thead>
+                                    <tr>
+
+                                        <th>Nom employé</th>
+                                        <th>Prenom employé</th>
+                                        <th>Date naissance</th>
+                                        <th>Adresse</th>
+                                        <th>Sexe</th>
+                                        <th>Email</th>
+                                        <th>Numtel</th>
+                                        <th>Qualification</th>
+                                        <th>Experience</th>
+                                        {# <th style="width: 160px;" class="no-sort">Actions</th> #}
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="odd gradeX">
+                                        {% for demandeEmploi in demandeEmplois %}
+                                    <tr>
+
+
+                                        <td>{{ demandeEmploi.nomEmp }}</td>
+                                        <td>{{ demandeEmploi.prenomEmp }}</td>
+                                        <td>{% if demandeEmploi.dateNaissance %}{{ demandeEmploi.dateNaissance|date('Y-m-d') }}{% endif %}</td>
+                                        <td>{{ demandeEmploi.adresse }}</td>
+                                        <td>{{ demandeEmploi.sexe }}</td>
+                                        <td>{{ demandeEmploi.email }}</td>
+                                        <td>{{ demandeEmploi.numTel }}</td>
+                                        <td>{{ demandeEmploi.qualification }}</td>
+                                        <td>{{ demandeEmploi.experience }}</td>
+
+                                    </tr>
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /tile body -->
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--/ Page Specific Scripts -->
+
+    {#{% block fintemplate %}#}
+{% endblock %}

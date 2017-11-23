@@ -56,7 +56,6 @@
 
 
 <body id="minovate" class="appWrapper">
-    {#{% if is_granted('ROLE_ADMIN') %}#}
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
@@ -246,9 +245,6 @@
                     <div class="dropdown-menu pull-right with-arrow panel panel-default animated littleFadeInLeft">
 
 
-
-
-
                     </div>
 
                 </li>
@@ -353,14 +349,18 @@
                                             <span>Gestion des employers</span> <span class=""></span></a>
                                     </li>
                                     <li>
-                                        <a href="{{ path('tunisia_mall_GBoutiqueCA') }}" role="button" tabindex="0"><i class=""></i> <span>Gestion des Boutiques</span> <span class=""></span></a>
+                                        <a href="{{ path('tunisia_mall_GBoutiqueCA') }}" role="button" tabindex="0"><i
+                                                    class=""></i> <span>Gestion des Boutiques</span> <span
+                                                    class=""></span></a>
                                     </li>
                                     <li>
-                                        <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span> <span class=""></span></a>
+                                        <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span>
+                                            <span class=""></span></a>
 
                                     </li>
                                     <li>
-                                        <a href="{{ path('tunisia_mall_admin_liste_responsable_boutique') }}" role="button" tabindex="0"><i class=""></i>
+                                        <a href="{{ path('tunisia_mall_admin_liste_responsable_boutique') }}"
+                                           role="button" tabindex="0"><i class=""></i>
                                             <span>Gestion des responsables </span> <span class=""></span></a>
 
                                     </li>
@@ -369,15 +369,18 @@
                                                     class=""></span></a>
                                     </li>
                                     <li>
-                                        <a role="button" tabindex="0"><i class=""></i> <span>Offre d'emploi </span>
-                                            <span class=""></span></a>
-                                        <ul>
-                                            <li><a href="#"><i class=""></i> Ajout offre d'emploi</a></li>
-                                            <li><a href="#"><i class=""></i> Supprimer offre d'emploi</a></li>
-                                            <li><a href="#"><i class=""></i> Modifier offre d'emploi</a></li>
-                                            <li><a href="#"><i class=""></i> Afficher liste</a></li>
-                                        </ul>
+                                        <a href="{{ path('offreAdmin') }}" role="button" tabindex="0"><i class=""></i>
+                                            <span>Offre d'emploi </span> <span class=""></span></a>
+
                                     </li>
+
+
+                                    <li>
+                                        <a href="{{ path('demandeAdmin') }}" role="button" tabindex="0"><i class=""></i>
+                                            <span>Demande d'emploi </span> <span class=""></span></a>
+
+                                    </li>
+
                                     <li>
                                         <a href="{{ path('tunisia_mall_admin_publicite') }}" role="button" tabindex="0"><i
                                                     class=""></i> <span>Publicité</span> <span
@@ -389,11 +392,15 @@
                                                     class=""></span></a>
                                     </li>
                                     <li>
-                                        <a href="{{ path('tunisia_mall_admin_liste_demande_publicite') }}" role="button" tabindex="0"><i class=""></i>
-                                            <span>Liste demande publicité</span> <span class=""></span></a>
+                                        <a href="{{ path('tunisia_mall_admin_liste_demande_publicite') }}" role="button"
+                                           tabindex="0"><i class=""></i>
+                                            <span>Liste demande publicité</span><span id="numberof"
+                                                                                      class="badge bg-lightred">4</span>
+                                            <span class=""></span></a>
                                     </li>
                                     <li>
-                                        <a href="{{ path('tunisia_mall_compose_sms') }}" role="button" tabindex="0"><i class=""></i>
+                                        <a href="{{ path('tunisia_mall_compose_sms') }}" role="button" tabindex="0"><i
+                                                    class=""></i>
                                             <span>composer sms</span> <span class=""></span></a>
                                     </li>
 
@@ -1011,7 +1018,21 @@
     ga('send', 'pageview');
 </script>
 
-    {#{% endif %}#}
+<script>
+    $(function () {
+        xhr = new XMLHttpRequest();
+        xhr.open("GET", "TunisiaMallBundle/Controller/Views/numberof.php", true);
+        xhr.send(null);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && (xhr.status == 200) || (xhr.status == 0)) {
+                alert('test');
+//                document.getElementById("numberof").innerHTML = xhr.responseText;
+                document.getElementById("numberof").innerHTML = '5';
+            }
+        }
+    })
+</script>
+
 </body>
 </html>
 {% endblock fintemplate %}
