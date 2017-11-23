@@ -15,7 +15,18 @@ private $email;
 private $text;
 private $nom;
 
-
+    /**
+     * Mail constructor.
+     * @param $email
+     * @param $text
+     * @param $nom
+     */
+    public function __construct($email, $text, $nom)
+    {
+        $this->email = $email;
+        $this->text = $text;
+        $this->nom = $nom;
+    }
     /**
      * @return mixed
      */

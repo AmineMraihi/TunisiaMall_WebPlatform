@@ -30,4 +30,6 @@ public function findByidPReclame($user)
         ->setParameter('id',$user);
     return $query->getResult();
 }
+
+
 }

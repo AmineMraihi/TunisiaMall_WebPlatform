@@ -71,4 +71,12 @@ class BoutiqueController extends Controller
         ));
 
     }
+    public function afficherboutiquesComboAction()
+    {
+        $em=$this->getDoctrine()->getManager();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+        return $this->render("TunisiaMallBundle::templateC.html.twig",array(
+            "boutiques"=>$boutiques
+        ));
+    }
 }

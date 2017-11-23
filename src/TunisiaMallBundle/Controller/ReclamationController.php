@@ -39,7 +39,7 @@ class ReclamationController extends Controller
             $user=$this->getUser();}
         $em=$this->getDoctrine()->getManager();
 
-        $reclamations=$em->getRepository("TunisiaMallBundle:Reclamation")->findByidPReclame(2);
+        $reclamations=$em->getRepository("TunisiaMallBundle:Reclamation")->findByidPReclame($user);
 
 
 

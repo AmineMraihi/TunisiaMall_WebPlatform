@@ -72,14 +72,20 @@
 
 
 
-
                             <div>
+
                                 {{ form_widget( formulaire.ajouter,{'attr': {'class':'form_ajouter'}}  ) }}
+
+
+
+
 
                             </div>
                             {% if etat == -1 %}
 
                                 <script>alert("Erreur: Date creation superieur au date expiration!");</script>
+
+
                             {% endif %}
 
                             {{ form_end(formulaire) }}

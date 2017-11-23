@@ -104,7 +104,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
           <root url="file://$MODULE_DIR$/vendor/symfony/symfony" />
           <root url="file://$MODULE_DIR$/vendor/twig/twig" />
-          <root url="file://$MODULE_DIR$/vendor/twilio/sdk" />
           <root url="file://$MODULE_DIR$/vendor/vich/uploader-bundle" />
         </CLASSES>
         <SOURCES>
@@ -148,7 +147,6 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/swiftmailer-bundle" />
           <root url="file://$MODULE_DIR$/vendor/symfony/symfony" />
           <root url="file://$MODULE_DIR$/vendor/twig/twig" />
-          <root url="file://$MODULE_DIR$/vendor/twilio/sdk" />
           <root url="file://$MODULE_DIR$/vendor/vich/uploader-bundle" />
         </SOURCES>
       </library>

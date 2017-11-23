@@ -1945,15 +1945,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <label>Description</label>
                                 <span></span>
                             </div>
+
                             <div class="styled-input ">
                                <select required="required"  class="styled-input" name="nomB">
-                                   <option value="lufian"> Lufian</option>
-                                   <option value="massimo dutti"> massimo dutti</option>
-                                   <option value="ZARA">ZARA</option>
+                                   {% for boutique in boutiques %}
+                                   <option value={{ boutique.nom }}> {{ boutique.nom }}</option>
+                                   {% endfor %}
                                </select>
                                 <label>Boutique Reclamée</label>
                                 <span></span>
                             </div>
+
                             <input type="submit" value="Send">
                         </form>
 
