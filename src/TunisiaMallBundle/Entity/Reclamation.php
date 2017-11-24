@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Reclamation
  *
  * @ORM\Table(name="reclamation", indexes={@ORM\Index(name="id_user", columns={"id_reclamant"}), @ORM\Index(name="id_P_reclame", columns={"id_P_reclame"})})
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="TunisiaMallBundle\Repository\ReclamationRepository")
  */
 class Reclamation
 {
@@ -36,9 +36,12 @@ class Reclamation
     private $text;
 
     /**
-     * @var integer
+     * @var \User
      *
-     * @ORM\Column(name="id_reclamant", type="integer", nullable=false)
+    @ORM\ManyToOne(targetEntity="User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="id_reclamant", referencedColumnName="id_user")
+     * })
      */
     private $idReclamant;
 
@@ -115,11 +118,11 @@ class Reclamation
     /**
      * Set idReclamant
      *
-     * @param integer $idReclamant
+     * @param \TunisiaMallBundle\Entity\User $idReclamant
      *
      * @return Reclamation
      */
-    public function setIdReclamant($idReclamant)
+    public function setIdReclamant(\TunisiaMallBundle\Entity\User $idReclamant=null)
     {
         $this->idReclamant = $idReclamant;
 
@@ -129,7 +132,7 @@ class Reclamation
     /**
      * Get idReclamant
      *
-     * @return integer
+     * @return \TunisiaMallBundle\Entity\User
      */
     public function getIdReclamant()
     {

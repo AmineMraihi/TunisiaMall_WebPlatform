@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Boutique
  *
  * @ORM\Table(name="boutique")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="TunisiaMallBundle\Repository\BoutiqueRepository")
  */
 class Boutique
 {
@@ -43,7 +43,27 @@ class Boutique
     private $position;
 
     /**
-     * @return int
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation",type="date", nullable=true)
+     */
+    private $datecreation;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_expiration",type="date", nullable=true)
+     */
+    private $dateexpiration;
+
+
+
+
+
+    /**
+     * Get idBoutique
+     *
+     * @return integer
      */
     public function getIdBoutique()
     {
@@ -133,4 +153,37 @@ class Boutique
     {
         return $this->position;
     }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDatecreation()
+    {
+        return $this->datecreation;
+    }
+
+    /**
+     * @param \DateTime $datecreation
+     */
+    public function setDatecreation($datecreation)
+    {
+        $this->datecreation = $datecreation;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDateexpiration()
+    {
+        return $this->dateexpiration;
+    }
+
+    /**
+     * @param \DateTime $dateexpiration
+     */
+    public function setDateexpiration($dateexpiration)
+    {
+        $this->dateexpiration = $dateexpiration;
+    }
+
 }

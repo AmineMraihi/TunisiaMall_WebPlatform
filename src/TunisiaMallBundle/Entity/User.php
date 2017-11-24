@@ -91,15 +91,15 @@ class User extends BaseUser
      * @ORM\Column(name="path", type="string", length=200, nullable=true)
      */
     private $path;
-
     /**
      * @var \Boutique
      *
-     * @ORM\ManyToOne(targetEntity="Boutique")
+     * @ORM\ManyToOne(targetEntity="TunisiaMallBundle\Entity\Boutique")
      * @ORM\JoinColumns({
-     * @ORM\JoinColumn(name="id_boutique", referencedColumnName="id_boutique")
+     *   @ORM\JoinColumn(name="id_boutique", referencedColumnName="id_boutique")
      * })
      */
+
     private $idBoutique;
 
 
@@ -405,11 +405,11 @@ class User extends BaseUser
     /**
      * Set idBoutique
      *
-     * @param integer $idBoutique
+     * @param \TunisiaMallBundle\Entity\Boutique $idBoutique
      *
      * @return User
      */
-    public function setIdBoutique($idBoutique)
+    public function setIdBoutique(\TunisiaMallBundle\Entity\Boutique $idBoutique=null)
     {
         $this->idBoutique = $idBoutique;
 
@@ -419,7 +419,7 @@ class User extends BaseUser
     /**
      * Get idBoutique
      *
-     * @return integer
+     * @return \TunisiaMallBundle\Entity\Boutique
      */
     public function getIdBoutique()
     {
