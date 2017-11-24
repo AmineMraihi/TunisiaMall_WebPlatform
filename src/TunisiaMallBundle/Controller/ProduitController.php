@@ -13,7 +13,6 @@ use TunisiaMallBundle\Entity\Produit;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Form\AjoutProduitForum;
 use TunisiaMallBundle\Form\modifierproditForm;
-use TunisiaMallBundle\Form\ProduitType;
 
 
 
@@ -88,6 +87,68 @@ class ProduitController extends Controller
             'formulaire' => $form->createView()
         ));
     }
+
+
+
+
+
+    public function affichageclothesAction()
+    {
+
+
+        $em = $this->getDoctrine()->getManager();
+
+        $produits = $em->getRepository("TunisiaMallBundle:Produit")->findBy(array('type'=>"Clothes"));
+
+
+
+        return $this->render("TunisiaMallBundle:produit:affichageclient.html.twig", array(
+
+            "produits" => $produits   )) ;
+
+    }
+
+
+    public function affichagewatchAction()
+    {
+
+
+        $em = $this->getDoctrine()->getManager();
+
+        $produits = $em->getRepository("TunisiaMallBundle:Produit")->findBy(array('type'=>"watch"));
+
+
+
+        return $this->render("TunisiaMallBundle:produit:affichageclient.html.twig", array(
+
+            "produits" => $produits   )) ;
+
+    }
+
+    public function exemplprodyAction($id)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+
+        $produit = $em->getRepository("TunisiaMallBundle:Produit")->find($id);
+        $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+
+        $em = $this->getDoctrine()->getManager();
+        $em->persist($produit);
+
+
+        $em->flush();
+
+        return $this->render("TunisiaMallBundle:produit:afficheprodY.html.twig", array(
+            "produit" => $produit,
+
+
+            "publicites" => $publicites
+
+
+        ));
+    }
+
 
 
 }

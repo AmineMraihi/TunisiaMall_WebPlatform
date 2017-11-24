@@ -147,6 +147,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </li>
                             <li class=" menu__item"><a class="menu__link" href="{{ path('tunisia_mall_contact') }}">Contact</a>
                             </li>
+                            <li class="dropdown menu__item">
+                                <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+                                <ul class="dropdown-menu agile_short_dropdown">
+                                    <li><a href="{{ path('tunisia_mall_clientaffichageclothes') }} ">Clothes</a></li>
+                                    <li><a href="{{ path('tunisia_mall_clientaffichagewatch') }} ">Watch</a></li>
+
+
+                                </ul>
+
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -343,7 +354,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     </div>
                     <div class="col-md-4 modal_body_right modal_body_right1">
-                        <img src="{{ asset('images/log_pic.jpg') }}" alt=" "/>
+
+
+                        <img src="{{ asset('images/log_pic.jpg')   }}" alt=" "/>
                     </div>
                     <div class="clearfix"></div>
                 </div>
@@ -1972,9 +1985,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- FOS USER-->
 
 
-{% block registration_content %}
-    {{ render(controller('FOSUserBundle:Registration:register')) }}
-{% endblock registration_content %}
+
 
 <!-- FOS USER-->
 

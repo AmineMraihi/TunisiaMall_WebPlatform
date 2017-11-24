@@ -62,7 +62,7 @@ class Produit
     /**
      * @var integer
      *
-     * @ORM\Column(name="nb_vente", type="integer", nullable=false)
+     * @ORM\Column(name="nb_vente", type="integer", nullable=true)
      */
     private $nbVente;
 

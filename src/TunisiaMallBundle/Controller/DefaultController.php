@@ -50,6 +50,9 @@ class DefaultController extends Controller
 
         ));
 
+
+
+
     }
 
     public function clientproduitAction()
@@ -118,11 +121,13 @@ class DefaultController extends Controller
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
         return $this->render("TunisiaMallBundle::clientevenement.html.twig", array(
             "evenements" => $evenements,
             "publicites" => $publicites,
-            "produits" => $produits
+            "produits" => $produits,
+            "boutiques" =>$boutiques
 
         ));
     }
