@@ -30,7 +30,7 @@
                                     <select name="select" data-placeholder="Select recipients..." multiple="" tabindex="3"
                                             class="chosen-select" style="width: 100%;">
                                       {% for user in users %}
-                                        <option id="to-reciever"  value="{{ user.numeroTelephone }}">{{ user.nom }}</option>
+                                        <option id="to-reciever"  value="{{ user.numeroTelephone }}">{{ user.nom }} {{ user.username }}</option>
                                        {% endfor %}
                                     </select>
                                 </div>

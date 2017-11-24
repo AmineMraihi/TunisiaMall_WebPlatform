@@ -425,4 +425,18 @@ class User extends BaseUser
     {
         return $this->idBoutique;
     }
+
+
+    /**
+     * @return string
+     */
+    public function get_the_role()
+    {
+        $rolesTab = $this->getRoles();
+        if (in_array('ROLE_ADMIN', $rolesTab, true))
+            return $redirection = "ROLE_ADMIN";
+        if (in_array('ROLE_RESPONSABLE', $rolesTab, true))
+            return $redirection = "ROLE_RESPONSABLE";
+
+    }
 }
