@@ -202,3 +202,7 @@ tunisia_mall_admin_supprimer_responsable_boutique:
 templateclient:
     path:     /templateclient
     defaults: { _controller: TunisiaMallBundle:Default:templateclient }
+
+tunisiamall_count:
+    path:     /count
+    defaults: { _controller: TunisiaMallBundle:Publicite:count }

@@ -24,7 +24,8 @@
                             <h1 class="custom-font"><strong>Responsable Boutique</strong> Liste</h1>
                             <ul class="controls">
                                 <li>
-                                    <a id="add-entry" href="{{ path('tunisia_mall_ajout_responsable_boutique') }}" role="button" tabindex="0"><i
+                                    <a id="add-entry" href="{{ path('tunisia_mall_ajout_responsable_boutique') }}"
+                                       role="button" tabindex="0"><i
                                                 class="fa fa-plus mr-5"></i> Add
                                         Entry</a>
                                 </li>
@@ -77,25 +78,27 @@
                                     </thead>
                                     <tbody>
                                     {% for responsable in responsables %}
-                                        <tr class="odd gradeX">
-                                            <td>{{ responsable.nom }}</td>
-                                            <td>{{ responsable.prenom }}</td>
-                                            <td>{{ responsable.dateExpiration | date("d-m-y") }}</td>
-                                            <td>{{ responsable.idBoutique.nom }}</td>
-                                            <td class="actions">
-                                                <a role="button" tabindex="0"
-                                                   class="edit text-primary text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_modifier_responsable_boutique',
-                                                   {'id':responsable.id}) }}">Edit
-                                                </a>
-                                                <a role="button" tabindex="0"
-                                                   class="delete text-danger text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_admin_supprimer_responsable_boutique',
-                                                   {'id':responsable.id}
-                                                   ) }}">Remove
-                                                </a>
-                                            </td>
-                                        </tr>
+                                        {% if responsable.get_the_role()=='ROLE_RESPONSABLE' %}
+                                            <tr class="odd gradeX">
+                                                <td>{{ responsable.nom }}</td>
+                                                <td>{{ responsable.prenom }}</td>
+                                                <td>{{ responsable.dateExpiration | date("d-m-y") }}</td>
+                                                <td>{{ responsable.idBoutique.nom }}</td>
+                                                <td class="actions">
+                                                    <a role="button" tabindex="0"
+                                                       class="edit text-primary text-uppercase text-strong text-sm mr-10"
+                                                       href="{{ path('tunisia_mall_modifier_responsable_boutique',
+                                                       {'id':responsable.id}) }}">Edit
+                                                    </a>
+                                                    <a role="button" tabindex="0"
+                                                       class="delete text-danger text-uppercase text-strong text-sm mr-10"
+                                                       href="{{ path('tunisia_mall_admin_supprimer_responsable_boutique',
+                                                       {'id':responsable.id}
+                                                       ) }}">Remove
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
                                     {% endfor %}
 
                                     </tbody>

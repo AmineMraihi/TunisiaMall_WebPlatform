@@ -44,6 +44,7 @@ class Boutique
 
 
 
+
     /**
      * Get idBoutique
      *
@@ -125,4 +126,7 @@ class Boutique
     {
         return $this->position;
     }
+
+
+
 }

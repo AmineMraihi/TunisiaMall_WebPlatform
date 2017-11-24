@@ -1,4 +1,4 @@
-{% block debuttemplate %}
+{#{% block debuttemplate %}#}
 
     <!doctype html>
     <!--[if lt IE 7]>
@@ -43,7 +43,32 @@
     <!-- project main css files -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <!--/ stylesheets -->
+    <script type="text/javascript">
+        setInterval(function () {
+            var notif = document.getElementById("numberof");
+            notif.innerHTML = getNotifCount();
+            $.ajax({
+                url: '{{ path('tunisiamall_count') }}',
+                dataType: "json"
+            });
+        }, 5000);
 
+        function getNotifCount() {
+            var nbre;
+            $.ajax({
+                url: '{{ path('tunisiamall_count') }}',
+                type: 'GET',
+                async: false,
+                ifModified: true,
+                success: function (data) {
+                    console.log(data);
+                    nbre = data;
+
+                }
+            });
+            return nbre;
+        }
+    </script>
 
     <!-- ==========================================
     ================= Modernizr ===================
@@ -253,7 +278,7 @@
 
                     <a href class="dropdown-toggle" data-toggle="dropdown">
                         <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
-                        <span>John Douey <i class="fa fa-angle-down"></i></span>
+                        <span>{{ app.user.nom }} {{ app.user.prenom  }} <i class="fa fa-angle-down"></i></span>
                     </a>
 
                     <ul class="dropdown-menu animated littleFadeInRight" role="menu">
@@ -395,7 +420,7 @@
                                         <a href="{{ path('tunisia_mall_admin_liste_demande_publicite') }}" role="button"
                                            tabindex="0"><i class=""></i>
                                             <span>Liste demande publicité</span><span id="numberof"
-                                                                                      class="badge bg-lightred">4</span>
+                                                                                      class="badge bg-lightred"></span>
                                             <span class=""></span></a>
                                     </li>
                                     <li>
@@ -482,7 +507,7 @@
     <!--/ CONTROLS Content -->
 
 
-    {% endblock debuttemplate %}
+    {#{% endblock debuttemplate %}#}
     <!-- ====================================================
         ================= CONTENT ===============================
         ===================================================== -->
@@ -492,7 +517,7 @@
     {% endblock robots %}
 
 
-    {% block fintemplate %}
+    {#{% block fintemplate %}#}
     <!--/ CONTENT -->
 
 
@@ -1018,21 +1043,9 @@
     ga('send', 'pageview');
 </script>
 
-<script>
-    $(function () {
-        xhr = new XMLHttpRequest();
-        xhr.open("GET", "TunisiaMallBundle/Controller/Views/numberof.php", true);
-        xhr.send(null);
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && (xhr.status == 200) || (xhr.status == 0)) {
-                alert('test');
-//                document.getElementById("numberof").innerHTML = xhr.responseText;
-                document.getElementById("numberof").innerHTML = '5';
-            }
-        }
-    })
-</script>
+
+
 
 </body>
 </html>
-{% endblock fintemplate %}
+{#{% endblock fintemplate %}#}

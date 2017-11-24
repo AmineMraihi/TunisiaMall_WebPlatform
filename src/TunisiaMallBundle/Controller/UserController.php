@@ -20,7 +20,7 @@ class UserController extends Controller
     public function listeresponsableboutiqueAction()
     {
         $em = $this->getDoctrine()->getManager();
-        $responsables = $em->getRepository("TunisiaMallBundle:User")->findbyrole("ROLE_ADMIN");
+        $responsables = $em->getRepository("TunisiaMallBundle:User")->findAll();
         return $this->render("TunisiaMallBundle::responsableboutique.html.twig", array(
             "responsables" => $responsables
         ));
@@ -34,6 +34,7 @@ class UserController extends Controller
         $form = $this->createForm(AjoutResponsableBoutiqueForm::class, $user);
         $form->handleRequest($request);
         $user->setRoles(array('ROLE_RESPONSABLE'));
+        $user->setEnabled(true);
         if ($form->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($user);

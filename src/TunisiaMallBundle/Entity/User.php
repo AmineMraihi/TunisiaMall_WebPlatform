@@ -395,26 +395,34 @@ class User extends BaseUser
     }
 
     /**
-     * Set idBoutique
-     *
-     * @param integer $idBoutique
-     *
-     * @return User
-     */
-    public function setIdBoutique($idBoutique)
-    {
-        $this->idBoutique = $idBoutique;
-
-        return $this;
-    }
-
-    /**
-     * Get idBoutique
-     *
-     * @return integer
+     * @return \Boutique
      */
     public function getIdBoutique()
     {
         return $this->idBoutique;
+    }
+
+    /**
+     * @param \Boutique $idBoutique
+     */
+    public function setIdBoutique($idBoutique)
+    {
+        $this->idBoutique = $idBoutique;
+    }
+
+
+
+
+    /**
+     * @return string
+     */
+    public function get_the_role()
+    {
+        $rolesTab = $this->getRoles();
+        if (in_array('ROLE_ADMIN', $rolesTab, true))
+            return $redirection = "ROLE_ADMIN";
+        if (in_array('ROLE_RESPONSABLE', $rolesTab, true))
+            return $redirection = "ROLE_RESPONSABLE";
+
     }
 }
