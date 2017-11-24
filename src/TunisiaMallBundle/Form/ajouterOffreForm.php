@@ -7,7 +7,9 @@
  */
 
 namespace TunisiaMallBundle\Form;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\MoneyType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
@@ -19,16 +21,12 @@ class ajouterOffreForm extends AbstractType
 
     {
         $builder
-            ->add("User",EntityType::class,array(
-                'class'=>"TunisiaMallBundle\Entity\User",
-                'choice_label' => 'nom',
-                'multiple'=>false,
-            ))
+
             ->add('Boutique',EntityType::class,array('class'=>'TunisiaMallBundle:Boutique','choice_label'=>'nom','multiple'=>false))
             ->add('poste')
             ->add('specialite')
-            ->add('salaire')
-            ->add('nbrDemande')
+            ->add('salaire',MoneyType::class)
+            ->add('nbrDemande',IntegerType::class)
             ->add('dateExpiration')
 
         ->add("Save", SubmitType::class);

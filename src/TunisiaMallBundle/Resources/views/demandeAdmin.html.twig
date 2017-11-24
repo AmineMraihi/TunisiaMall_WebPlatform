@@ -1,6 +1,7 @@
-{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
-{#{% block debuttemplate %}#}
+{% extends 'TunisiaMallBundle::templateadmin.html.twig' %}
+
 {% block robots %}
+
 
     <section id="content">
 
@@ -26,6 +27,10 @@
                             <h1 class="custom-font"><strong>Demande emploi</strong> Liste</h1>
 
                             <ul class="controls">
+                                <li>
+
+
+                                </li>
 
                                 <li class="dropdown">
 
@@ -65,55 +70,49 @@
                             <div class="table-responsive">
                                 <table class="table table-custom" id="editable-usage">
                                     <thead>
-                                    <tr>
+                <tr>
+                    <th>Nom employé</th>
+                    <th>Prenom emp</th>
+                    <th>Date naissance</th>
+                    <th>Adresse</th>
+                    <th>Sexe</th>
+                    <th>Email</th>
+                    <th>Numero telephone</th>
+                    <th>Qualification</th>
+                    <th>Experience</th>
 
-                                        <th>Nom employé</th>
-                                        <th>Prenom employé</th>
-                                        <th>Date naissance</th>
-                                        <th>Adresse</th>
-                                        <th>Sexe</th>
-                                        <th>Email</th>
-                                        <th>Numtel</th>
-                                        <th>Qualification</th>
-                                        <th>Experience</th>
-                                        {# <th style="width: 160px;" class="no-sort">Actions</th> #}
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="odd gradeX">
-                                        {% for demandeEmploi in demandeEmplois %}
-                                    <tr>
+                </tr>
+                </thead>
+    <tbody>
+    {% for demandeEmploi in demandeEmplois %}
+        <tr>
+
+            <td>{{ demandeEmploi.nomEmp }}</td>
+            <td>{{ demandeEmploi.prenomEmp }}</td>
+            <td>{% if demandeEmploi.dateNaissance %}{{ demandeEmploi.dateNaissance|date('Y-m-d') }}{% endif %}</td>
+            <td>{{ demandeEmploi.adresse }}</td>
+            <td>{{ demandeEmploi.sexe }}</td>
+            <td>{{ demandeEmploi.email }}</td>
+            <td>{{ demandeEmploi.numTel }}</td>
+            <td>{{ demandeEmploi.qualification }}</td>
+            <td>{{ demandeEmploi.experience }}</td>
 
 
-                                        <td>{{ demandeEmploi.nomEmp }}</td>
-                                        <td>{{ demandeEmploi.prenomEmp }}</td>
-                                        <td>{% if demandeEmploi.dateNaissance %}{{ demandeEmploi.dateNaissance|date('Y-m-d') }}{% endif %}</td>
-                                        <td>{{ demandeEmploi.adresse }}</td>
-                                        <td>{{ demandeEmploi.sexe }}</td>
-                                        <td>{{ demandeEmploi.email }}</td>
-                                        <td>{{ demandeEmploi.numTel }}</td>
-                                        <td>{{ demandeEmploi.qualification }}</td>
-                                        <td>{{ demandeEmploi.experience }}</td>
 
-                                    </tr>
-                                    {% endfor %}
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- /tile body -->
-
-                    </section>
-                </div>
-            </div>
+                            {% endfor %}
+    </tbody>
+            </table>
         </div>
+    </div>
+
+
+    </section>
+    </div>
+    </div>
+    </div>
 
     </section>
 
 
 
-    <!--/ Page Specific Scripts -->
-
-    {#{% block fintemplate %}#}
 {% endblock %}

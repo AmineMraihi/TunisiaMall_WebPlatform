@@ -9,6 +9,7 @@ class AppKernel extends Kernel
     {
         $bundles = [
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new JMose\CommandSchedulerBundle\JMoseCommandSchedulerBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
@@ -21,7 +22,12 @@ class AppKernel extends Kernel
             new TunisiaMallBundle\TunisiaMallBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
+            new Liip\ImagineBundle\LiipImagineBundle(),
+
             new DocDocDoc\NexmoBundle\DocDocDocNexmoBundle(),
+            new MyAppMailBundle\MyAppMailBundle(),
+
+            new Ob\HighchartsBundle\ObHighchartsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

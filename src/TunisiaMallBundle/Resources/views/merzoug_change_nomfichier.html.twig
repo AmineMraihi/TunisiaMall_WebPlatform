@@ -1,5 +1,5 @@
 {% block produit_merzoug %}
-{% for prod in produits %}
+    {% for prod in produits %}
 
 
     <div class="col-md-3 product-men">
@@ -26,11 +26,7 @@
                     <span class="item_price">{{ prod.prix }} TND</span>
                     <del>TND140.99</del>
                 </div>
-                <div class="info-product-price">
 
-                    <span>Description : {{ prod.description }} </span>
-
-                </div>
                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
                     <form action="#" method="post">
                         <fieldset>
@@ -52,5 +48,5 @@
             </div>
         </div>
     </div>
-{% endfor %}
+{% endfor %} 
 {% endblock produit_merzoug %}

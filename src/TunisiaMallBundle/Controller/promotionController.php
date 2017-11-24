@@ -12,6 +12,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use TunisiaMallBundle\Form\AjoutPromotionForm;
 use TunisiaMallBundle\Entity\Promotion;
+use TunisiaMallBundle\Form\modifierproditForm;
+use TunisiaMallBundle\Form\ModifierPromotion;
 
 class promotionController extends Controller
 {
@@ -31,38 +33,50 @@ class promotionController extends Controller
             array("Promotions" => $Promotions));
 
     }
-    public function AjoutPromotionAction(Request $request)
+    public function AjoutPromotionAction($id_produit,Request $request)
     {
-        $Promotion = new Promotion();
-
-        $form = $this->createForm(AjoutPromotionForm::class, $Promotion);
-        $form->handleRequest($request);
-        if ($form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($Promotion);
-            $em->flush();
-            return $this->redirectToRoute("tunisia_mall_listProduit") ;
-
-        }
 
 
 
+        $em=$this->getDoctrine()->getManager() ;
+        $promotion= $em->getRepository("TunisiaMallBundle\\Entity\\Promotion")->findOneBy(array('idProduit'=>$id_produit )) ;
 
+        $Form =$this->createForm(AjoutPromotionForm::class, $promotion) ;
+        $Form->handleRequest($request) ;
+        if($Form->isValid()) {
+            $em=$this->getDoctrine()->getManager() ;
+            $em->persist($promotion) ;
+            $em->flush() ;
+    }
+        return $this->render('TunisiaMallBundle:promotion:promotiondeproduitx.html.twig', array('formulaire'=>$Form->createView())) ;
+    }
 
-        return $this->render('@TunisiaMall/promotion/promotiondeproduitx.html.twig', array(
-            'formulaire' => $form->createView()
-        ));
+    public function modifierPromotionAction($id_promotion, Request $request)
+    {
+        $em=$this->getDoctrine()->getManager() ;
+        $promotion= $em->getRepository("TunisiaMallBundle\\Entity\\Promotion")->findOneBy(array('idPromotion'=>$id_promotion )) ;
+
+        $Form =$this->createForm(ModifierPromotion::class, $promotion) ;
+        $Form->handleRequest($request) ;
+        if($Form->isValid()) {
+            $em=$this->getDoctrine()->getManager() ;
+            $em->persist($promotion) ;
+            $em->flush() ;
+            return $this->redirectToRoute("tunisia_mall_promoproduittotal"); }
+
+        return $this->render('TunisiaMallBundle:promotion:modifierpromotion.html.twig', array('formulaire'=>$Form->createView())) ;
     }
 
 
-    public function SuppppromotionAction($id_produit)
+
+    public function SupppromotionAction($id_promotion)
     {
 
         $em = $this->getDoctrine()->getManager();
-        $produit= $em->getRepository("TunisiaMallBundle\\Entity\\Produit")->findOneBy(array('idProduit'=>$id_produit)) ;
-        $em->remove($produit);
+        $promotion= $em->getRepository("TunisiaMallBundle\\Entity\\Promotion")->findOneBy(array('idPromotion'=>$id_promotion)) ;
+        $em->remove($promotion);
         $em->flush();
 
-        return $this->redirectToRoute("tunisia_mall_listProduit") ;
+        return $this->redirectToRoute("tunisia_mall_promoproduittotal") ;
     }
 }

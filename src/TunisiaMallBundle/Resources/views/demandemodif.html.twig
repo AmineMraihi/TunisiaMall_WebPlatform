@@ -1,0 +1,104 @@
+{% extends 'TunisiaMallBundle::templateC.html.twig' %}
+
+{% block pleasework %}
+
+    <div class="new_arrivals_agile_w3ls_info">
+        <div class="container">
+            <div class="col-md-6 contact-form">
+            <h4 class="white-w3ls">Demande emploi <span>Form</span></h4>
+
+            <ul class="resp-tabs-list">
+                <li></li>
+            </ul>
+            <div class="resp-tabs-container">
+                <!--/tab_one-->
+               {# <div class="col-md-6 contact-form">#}
+                  {#  <div class="col-md-6 contact-form">
+						<h4 class="white-w3ls">Contact <span>Form</span></h4>
+						<form action="#" method="post">
+							<div class="styled-input agile-styled-input-top">
+								<input type="text" name="Name" required="">
+								<label>Name</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="email" name="Email" required="">
+								<label>Email</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<input type="text" name="Subject" required="">
+								<label>Subject</label>
+								<span></span>
+							</div>
+							<div class="styled-input">
+								<textarea name="Message" required=""></textarea>
+								<label>Message</label>
+								<span></span>
+							</div>
+							<input type="submit" value="SEND">
+						</form>
+					</div>#}
+
+
+                    {{ form_start(edit_form) }}
+
+                    <table>
+                        <br>
+                        <tr>
+                            <div class="styled-input agile-styled-input-top">
+                                <div class="styled-input"> <th>Nom emp</th> </div>
+                            <td>{{  form_widget(edit_form.nomEmp) }}</td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <th>Prenom emp</th>
+                            <td>{{ form_widget(edit_form.prenomEmp) }}</td>
+                        </tr>
+                        <tr>
+                            <th>Date naissance</th>
+                            <td>{{ form_widget(edit_form.dateNaissance)}}</td>
+                        </tr>
+                        <tr>
+                            <th>Adresse</th>
+                            <td>{{form_widget(edit_form.adresse) }}</td>
+                        </tr>
+                        <tr>
+                            <th>Sexe</th>
+                            <td>{{ form_widget(edit_form.sexe)  }}</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>{{ form_widget(edit_form.email)  }}</td>
+                        </tr>
+                        <tr>
+                            <th>Num tel</th>
+                            <td>{{ form_widget(edit_form.numTel)  }}</td>
+                        </tr>
+                        <tr>
+                            <th>Qualification</th>
+                            <td>{{ form_widget(edit_form.qualification)  }}</td>
+                        </tr>
+                        <tr>
+                            <th>Experience</th>
+                            <td>{{ form_widget(edit_form.experience)  }}</td>
+                        </tr>
+
+                        <td></td>
+
+                        <tr>
+
+                            <td> <a href="{{ path('demandelist') }}"> <input type="submit" value="Modifier"> </a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                    {{ form_end(edit_form) }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

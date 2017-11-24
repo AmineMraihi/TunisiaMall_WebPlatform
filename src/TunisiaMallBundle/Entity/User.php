@@ -16,7 +16,7 @@ class User extends BaseUser
      *
      * @ORM\Column(name="id_user", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="IDENTITY")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
@@ -91,15 +91,15 @@ class User extends BaseUser
      * @ORM\Column(name="path", type="string", length=200, nullable=true)
      */
     private $path;
-
     /**
      * @var \Boutique
      *
-     * @ORM\ManyToOne(targetEntity="Boutique")
+     * @ORM\ManyToOne(targetEntity="TunisiaMallBundle\Entity\Boutique")
      * @ORM\JoinColumns({
-     * @ORM\JoinColumn(name="id_boutique", referencedColumnName="id_boutique")
+     *   @ORM\JoinColumn(name="id_boutique", referencedColumnName="id_boutique")
      * })
      */
+
     private $idBoutique;
 
 
@@ -140,6 +140,14 @@ class User extends BaseUser
         parent::__construct();
         // your own logic
 
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
 
@@ -395,34 +403,26 @@ class User extends BaseUser
     }
 
     /**
-     * @return \Boutique
+     * Set idBoutique
+     *
+     * @param \TunisiaMallBundle\Entity\Boutique $idBoutique
+     *
+     * @return User
+     */
+    public function setIdBoutique(\TunisiaMallBundle\Entity\Boutique $idBoutique=null)
+    {
+        $this->idBoutique = $idBoutique;
+
+        return $this;
+    }
+
+    /**
+     * Get idBoutique
+     *
+     * @return \TunisiaMallBundle\Entity\Boutique
      */
     public function getIdBoutique()
     {
         return $this->idBoutique;
-    }
-
-    /**
-     * @param \Boutique $idBoutique
-     */
-    public function setIdBoutique($idBoutique)
-    {
-        $this->idBoutique = $idBoutique;
-    }
-
-
-
-
-    /**
-     * @return string
-     */
-    public function get_the_role()
-    {
-        $rolesTab = $this->getRoles();
-        if (in_array('ROLE_ADMIN', $rolesTab, true))
-            return $redirection = "ROLE_ADMIN";
-        if (in_array('ROLE_RESPONSABLE', $rolesTab, true))
-            return $redirection = "ROLE_RESPONSABLE";
-
     }
 }

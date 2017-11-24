@@ -1,126 +1,97 @@
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
+
 {% block robots %}
 
-    {{ form_start(form) }}
     <section id="content">
+        <link rel="stylesheet" href="{{ asset('assets/css/vendor/promotion.css') }}">
+        <div class="page page-tables-datatables">
 
-        <div class="page page-forms-common">
+            <div class="pageheader">
+                <br>
 
+
+                <div id="titreajout">Ajouter un Offre d'emploi</div>
+
+
+            </div>
 
             <!-- row -->
             <div class="row">
-
-
                 <!-- col -->
-                <div class="col-md-6">
+                <div class="col-md-12">
 
-                    <!-- tile -->
+
                     <section class="tile">
 
                         <!-- tile header -->
-                        <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Offre emploi </strong>Ajout</h1>
-                            <ul class="controls">
-                                <li class="dropdown">
+                        <div >
 
-                                    <a role="button" tabindex="0" class="dropdown-toggle settings"
-                                       data-toggle="dropdown">
-                                        <i class="fa fa-cog"></i>
-                                        <i class="fa fa-spinner fa-spin"></i>
-                                    </a>
 
-                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-toggle">
-                                                <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                                                <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-refresh">
-                                                <i class="fa fa-refresh"></i> Refresh
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-fullscreen">
-                                                <i class="fa fa-expand"></i> Fullscreen
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                                <li class="remove"><a role="button" tabindex="0" class="tile-close"><i
-                                                class="fa fa-times"></i></a></li>
-                            </ul>
                         </div>
                         <!-- /tile header -->
 
-                        <!-- tile body -->
 
-                        <table class="table table-custom" >
-                            <thead>
-                            <tr class="odd gradeX">
-                                <th>Poste</th>
-                                <td>{{ form_widget(form.poste) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>Spécialité</th>
-                                <td>{{ form_widget(form.specialite) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>Salaire</th>
-                                <td>{{ form_widget(form.salaire) }}</td>
-                            </tr>
 
-                            <tr class="odd gradeX">
-                                <th>Nombre demandé</th>
-                                <td>{{ form_widget(form.nbrDemande) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>Date expiration</th>
-                                <td>{{ form_widget(form.dateExpiration) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>Boutique</th>
-                                <td>{{ form_widget(form.Boutique) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>User</th>
-                                <td>{{ form_widget(form.User) }}</td>
-                            </tr>
-                            <tr>
+                        <div class="content">
+                            {{ form_start(form) }}
 
-                                <td><input type="submit" value="Ajouter"></td>
-                            </tr>
-                            </thead>
-                            <tbody>
+                            <div>
 
-                            </tbody>
-                        </table>
+                                {{ form_label(form.poste) }} :
+                                {{ form_widget(form.poste,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(form.specialite) }} :
+                                {{ form_widget(form.specialite,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(form.salaire) }} :
+                                {{ form_widget(form.salaire,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(form.nbrDemande) }} :
+                                {{ form_widget(form.nbrDemande,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(form.dateExpiration) }} :
+                                {{ form_widget(form.dateExpiration,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(form.Boutique) }} :
+                                {{ form_widget(form.Boutique,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+                                {{ form_widget( form.Save,{'attr': {'class':'form_ajouter'}}  ) }}
+
+                            </div>
+                            {{ form_end(form) }}
+
+                        </div>
 
                         <!-- /tile body -->
 
                     </section>
-                    <!-- /tile -->
-
                 </div>
-                <!-- /col -->
-
-
             </div>
-            <!-- /row -->
-
-
         </div>
-        <!-- /tile body -->
+
 
     </section>
-    <!-- /tile -->
 
 
 
 
-    <!--/ CONTENT -->
-    {{ form_end(form) }}
 
+    <!--/ Page Specific Scripts -->
 {% endblock robots %}

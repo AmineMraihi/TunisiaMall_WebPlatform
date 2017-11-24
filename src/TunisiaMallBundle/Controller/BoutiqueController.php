@@ -16,20 +16,24 @@ use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Entity\Boutique;
 use TunisiaMallBundle\Form\AjoutBoutiqueForm;
 use TunisiaMallBundle\Form\ModifierBoutiqueForm;
-
+use Symfony\Component\HttpFoundation\Response;
 class BoutiqueController extends Controller
 {
     public function ajoutboutiqueAction(Request $request)
     {
+        $etat=0;
         $boutique=new Boutique();
         $form = $this->createForm(AjoutBoutiqueForm::class,$boutique);
         $form->handleRequest($request);
-        if ($form->isValid()) {
+        if ($form->isValid() ) {
+            if(($boutique->getDatecreation() < $boutique->getDateexpiration())){
             $em = $this->getDoctrine()->getManager();
             $em->persist($boutique);
             $em->flush();
-        }
-        return $this->render("TunisiaMallBundle::ajoutboutique.html.twig",array(
+        }else{$etat=-1;
+
+            }}
+        return $this->render("TunisiaMallBundle::ajoutboutique.html.twig",array("etat"=>$etat,
             'formulaire'=>$form->createView()
         ));
     }
@@ -66,5 +70,13 @@ class BoutiqueController extends Controller
             "form"=>$form->createView()
         ));
 
+    }
+    public function afficherboutiquesComboAction()
+    {
+        $em=$this->getDoctrine()->getManager();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+        return $this->render("TunisiaMallBundle::templateC.html.twig",array(
+            "boutiques"=>$boutiques
+        ));
     }
 }

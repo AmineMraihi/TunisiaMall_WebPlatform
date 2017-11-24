@@ -23,11 +23,11 @@
 
                         <!-- tile header -->
                         <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Editable</strong> Usage</h1>
+                            <h1 class="custom-font"><strong></strong> </h1>
                             <ul class="controls">
 
                                 <li>
-                                    <a role="button" tabindex="0" id="add-entry"><i class="fa fa-plus mr-5"></i> Ajouter un produit
+                                    <a role="button" tabindex="0" id="add-entry"><i class="fa fa-plus mr-5"></i>
                                     </a>
                                 </li>
                                 <li class="dropdown">
@@ -85,7 +85,7 @@
                                         <tr class="odd gradeX">
 
                                             <td>{{ P.IdProduit.nom }}</td>
-                                            <td>{{ P.tauxReduction}}</td>
+                                            <td>{{ P.tauxReduction ~"  %"}}</td>
                                             <td>{{ P.dateDebut | date("d-m-y")}}</td>
                                             <td>{{ P.dateFin | date("d-m-y")}}</td>
 
@@ -93,12 +93,12 @@
                                             <td> <img src=" {{ asset('images/ahmed/' ~ P.path) }}" width="75" height="75" /></td>
                                             <td class="actions">
                                                 <a role="button20" tabindex="0" id="produitupdate"
-                                                   >Edit
+                                                   href="{{ path('tunisia_mall_modifierPromotion', {'id_promotion':P.idPromotion})}}">Edit
                                                 </a>
                                                 <a role="button" id="remove"
+                                                   href=" {{ path('tunisia_mall_supppromotion', {'id_promotion':P.idPromotion} ) }}">Remove
 
                                                 </a>
-
 
                                             </td>
 

@@ -1,22 +1,94 @@
-<h1>mise à jour</h1>
-{{ form_start(form) }}
-<table>
-    <tr>
-        <td>nom</td>
-        <td>{{ form_widget(form.nom) }}</td>
-    </tr>
-    <tr>
-        <td>type</td>
-        <td>{{ form_widget(form.type) }}</td>
-    </tr>
-    <tr>
-        <td>position</td>
-        <td>{{ form_widget(form.position) }}</td>
-    </tr>
+{% extends "TunisiaMallBundle::templateadmin.html.twig" %}
 
-    <tr>
-        <td></td>
-        <td>{{ form_widget(form.save) }}</td>
-    </tr>
-</table>
-{{ form_end(form) }}
+{% block robots %}
+
+
+    <section id="content">
+    <link rel="stylesheet" href="{{ asset('assets/css/vendor/promotion.css') }}">
+    <div class="page page-tables-datatables">
+
+        <div class="pageheader">
+            <br>
+
+
+            <div id="titreajout">Modifier Boutique</div>
+
+
+        </div>
+
+        <!-- row -->
+        <div class="row">
+            <!-- col -->
+            <div class="col-md-12">
+
+
+                <section class="tile">
+
+                    <!-- tile header -->
+                    <div >
+
+
+                    </div>
+                    <!-- /tile header -->
+
+
+
+                    <div class="content">
+                        {{ form_start(form) }}
+
+                        <div>
+
+                            {{ form_label(form.nom) }} :
+                            {{ form_widget( form.nom,{'attr': {'class':'form-control'}}   ) }}
+                        </div>
+
+
+                        <div>
+
+                            {{ form_label(form.type) }} :
+                            {{ form_widget( form.type,{'attr': {'class':'form-control'}}   ) }}
+                        </div>
+
+
+
+
+
+                        <div>
+                            {{ form_label(form.position) }} :
+                            {{ form_widget( form.position,{'attr': {'class':'form-control'}}   ) }}
+                        </div>
+                        <div>
+
+                            {{ form_label(form.datecreation) }} :
+                            {{ form_widget( form.datecreation,{'attr': {'class':'form-control'}}   ) }}
+
+                        </div>
+
+                        <div>
+                            {{ form_label(form.dateexpiration) }} :
+                            {{ form_widget( form.dateexpiration,{'attr': {'class':'form-control'}}   ) }}
+
+                        </div>
+
+
+
+
+
+                        <div>
+                            {{ form_widget( form.save,{'attr': {'class':'form_ajouter'}}  ) }}
+
+                        </div>
+                        {{ form_end(form) }}
+
+                    </div>
+
+                    <!-- /tile body -->
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock robots %}
