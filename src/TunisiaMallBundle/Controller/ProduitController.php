@@ -71,6 +71,12 @@ class ProduitController extends Controller
 
     public function AjoutProduitAction(Request $request)
     {
+        if( $this->container->get( 'security.authorization_checker' )->isGranted( 'IS_AUTHENTICATED_FULLY' ) )
+        {
+            $user = $this->container->get('security.token_storage')->getToken()->getUser();
+            $username = $user->getUsername();
+        }
+
         $Produit = new Produit();
 
         $form = $this->createForm(AjoutProduitForum::class, $Produit);
@@ -132,6 +138,8 @@ class ProduitController extends Controller
 
         $produit = $em->getRepository("TunisiaMallBundle:Produit")->find($id);
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        $review = $em->getRepository("TunisiaMallBundle:Review11")->findBy(array('idProduit'=>$produit));
+        $promotion= $em->getRepository("TunisiaMallBundle:Promotion")->findBy(array('idProduit'=>$produit));
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($produit);
@@ -141,9 +149,9 @@ class ProduitController extends Controller
 
         return $this->render("TunisiaMallBundle:produit:afficheprodY.html.twig", array(
             "produit" => $produit,
-
-
-            "publicites" => $publicites
+            "promotion" =>$promotion,
+            "publicites" => $publicites,
+            "review" => $review
 
 
         ));

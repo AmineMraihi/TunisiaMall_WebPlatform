@@ -161,7 +161,7 @@ tunisia_mall_exemple_evenement:
 
 
 tunisia_mall_AjouterReview:
-    path:     /detailleprod/AjouterReview
+    path:     /detailleprod/AjouterReview/{id_dis}
     defaults: { _controller: TunisiaMallBundle:Review:AjouterReview }
 
 

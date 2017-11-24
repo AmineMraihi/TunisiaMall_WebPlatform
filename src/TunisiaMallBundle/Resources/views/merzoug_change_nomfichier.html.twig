@@ -1,6 +1,6 @@
 {% block produit_merzoug %}
     {% for prod in produits %}
-
+        {% for promo in promotions %}
 
     <div class="col-md-3 product-men">
         <div class="men-pro-item simpleCart_shelfItem">
@@ -24,7 +24,7 @@
                 <div class="info-product-price">
 
                     <span class="item_price">{{ prod.prix }} TND</span>
-                    <del>TND140.99</del>
+                    <del>{{ promo.tauxReduction }}</del>
                 </div>
 
                 <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
@@ -48,5 +48,6 @@
             </div>
         </div>
     </div>
-{% endfor %} 
+        {% endfor %}
+    {% endfor %}
 {% endblock produit_merzoug %}

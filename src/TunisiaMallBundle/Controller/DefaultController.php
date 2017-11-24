@@ -43,10 +43,13 @@ class DefaultController extends Controller
         $em=$this->getDoctrine()->getManager();
         $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
+        $promotions= $em->getRepository("TunisiaMallBundle:Promotion")->findBy(array('idProduit'=>$produits));
+
 
         return $this->render('TunisiaMallBundle:Default:index.html.twig', array(
             "publicites" => $publicites,
-            "produits" => $produits, "boutiques"=>$boutiques
+            "produits" => $produits, "boutiques"=>$boutiques,
+            "promotions" =>$promotions
 
         ));
 
