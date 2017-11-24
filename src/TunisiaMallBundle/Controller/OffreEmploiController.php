@@ -46,6 +46,7 @@ class OffreEmploiController extends Controller
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 //var_dump($offreEmplois);
 
   $boutique =$em->getRepository('TunisiaMallBundle:Boutique')->findBy(['idBoutique'=>$offreEmploi->getBoutique()]);
@@ -55,7 +56,9 @@ class OffreEmploiController extends Controller
             'offreEmplois' => $offreEmploi,'boutique'=>$boutique,
         "evenements" => $evenements,
         "publicites" => $publicites,
-        "produits" => $produits
+        "produits" => $produits,
+        "boutiques"=>$boutiques
+
         ));
     }
 

@@ -12,6 +12,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @ORM\Table(name="produit", indexes={@ORM\Index(name="id_boutique", columns={"id_boutique"})})
  * @ORM\Entity
  * @Vich\Uploadable
+ * @ORM\Entity(repositoryClass="TunisiaMallBundle\Repository\StatRepository")
  */
 class Produit
 {

@@ -76,6 +76,14 @@ class OffreEmploi
     private $dateExpiration;
 
     /**
+     * OffreEmploi constructor.
+     */
+    public function __construct()
+    {
+    }
+
+
+    /**
      * @return int
      */
     public function getIdOffre()

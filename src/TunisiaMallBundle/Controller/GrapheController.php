@@ -18,10 +18,13 @@ class GrapheController extends Controller
 
     public function chartHistogrammeAction()
     {
-
+       $idboutique=$this->getUser()->getIdBoutique()->getIdboutique();
+//var_dump($idboutique);
         $em = $this->container->get('doctrine')->getEntityManager();
+        $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        $produits=$em->getRepository("TunisiaMallBundle:Produit")->findByidBoutique($idboutique);
 
-        $produits = $em->getRepository('TunisiaMallBundle:Produit')->findAll();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
         $categories = array();
         $nbrvente=array();
@@ -29,6 +32,7 @@ class GrapheController extends Controller
             array_push($nbrvente, $Produit->getNbVente());
             array_push($categories, $Produit->getNom());
         }
+
 
         // Chart
         $series = array(
@@ -40,6 +44,7 @@ class GrapheController extends Controller
                 'data'=>$nbrvente,
             )
         );
+
         $yData = array(
 
             array(
@@ -73,10 +78,50 @@ class GrapheController extends Controller
 
         $ob->tooltip->formatter($formatter);
         $ob->series($series);
-        return $this->render('TunisiaMallBundle:Graphe:historgramme.html.twig',array('chart'=>$ob));
+        return $this->render('TunisiaMallBundle:Graphe:historgramme.html.twig',array('chart'=>$ob,
+         "publicites" => $publicites,
+            "produits" => $produits,
+            "boutiques"=>$boutiques,
+
+        ));
 
 
     }
+
+
+    public function chartPieAction(){
+        $ob = new Highchart();
+        $ob->chart->renderTo('piechart');
+        $ob->title->text('Pourcentages des demandes sexe');
+        $ob->plotOptions->pie(array(
+            'allowPointSelect'  => true,
+            'cursor'    => 'pointer',
+            'dataLabels'    => array('enabled' => false),
+            'showInLegend'  => true
+        ));
+        $em= $this->container->get('doctrine')->getEntityManager();
+        $demandes = $em->getRepository('TunisiaMallBundle:DemandeEmploi')->CountSexe();
+        $totaldemande=0;
+        foreach($demandes as $demande) {
+            $totaldemande=$totaldemande+$demande;
+        }
+        var_dump($totaldemande);
+        $data= array();
+        foreach($demandes as $demande) {
+            $stat=array();
+            array_push($stat,$demande->getSexe(),(($demande->getIdDemande()) *100)/$totaldemande);
+            //var_dump($stat);
+            array_push($data,$stat);
+        }
+        // var_dump($data);
+        $ob->series(array(array('type' => 'pie','name' => 'Browser share', 'data' => $data)));
+        return $this->render('TunisiaMallBundle:Graphe:pieChart.html.twig', array(
+            'chart' => $ob
+        ));
+    }
+
+
+
 
 
 

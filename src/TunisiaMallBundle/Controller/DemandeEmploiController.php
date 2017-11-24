@@ -60,7 +60,7 @@ class DemandeEmploiController extends Controller
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
-
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
        $date= $offreemploi->getDateExpiration();
      // var_dump($date);
         $time=new\DateTime("now");
@@ -87,7 +87,8 @@ if ($date > $time )
                'form' => $form->createView(),
                "evenements" => $evenements,
                "publicites" => $publicites,
-               "produits" => $produits
+               "produits" => $produits,
+               "boutiques"=>$boutiques
 
            ));
        }
@@ -118,11 +119,13 @@ if ($date > $time )
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
         return $this->render('TunisiaMallBundle::demandeAdmin.html.twig', array(
             'demandeEmplois' => $demandeEmploi,
             "evenements" => $evenements,
             "publicites" => $publicites,
-            "produits" => $produits
+            "produits" => $produits,
+            "boutiques"=>$boutiques
         ));
     }
 
@@ -137,13 +140,15 @@ if ($date > $time )
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
         /*['idDemande'=>$demandeEmploi]*/
         //var_dump($demandeEmploi);
       return $this->render('TunisiaMallBundle::demandelistclient.html.twig', array(
             'demandeEmplois' => $demandeEmploi,
           "evenements" => $evenements,
           "publicites" => $publicites,
-          "produits" => $produits
+          "produits" => $produits,
+            "boutiques"=>$boutiques
         ));
     }
 
@@ -155,6 +160,7 @@ if ($date > $time )
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
         if ($Form_edit->isSubmitted() && $Form_edit->isValid()) {
             $this->getDoctrine()->getManager()->flush();
@@ -168,6 +174,7 @@ if ($date > $time )
             "evenements" => $evenements,
             "publicites" => $publicites,
             "produits" => $produits
+        , "boutiques"=>$boutiques
 
         ));
     }

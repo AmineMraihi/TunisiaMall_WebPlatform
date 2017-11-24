@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="demande_emploi", indexes={@ORM\Index(name="id_user_fk", columns={"id_user_fk"}), @ORM\Index(name="id_offre_fk", columns={"id_offre_fk"})})
  * @ORM\Entity
+ * @ORM\Entity(repositoryClass="TunisiaMallBundle\Repository\StatRepository")
  */
 class DemandeEmploi
 {
@@ -101,6 +102,14 @@ class DemandeEmploi
      * })
      */
     private $Offre;
+
+    /**
+     * DemandeEmploi constructor.
+     */
+    public function __construct()
+    {
+    }
+
 
     /**
      * @return int

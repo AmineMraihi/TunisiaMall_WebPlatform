@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.4.xsd" frameworkId="com.symfony" name="Symfony_23/11/17 21:53_s" invoke="C:\wamp64\bin\php\php5.6.31\php.exe C:\wamp64\www\TestUser\bin\console" alias="s" enabled="true" version="2">
+<framework xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schemas/frameworkDescriptionVersion1.1.4.xsd" frameworkId="com.symfony" name="Symfony_24/11/17 04:05_s" invoke="C:\wamp64\bin\php\php5.6.31\php.exe C:\wamp64\www\TestUser\bin\console" alias="s" enabled="true" version="2">
   <extraData><![CDATA[version:3]]></extraData>
   <command>
     <name>about</name>
@@ -2025,6 +2025,95 @@
     </optionsBefore>
   </command>
   <command>
+    <name>liip:imagine:cache:remove</name>
+    <help><![CDATA[The <comment>liip:imagine:cache:remove</comment> command removes asset cache for the passed image(s) and filter(s).<br> <br> For an application that has only the two files "foo.ext" and "bar.ext", and only the filter sets<br> named "thumb_sm" and "thumb_lg", the following examples will behave as shown.<br> <br> <comment># bin/console liip:imagine:cache:remove foo.ext</comment><br> Removes caches for <options=bold>foo.ext</> using <options=bold>all configured filters</>, outputting:<br> <b>- foo.ext[thumb_sm] removed</><br> <b>- foo.ext[thumb_lg] removed</><br> <br> <comment># bin/console liip:imagine:cache:remove --filter=thumb_sm --filter=thumb_lg foo.ext bar.ext</comment><br> Removes caches for both <options=bold>foo.ext</> and <options=bold>bar.ext</> using <options=bold>thumb_sm</> and <options=bold>thumb_lg</> filters, outputting:<br> <b>- foo.ext[thumb_sm] removed</><br> <b>- foo.ext[thumb_lg] removed</><br> <b>- bar.ext[thumb_sm] removed</><br> <b>- bar.ext[thumb_lg] removed</><br> <br> <comment># bin/console liip:imagine:cache:remove --filter=thumb_sm</comment><br> Removes <options=bold>all caches</> for <options=bold>thumb_sm</> filter, outputting:<br> <b>- *[thumb_sm] glob-removal</><br> <br> <comment># bin/console liip:imagine:cache:remove</comment><br> Removes <options=bold>all caches</> for <options=bold>all configured filters</>, removing all cached assets, outputting:<br> <b>- *[thumb_sm] glob-removal</><br> <b>- *[thumb_lg] glob-removal</><br> <br> <comment># bin/console liip:imagine:cache:remove --force --filter=thumb_sm foo.ext</comment><br> Removing caches for <options=bold>foo.ext</> using <options=bold>thumb_sm</> filter when <options=bold>already removed</> will caused <options=bold>skipping</>, outputting:<br> <b>- foo.ext[thumb_sm] skipped</><br> <br> <comment># bin/console liip:imagine:cache:remove --filter=does_not_exist --filter=thumb_sm foo.ext</comment><br> Removes caches for <options=bold>foo.ext</> for <options=bold>thumb_sm</> while <options=bold>failing inline</> on invalid filter (or other errors), outputting:<br> <b>- foo.ext[does_not_exist] failure: Could not find configuration for a filter: does_not_exist</><br> <b>- foo.ext[thumb_sm] removed</><br> <br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--filter</td><td>(-f)</td><td>Filter name to remove caches of (passing none will use all registered filters)</td></tr> <tr><td>--machine-readable</td><td>(-m)</td><td>Enable machine parseable output (removing extraneous output and all text styles)</td></tr> <tr><td>--filters</td><td></td><td>Deprecated in 1.9.0 and removed in 2.0.0 (use the --filter option instead)</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> </table> <br/>]]></help>
+    <params>paths[=null]</params>
+    <optionsBefore>
+      <option name="--filter" shortcut="-f" pattern="equals">
+        <help><![CDATA[Filter name to remove caches of (passing none will use all registered filters)]]></help>
+      </option>
+      <option name="--machine-readable" shortcut="-m">
+        <help><![CDATA[Enable machine parseable output (removing extraneous output and all text styles)]]></help>
+      </option>
+      <option name="--filters" shortcut="" pattern="equals">
+        <help><![CDATA[Deprecated in 1.9.0 and removed in 2.0.0 (use the --filter option instead)]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display this help message]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Disable ANSI output]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="-e" pattern="equals">
+        <help><![CDATA[The environment name]]></help>
+      </option>
+      <option name="--no-debug" shortcut="">
+        <help><![CDATA[Switches off debug mode]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>liip:imagine:cache:resolve</name>
+    <help><![CDATA[The <comment>liip:imagine:cache:resolve</comment> command resolves asset cache for the passed image(s) and filter(s).<br> <br> For an application that has only the two files "foo.ext" and "bar.ext", and only the filter sets<br> named "thumb_sm" and "thumb_lg", the following examples will behave as shown.<br> <br> <comment># bin/console liip:imagine:cache:resolve foo.ext bar.ext</comment><br> Resolves caches for <options=bold>both</> <options=bold>foo.ext</> and <options=bold>bar.ext</> using <options=bold>all configured filters</>, outputting:<br> <b>- foo.ext[thumb_sm] resolved: http://localhost/media/cache/thumb_sm/foo.ext</><br> <b>- bar.ext[thumb_sm] resolved: http://localhost/media/cache/thumb_sm/bar.ext</><br> <b>- foo.ext[thumb_lg] resolved: http://localhost/media/cache/thumb_lg/foo.ext</><br> <b>- bar.ext[thumb_lg] resolved: http://localhost/media/cache/thumb_lg/bar.ext</><br> <br> <comment># bin/console liip:imagine:cache:resolve --filter=thumb_sm foo.ext</comment><br> Resolves caches for <options=bold>foo.ext</> using <options=bold>only</> <options=bold>thumb_sm</> filter, outputting:<br> <b>- foo.ext[thumb_sm] resolved: http://localhost/media/cache/thumb_sm/foo.ext</><br> <br> <comment># bin/console liip:imagine:cache:resolve --filter=thumb_sm --filter=thumb_lg foo.ext</comment><br> Resolves caches for <options=bold>foo.ext</> using <options=bold>both</> <options=bold>thumb_sm</> and <options=bold>thumb_lg</> filters, outputting:<br> <b>- foo.ext[thumb_sm] resolved: http://localhost/media/cache/thumb_sm/foo.ext</><br> <b>- foo.ext[thumb_lg] resolved: http://localhost/media/cache/thumb_lg/foo.ext</><br> <br> <comment># bin/console liip:imagine:cache:resolve --force --filter=thumb_sm foo.ext</comment><br> Resolving caches for <options=bold>foo.ext</> using <options=bold>thumb_sm</> filter when <options=bold>already cached</> will caused <options=bold>skipped</>, outputting:<br> <b>- foo.ext[thumb_sm] skipped: http://localhost/media/cache/thumb_sm/foo.ext</><br> <br> <comment># bin/console liip:imagine:cache:resolve --force --filter=thumb_sm foo.ext</comment><br> Resolving caches for <options=bold>foo.ext</> using <options=bold>thumb_sm</> filter when <options=bold>already cached</> with <options=bold>force</> option <options=bold>re-resolves</> (ignoring cache), outputting:<br> <b>- foo.ext[thumb_sm] resolved: http://localhost/media/cache/thumb_sm/foo.ext</><br> <br> <comment># bin/console liip:imagine:cache:resolve --filter=does_not_exist --filter=thumb_sm foo.ext</comment><br> Resolves caches for <options=bold>foo.ext</> using <options=bold>thumb_sm</> while <options=bold>failing inline</> on invalid filter (or other errors), outputting:<br> <b>- foo.ext[does_not_exist] failed: Could not find configuration for a filter: does_not_exist</><br> <b>- foo.ext[thumb_sm] removed: http://localhost/media/cache/thumb_sm/foo.ext</><br> <br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--filter</td><td>(-f)</td><td>Filter name to resolve caches for (passing none will use all registered filters)</td></tr> <tr><td>--force</td><td>(-F)</td><td>Force asset cache resolution (ignoring whether it already cached)</td></tr> <tr><td>--machine-readable</td><td>(-m)</td><td>Enable machine parseable output (removing extraneous output and all text styles)</td></tr> <tr><td>--filters</td><td></td><td>Deprecated in 1.9.0 and removed in 2.0.0 (use the --filter option instead)</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> </table> <br/>]]></help>
+    <params>paths</params>
+    <optionsBefore>
+      <option name="--filter" shortcut="-f" pattern="equals">
+        <help><![CDATA[Filter name to resolve caches for (passing none will use all registered filters)]]></help>
+      </option>
+      <option name="--force" shortcut="-F">
+        <help><![CDATA[Force asset cache resolution (ignoring whether it already cached)]]></help>
+      </option>
+      <option name="--machine-readable" shortcut="-m">
+        <help><![CDATA[Enable machine parseable output (removing extraneous output and all text styles)]]></help>
+      </option>
+      <option name="--filters" shortcut="" pattern="equals">
+        <help><![CDATA[Deprecated in 1.9.0 and removed in 2.0.0 (use the --filter option instead)]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display this help message]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Disable ANSI output]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="-e" pattern="equals">
+        <help><![CDATA[The environment name]]></help>
+      </option>
+      <option name="--no-debug" shortcut="">
+        <help><![CDATA[Switches off debug mode]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
     <name>lint:twig</name>
     <help><![CDATA[The <b>lint:twig</b> command lints a template and outputs to STDOUT<br> the first encountered syntax error.<br> <br> You can validate the syntax of contents passed from STDIN:<br> <br> <b>cat filename | php C:\wamp64\www\TestUser\bin\console lint:twig</b><br> <br> Or the syntax of a file:<br> <br> <b>php C:\wamp64\www\TestUser\bin\console lint:twig filename</b><br> <br> Or of a whole directory:<br> <br> <b>php C:\wamp64\www\TestUser\bin\console lint:twig dirname</b><br> <b>php C:\wamp64\www\TestUser\bin\console lint:twig dirname --format=json</b><br> <br> Or all template files in a bundle:<br> <br> <b>php C:\wamp64\www\TestUser\bin\console lint:twig @AcmeDemoBundle</b><br> <br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--format</td><td></td><td>The output format</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> </table> <br/>]]></help>
     <params>filename[=null]</params>
@@ -2151,6 +2240,81 @@
       </option>
       <option name="--host" shortcut="" pattern="equals">
         <help><![CDATA[Sets the URI host]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display this help message]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Disable ANSI output]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="-e" pattern="equals">
+        <help><![CDATA[The environment name]]></help>
+      </option>
+      <option name="--no-debug" shortcut="">
+        <help><![CDATA[Switches off debug mode]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>scheduler:execute</name>
+    <help><![CDATA[This class is the entry point to execute all scheduled command<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--dump</td><td></td><td>Display next execution</td></tr> <tr><td>--no-output</td><td></td><td>Disable output message from scheduler</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--dump" shortcut="">
+        <help><![CDATA[Display next execution]]></help>
+      </option>
+      <option name="--no-output" shortcut="">
+        <help><![CDATA[Disable output message from scheduler]]></help>
+      </option>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display this help message]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Disable ANSI output]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="-e" pattern="equals">
+        <help><![CDATA[The environment name]]></help>
+      </option>
+      <option name="--no-debug" shortcut="">
+        <help><![CDATA[Switches off debug mode]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
+    <name>scheduler:monitor</name>
+    <help><![CDATA[This class is for monitoring all active commands.<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--dump</td><td></td><td>Display result instead of send mail</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--dump" shortcut="">
+        <help><![CDATA[Display result instead of send mail]]></help>
       </option>
       <option name="--help" shortcut="-h">
         <help><![CDATA[Display this help message]]></help>
@@ -2628,6 +2792,39 @@
     </optionsBefore>
   </command>
   <command>
+    <name>tunisia_mall:archive1command</name>
+    <help><![CDATA[please_work<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> </table> <br/>]]></help>
+    <optionsBefore>
+      <option name="--help" shortcut="-h">
+        <help><![CDATA[Display this help message]]></help>
+      </option>
+      <option name="--quiet" shortcut="-q">
+        <help><![CDATA[Do not output any message]]></help>
+      </option>
+      <option name="--verbose" shortcut="-v">
+        <help><![CDATA[Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug]]></help>
+      </option>
+      <option name="--version" shortcut="-V">
+        <help><![CDATA[Display this application version]]></help>
+      </option>
+      <option name="--ansi" shortcut="">
+        <help><![CDATA[Force ANSI output]]></help>
+      </option>
+      <option name="--no-ansi" shortcut="">
+        <help><![CDATA[Disable ANSI output]]></help>
+      </option>
+      <option name="--no-interaction" shortcut="-n">
+        <help><![CDATA[Do not ask any interactive question]]></help>
+      </option>
+      <option name="--env" shortcut="-e" pattern="equals">
+        <help><![CDATA[The environment name]]></help>
+      </option>
+      <option name="--no-debug" shortcut="">
+        <help><![CDATA[Switches off debug mode]]></help>
+      </option>
+    </optionsBefore>
+  </command>
+  <command>
     <name>vich:mapping:debug</name>
     <help><![CDATA[Debug a mapping.<br/><br/><table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> </table> <br/>]]></help>
     <params>mapping</params>
@@ -2728,6 +2925,6 @@
       </option>
     </optionsBefore>
   </command>
-  <help><![CDATA[<p>Usage:<br> [options] command [arguments] </p><br> <table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> </table> <br/> <table> <tr><td><strong>Available commands:</strong></td></tr> <tr><td>about</td><td>Displays information about the current project</td></tr> <tr><td>help</td><td>Displays help for a command</td></tr> <tr><td>list</td><td>Lists commands</td></tr> <tr><td>assets:install</td><td>Installs bundles web assets under a public directory</td></tr> <tr><td>cache:clear</td><td>Clears the cache</td></tr> <tr><td>cache:pool:clear</td><td>Clears cache pools</td></tr> <tr><td>cache:warmup</td><td>Warms up an empty cache</td></tr> <tr><td>config:dump-reference</td><td>Dumps the default configuration for an extension</td></tr> <tr><td>debug:config</td><td>Dumps the current configuration for an extension</td></tr> <tr><td>debug:container</td><td>Displays current services for an application</td></tr> <tr><td>debug:event-dispatcher</td><td>Displays configured listeners for an application</td></tr> <tr><td>debug:router</td><td>Displays current routes for an application</td></tr> <tr><td>debug:swiftmailer</td><td>Displays current mailers for an application</td></tr> <tr><td>debug:translation</td><td>Displays translation messages information</td></tr> <tr><td>debug:twig</td><td>Shows a list of twig functions, filters, globals and tests</td></tr> <tr><td>doctrine:cache:clear-collection-region</td><td>Clear a second-level cache collection region.</td></tr> <tr><td>doctrine:cache:clear-entity-region</td><td>Clear a second-level cache entity region.</td></tr> <tr><td>doctrine:cache:clear-metadata</td><td>Clears all metadata cache for an entity manager</td></tr> <tr><td>doctrine:cache:clear-query</td><td>Clears all query cache for an entity manager</td></tr> <tr><td>doctrine:cache:clear-query-region</td><td>Clear a second-level cache query region.</td></tr> <tr><td>doctrine:cache:clear-result</td><td>Clears result cache for an entity manager</td></tr> <tr><td>doctrine:cache:contains</td><td>Check if a cache entry exists</td></tr> <tr><td>doctrine:cache:delete</td><td>Delete a cache entry</td></tr> <tr><td>doctrine:cache:flush</td><td>Flush a given cache</td></tr> <tr><td>doctrine:cache:stats</td><td>Get stats on a given cache provider</td></tr> <tr><td>doctrine:database:create</td><td>Creates the configured database</td></tr> <tr><td>doctrine:database:drop</td><td>Drops the configured database</td></tr> <tr><td>doctrine:database:import</td><td>Import SQL file(s) directly to Database.</td></tr> <tr><td>doctrine:ensure-production-settings</td><td>Verify that Doctrine is properly configured for a production environment.</td></tr> <tr><td>doctrine:generate:crud</td><td>Generates a CRUD based on a Doctrine entity</td></tr> <tr><td>doctrine:generate:entities</td><td>Generates entity classes and method stubs from your mapping information</td></tr> <tr><td>doctrine:generate:entity</td><td>Generates a new Doctrine entity inside a bundle</td></tr> <tr><td>doctrine:generate:form</td><td>Generates a form type class based on a Doctrine entity</td></tr> <tr><td>doctrine:mapping:convert</td><td>Convert mapping information between supported formats.</td></tr> <tr><td>doctrine:mapping:import</td><td>Imports mapping information from an existing database</td></tr> <tr><td>doctrine:mapping:info</td><td></td></tr> <tr><td>doctrine:query:dql</td><td>Executes arbitrary DQL directly from the command line.</td></tr> <tr><td>doctrine:query:sql</td><td>Executes arbitrary SQL directly from the command line.</td></tr> <tr><td>doctrine:schema:create</td><td>Executes (or dumps) the SQL needed to generate the database schema</td></tr> <tr><td>doctrine:schema:drop</td><td>Executes (or dumps) the SQL needed to drop the current database schema</td></tr> <tr><td>doctrine:schema:update</td><td>Executes (or dumps) the SQL needed to update the database schema to match the current mapping metadata.</td></tr> <tr><td>doctrine:schema:validate</td><td>Validate the mapping files.</td></tr> <tr><td>fos:user:activate</td><td>Activate a user</td></tr> <tr><td>fos:user:change-password</td><td>Change the password of a user.</td></tr> <tr><td>fos:user:create</td><td>Create a user.</td></tr> <tr><td>fos:user:deactivate</td><td>Deactivate a user</td></tr> <tr><td>fos:user:demote</td><td>Demote a user by removing a role</td></tr> <tr><td>fos:user:promote</td><td>Promotes a user by adding a role</td></tr> <tr><td>generate:bundle</td><td>Generates a bundle</td></tr> <tr><td>generate:command</td><td>Generates a console command</td></tr> <tr><td>generate:controller</td><td>Generates a controller</td></tr> <tr><td>lint:twig</td><td>Lints a template and outputs encountered errors</td></tr> <tr><td>lint:xliff</td><td>Lints a XLIFF file and outputs encountered errors</td></tr> <tr><td>lint:yaml</td><td>Lints a file and outputs encountered errors</td></tr> <tr><td>router:match</td><td>Helps debug routes by simulating a path info match</td></tr> <tr><td>security:check</td><td>Checks security issues in your project dependencies</td></tr> <tr><td>security:encode-password</td><td>Encodes a password.</td></tr> <tr><td>server:log</td><td>Starts a log server that displays logs in real time</td></tr> <tr><td>server:run</td><td>Runs a local web server</td></tr> <tr><td>server:start</td><td>Starts a local web server in the background</td></tr> <tr><td>server:status</td><td>Outputs the status of the local web server for the given address</td></tr> <tr><td>server:stop</td><td>Stops the local web server that was started with the server:start command</td></tr> <tr><td>swiftmailer:email:send</td><td>Send simple email message</td></tr> <tr><td>swiftmailer:spool:send</td><td>Sends emails from the spool</td></tr> <tr><td>translation:update</td><td>Updates the translation file</td></tr> <tr><td>vich:mapping:debug</td><td>Debug a mapping.</td></tr> <tr><td>vich:mapping:debug-class</td><td>Debug a class.</td></tr> <tr><td>vich:mapping:list-classes</td><td>Searches for uploadable classes.</td></tr> </table> <br/>]]></help>
+  <help><![CDATA[<p>Usage:<br> [options] command [arguments] </p><br> <table> <tr><td><strong>Options:</strong></td></tr> <tr><td>--no-interaction</td><td>(-n)</td><td>Do not ask any interactive question</td></tr> <tr><td>--ansi</td><td></td><td>Force ANSI output</td></tr> <tr><td>--help</td><td>(-h)</td><td>Display this help message</td></tr> <tr><td>--no-ansi</td><td></td><td>Disable ANSI output</td></tr> <tr><td>--quiet</td><td>(-q)</td><td>Do not output any message</td></tr> <tr><td>--no-debug</td><td></td><td>Switches off debug mode</td></tr> <tr><td>--version</td><td>(-V)</td><td>Display this application version</td></tr> <tr><td>--verbose</td><td>(-v)</td><td>Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug</td></tr> <tr><td>--env</td><td>(-e)</td><td>The environment name</td></tr> </table> <br/> <table> <tr><td><strong>Available commands:</strong></td></tr> <tr><td>about</td><td>Displays information about the current project</td></tr> <tr><td>help</td><td>Displays help for a command</td></tr> <tr><td>list</td><td>Lists commands</td></tr> <tr><td>assets:install</td><td>Installs bundles web assets under a public directory</td></tr> <tr><td>cache:clear</td><td>Clears the cache</td></tr> <tr><td>cache:pool:clear</td><td>Clears cache pools</td></tr> <tr><td>cache:warmup</td><td>Warms up an empty cache</td></tr> <tr><td>config:dump-reference</td><td>Dumps the default configuration for an extension</td></tr> <tr><td>debug:config</td><td>Dumps the current configuration for an extension</td></tr> <tr><td>debug:container</td><td>Displays current services for an application</td></tr> <tr><td>debug:event-dispatcher</td><td>Displays configured listeners for an application</td></tr> <tr><td>debug:router</td><td>Displays current routes for an application</td></tr> <tr><td>debug:swiftmailer</td><td>Displays current mailers for an application</td></tr> <tr><td>debug:translation</td><td>Displays translation messages information</td></tr> <tr><td>debug:twig</td><td>Shows a list of twig functions, filters, globals and tests</td></tr> <tr><td>doctrine:cache:clear-collection-region</td><td>Clear a second-level cache collection region.</td></tr> <tr><td>doctrine:cache:clear-entity-region</td><td>Clear a second-level cache entity region.</td></tr> <tr><td>doctrine:cache:clear-metadata</td><td>Clears all metadata cache for an entity manager</td></tr> <tr><td>doctrine:cache:clear-query</td><td>Clears all query cache for an entity manager</td></tr> <tr><td>doctrine:cache:clear-query-region</td><td>Clear a second-level cache query region.</td></tr> <tr><td>doctrine:cache:clear-result</td><td>Clears result cache for an entity manager</td></tr> <tr><td>doctrine:cache:contains</td><td>Check if a cache entry exists</td></tr> <tr><td>doctrine:cache:delete</td><td>Delete a cache entry</td></tr> <tr><td>doctrine:cache:flush</td><td>Flush a given cache</td></tr> <tr><td>doctrine:cache:stats</td><td>Get stats on a given cache provider</td></tr> <tr><td>doctrine:database:create</td><td>Creates the configured database</td></tr> <tr><td>doctrine:database:drop</td><td>Drops the configured database</td></tr> <tr><td>doctrine:database:import</td><td>Import SQL file(s) directly to Database.</td></tr> <tr><td>doctrine:ensure-production-settings</td><td>Verify that Doctrine is properly configured for a production environment.</td></tr> <tr><td>doctrine:generate:crud</td><td>Generates a CRUD based on a Doctrine entity</td></tr> <tr><td>doctrine:generate:entities</td><td>Generates entity classes and method stubs from your mapping information</td></tr> <tr><td>doctrine:generate:entity</td><td>Generates a new Doctrine entity inside a bundle</td></tr> <tr><td>doctrine:generate:form</td><td>Generates a form type class based on a Doctrine entity</td></tr> <tr><td>doctrine:mapping:convert</td><td>Convert mapping information between supported formats.</td></tr> <tr><td>doctrine:mapping:import</td><td>Imports mapping information from an existing database</td></tr> <tr><td>doctrine:mapping:info</td><td></td></tr> <tr><td>doctrine:query:dql</td><td>Executes arbitrary DQL directly from the command line.</td></tr> <tr><td>doctrine:query:sql</td><td>Executes arbitrary SQL directly from the command line.</td></tr> <tr><td>doctrine:schema:create</td><td>Executes (or dumps) the SQL needed to generate the database schema</td></tr> <tr><td>doctrine:schema:drop</td><td>Executes (or dumps) the SQL needed to drop the current database schema</td></tr> <tr><td>doctrine:schema:update</td><td>Executes (or dumps) the SQL needed to update the database schema to match the current mapping metadata.</td></tr> <tr><td>doctrine:schema:validate</td><td>Validate the mapping files.</td></tr> <tr><td>fos:user:activate</td><td>Activate a user</td></tr> <tr><td>fos:user:change-password</td><td>Change the password of a user.</td></tr> <tr><td>fos:user:create</td><td>Create a user.</td></tr> <tr><td>fos:user:deactivate</td><td>Deactivate a user</td></tr> <tr><td>fos:user:demote</td><td>Demote a user by removing a role</td></tr> <tr><td>fos:user:promote</td><td>Promotes a user by adding a role</td></tr> <tr><td>generate:bundle</td><td>Generates a bundle</td></tr> <tr><td>generate:command</td><td>Generates a console command</td></tr> <tr><td>generate:controller</td><td>Generates a controller</td></tr> <tr><td>liip:imagine:cache:remove</td><td>Remove asset caches for the passed asset paths(s) and filter name(s)</td></tr> <tr><td>liip:imagine:cache:resolve</td><td>Resolves asset caches for the passed asset paths(s) and filter set name(s)</td></tr> <tr><td>lint:twig</td><td>Lints a template and outputs encountered errors</td></tr> <tr><td>lint:xliff</td><td>Lints a XLIFF file and outputs encountered errors</td></tr> <tr><td>lint:yaml</td><td>Lints a file and outputs encountered errors</td></tr> <tr><td>router:match</td><td>Helps debug routes by simulating a path info match</td></tr> <tr><td>scheduler:execute</td><td>Execute scheduled commands</td></tr> <tr><td>scheduler:monitor</td><td>Monitor scheduled commands</td></tr> <tr><td>security:check</td><td>Checks security issues in your project dependencies</td></tr> <tr><td>security:encode-password</td><td>Encodes a password.</td></tr> <tr><td>server:log</td><td>Starts a log server that displays logs in real time</td></tr> <tr><td>server:run</td><td>Runs a local web server</td></tr> <tr><td>server:start</td><td>Starts a local web server in the background</td></tr> <tr><td>server:status</td><td>Outputs the status of the local web server for the given address</td></tr> <tr><td>server:stop</td><td>Stops the local web server that was started with the server:start command</td></tr> <tr><td>swiftmailer:email:send</td><td>Send simple email message</td></tr> <tr><td>swiftmailer:spool:send</td><td>Sends emails from the spool</td></tr> <tr><td>translation:update</td><td>Updates the translation file</td></tr> <tr><td>tunisia_mall:archive1command</td><td>please_work</td></tr> <tr><td>vich:mapping:debug</td><td>Debug a mapping.</td></tr> <tr><td>vich:mapping:debug-class</td><td>Debug a class.</td></tr> <tr><td>vich:mapping:list-classes</td><td>Searches for uploadable classes.</td></tr> </table> <br/>]]></help>
 </framework>
 
