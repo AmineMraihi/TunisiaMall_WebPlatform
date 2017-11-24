@@ -7,7 +7,9 @@
  */
 
 namespace TunisiaMallBundle\Form;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
@@ -26,10 +28,10 @@ class ajouterDemandeForm extends AbstractType
             ->add('dateNaissance')
             ->add('adresse')
             ->add('sexe')
-            ->add('email')
-            ->add('numTel')
+            ->add('email',EmailType::class)
+            ->add('numTel',IntegerType::class)
             ->add('qualification')
-            ->add('experience')
+            ->add('experience',IntegerType::class)
 
            ;
 
