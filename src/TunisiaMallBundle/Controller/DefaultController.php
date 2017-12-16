@@ -114,8 +114,6 @@ class DefaultController extends Controller
         return $this->render('TunisiaMallBundle::publicite.html.twig');
     }
 
-
-
     public function clientevenementAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -124,7 +122,7 @@ class DefaultController extends Controller
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
         $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
-        return $this->render("TunisiaMallBundle::clientevenement.html.twig", array(
+        return $this->render("TunisiaMallBundle:evenement:clientevenement.html.twig", array(
             "evenements" => $evenements,
             "publicites" => $publicites,
             "produits" => $produits,

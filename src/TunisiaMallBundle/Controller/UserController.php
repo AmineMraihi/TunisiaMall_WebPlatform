@@ -21,7 +21,7 @@ class UserController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $responsables = $em->getRepository("TunisiaMallBundle:User")->findAll();
-        return $this->render("TunisiaMallBundle::responsableboutique.html.twig", array(
+        return $this->render("TunisiaMallBundle:responsable:responsableboutique.html.twig", array(
             "responsables" => $responsables
         ));
     }
@@ -41,7 +41,7 @@ class UserController extends Controller
             $em->flush();
             return $this->redirectToRoute('tunisia_mall_admin_liste_responsable_boutique');
         }
-        return $this->render("TunisiaMallBundle::ajoutresponsableboutique.html.twig", array(
+        return $this->render("TunisiaMallBundle:responsable:ajoutresponsableboutique.html.twig", array(
             "formulaire" => $form->createView()
         ));
     }
@@ -58,7 +58,7 @@ class UserController extends Controller
             $em->flush();
             return $this->redirectToRoute('tunisia_mall_admin_liste_responsable_boutique');
         }
-        return $this->render("TunisiaMallBundle::modifierresponsableboutique.html.twig", array(
+        return $this->render("TunisiaMallBundle:responsable:modifierresponsableboutique.html.twig", array(
             "formulaire" => $form->createView()
         ));
     }

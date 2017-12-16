@@ -54,7 +54,7 @@ class EvenementController extends Controller
 
 //        }
 
-        return $this->render("TunisiaMallBundle::exempleevenement.html.twig", array(
+        return $this->render("TunisiaMallBundle:evenement:exempleevenement.html.twig", array(
             "evenement" => $evenement,   /*->createView()*/
             "publicites" => $publicites,
             "boutiques"=>$boutiques
