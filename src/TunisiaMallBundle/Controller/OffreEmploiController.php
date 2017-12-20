@@ -146,8 +146,9 @@ if ($demandeEmploi!=NULL) {
 
         $boutique= new Boutique();
         $boutique->setIdBoutique($user=$this->getUser()->getIdBoutique());
+//var_dump($boutique);
 
-        $offreEmplois = $em->getRepository('TunisiaMallBundle:OffreEmploi')->findBy(['Boutique'=>$boutique]);
+        $offreEmplois = $em->getRepository('TunisiaMallBundle:OffreEmploi')->findBy(['Boutique'=>$boutique->getIdBoutique()]);
 
         return $this->render('TunisiaMallBundle::offreshopowner.html.twig', array(
             'offreEmplois' => $offreEmplois,
@@ -160,7 +161,7 @@ if ($demandeEmploi!=NULL) {
     {
         $em = $this->getDoctrine()->getManager();
         $boutique = $em->getRepository('TunisiaMallBundle:Boutique')->find($user=$this->getUser()->getIdBoutique());
-
+ //var_dump($boutique);
         $offreEmploi = new Offreemploi();
 
         $offreEmploi->setIdUserFk($user=$this->getUser()->getId());

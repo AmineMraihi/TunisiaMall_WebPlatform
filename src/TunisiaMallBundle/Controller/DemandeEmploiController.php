@@ -92,15 +92,21 @@ if ($date > $time )
            ));
        }
 
-       else { $message='Date déjà passée';
+       else { /*$message='Date déjà passée';
 
-        echo '<script type="text/javascript">window.alert("'.$message.'");
-                </script>';
+                 echo "<script type='text/javascript'>window.alert('$message');</script>";
+           $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+           return $this->render('TunisiaMallBundle:Default:index.html.twig',array(
 
-           return $this->redirectToRoute('offreclient');
+               "publicites" => $publicites,
+               "produits" => $produits
 
+           ));*/
             }
-    }
+
+       return $this->redirectToRoute('offreclient');
+
+ }
 
 
 
@@ -187,7 +193,7 @@ if ($date > $time )
 
         $boutique->setIdBoutique($user=$this->getUser()->getIdBoutique());
 
-        $offreEmploi = $em->getRepository('TunisiaMallBundle:OffreEmploi')->findBy(['Boutique'=>$boutique]);
+        $offreEmploi = $em->getRepository('TunisiaMallBundle:OffreEmploi')->findBy(['Boutique'=>$boutique->getIdBoutique()]);
 
         // var_dump($offreEmploi);
         //$offreEmploi->setBoutique($boutique);

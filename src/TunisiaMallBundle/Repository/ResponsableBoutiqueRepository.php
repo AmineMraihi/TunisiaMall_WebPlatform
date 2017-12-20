@@ -7,15 +7,23 @@
  */
 
 namespace TunisiaMallBundle\Repository;
+
 use Doctrine\ORM\EntityRepository;
 
 
 class ResponsableBoutiqueRepository extends EntityRepository
 {
-    function findbyrole($role){
-        $query=$this->getEntityManager()
+    function findbyrole($role)
+    {
+        $query = $this->getEntityManager()
             ->createQuery('select v from TunisiaMallBundle:User v where v.roles=:role ')
-            ->setParameter('role',$role);
+            ->setParameter('role', $role);
+        return $query->getResult();
+    }
+
+    function findQb()
+    {
+        $query = $this->getEntityManager()->createQuery("select m from TunisiaMallBundle:DemandePub ");
         return $query->getResult();
     }
 }

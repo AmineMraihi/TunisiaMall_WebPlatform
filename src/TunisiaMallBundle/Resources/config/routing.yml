@@ -316,3 +316,7 @@ clientoffredetails:
 statproduit:
     path:     /statproduit
     defaults: { _controller: TunisiaMallBundle:Graphe:chartHistogramme }
+
+tunisiamall_count:
+    path:     /count
+    defaults: { _controller: TunisiaMallBundle:Publicite:count }
