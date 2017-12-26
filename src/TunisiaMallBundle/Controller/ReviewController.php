@@ -18,16 +18,19 @@ class ReviewController extends Controller
 {
 
 
-    public function AjouterReviewAction(Request $request)
+    public function AjouterReviewAction($id_dis,Request $request)
     {
         $user = $this->getUser();
         $Review11 = new Review11();
         $em = $this->getDoctrine()->getManager();
-        $userManager = $this->container->get('fos_user.user_manager');
+
 
         if ($request->isMethod('GET')){
             $Review11->setEmail($request->get('email'));
             $Review11->setContenu($request->get('contenu'));
+            $Review11->setAb($id_dis);
+
+
 
 
             $em->persist($Review11);
