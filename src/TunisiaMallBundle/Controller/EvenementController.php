@@ -62,10 +62,16 @@ class EvenementController extends Controller
         ));
     }
 
-    public function listevenementAction()
+    public function listevenementAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+        if ($request->isXmlHttpRequest()){
+            $serializer=new Serializer(array(new ObjectNormalizer()));
+            $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+            $data = $serializer->normalize($evenements);
+            return new JsonResponse($data);
+        }
         return $this->render("TunisiaMallBundle:evenement:evenement.html.twig", array(
             "evenements" => $evenements
         ));

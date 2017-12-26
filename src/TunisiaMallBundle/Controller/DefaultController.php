@@ -8,6 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use TunisiaMallBundle\Entity\Reclamation;
 use TunisiaMallBundle\Entity\User;
 use TunisiaMallBundle\Entity\Boutique;
@@ -23,35 +24,33 @@ class DefaultController extends Controller
     {
         if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
 
-        $user=$this->getUser();
+            $user = $this->getUser();
 
-        $reclamation=new Reclamation();
-        if($request->isMethod('POST'))
-        {
-            $reclamation->setText($request->get('description'));
-            $reclamation->setType($request->get('type'));
-            $reclamation->setIdReclamant( $user);
-            $reclamation->setIdPReclame($this->rechercheshopowner($this->Rechercheboutique($request->get('nomB'))));
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($reclamation);
-            $em->flush();
-        }}
+            $reclamation = new Reclamation();
+            if ($request->isMethod('POST')) {
+                $reclamation->setText($request->get('description'));
+                $reclamation->setType($request->get('type'));
+                $reclamation->setIdReclamant($user);
+                $reclamation->setIdPReclame($this->rechercheshopowner($this->Rechercheboutique($request->get('nomB'))));
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($reclamation);
+                $em->flush();
+            }
+        }
         $em = $this->getDoctrine()->getManager();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
 
-        $em=$this->getDoctrine()->getManager();
-        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+        $em = $this->getDoctrine()->getManager();
+        $boutiques = $em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
 
         return $this->render('TunisiaMallBundle:Default:index.html.twig', array(
             "publicites" => $publicites,
             "produits" => $produits,
-            "boutiques"=>$boutiques
+            "boutiques" => $boutiques
 
         ));
-
-
 
 
     }
@@ -91,6 +90,7 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::evenement.html.twig');
     }
+
     /**
      * @Security("has_role('ROLE_ADMIN')")
      */
@@ -101,7 +101,7 @@ class DefaultController extends Controller
         return $this->render('TunisiaMallBundle::templateadmin.html.twig');
 //        $this->denyAccessUnlessGranted('ROLE_ADMIN', null, 'Unable to access this page!');
 
-      //  return $this->render('TunisiaMallBundle::templateadmin.html.twig');
+        //  return $this->render('TunisiaMallBundle::templateadmin.html.twig');
     }
 
     public function GBoutiqueCAAction()
@@ -120,16 +120,17 @@ class DefaultController extends Controller
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
-        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+        $boutiques = $em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
         return $this->render("TunisiaMallBundle:evenement:clientevenement.html.twig", array(
             "evenements" => $evenements,
             "publicites" => $publicites,
             "produits" => $produits,
-            "boutiques" =>$boutiques
+            "boutiques" => $boutiques
 
         ));
     }
+
     public function Rechercheboutique($nom)
     {
 
@@ -137,9 +138,10 @@ class DefaultController extends Controller
         $boutique = $em->getRepository("TunisiaMallBundle:Boutique")->findBynom($nom);
         return $boutique;
     }
+
     public function rechercheshopowner($boutique)
     {
-        $idBoutique=$boutique[0]->getIdBoutique();
+        $idBoutique = $boutique[0]->getIdBoutique();
         $em = $this->getDoctrine()->getManager();
         $user = $em->getRepository("TunisiaMallBundle:User")->findByidBoutique($idBoutique);
         return $user[0];
@@ -172,7 +174,6 @@ class DefaultController extends Controller
     }
 
 
-
     public function aboutAction()
     {
         return $this->render('TunisiaMallBundle:Default:about.html.twig');
@@ -192,6 +193,30 @@ class DefaultController extends Controller
         return $this->render('default/index.html.twig');
     }
 
+//////////////////////////test
+
+    public function updateDataAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $evenement = $em->getRepository("TunisiaMallBundle:Evenement")->find(39);
+//        $em->remove($evenement);
+//        $em->flush();
+        $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
+//        return new Response(json_encode(array(
+//            "evenements" => $response)));
+//        die($evenement->getNom());
+        $response = new Response();
+        $response->headers->set('Content-Type', 'application/json');
+        $response->setContent(json_encode($evenements));
+        return $response;
+//        return $response->setData(array("evenements" => $evenements));
+//        return $this->render("TunisiaMallBundle:evenement:evenement.html.twig", array(
+//            "evenements" => $evenements
+//        ));
+    }
+
+//////////////////////////end test
+
     public function templateclientAction()
     {
         return $this->render('TunisiaMallBundle::templateC.html.twig');
@@ -201,7 +226,6 @@ class DefaultController extends Controller
     {
         return $this->render('TunisiaMallBundle::offreshopowner.html.twig');
     }
-
 
 
     public function composersmsAction()
@@ -221,7 +245,7 @@ class DefaultController extends Controller
     public function sendsmsAction(Request $request)
     {
         $telephone = $request->get('select');
-        $subject=$request->get('subject');
+        $subject = $request->get('subject');
         $content = $request->get('content');
 
 
@@ -230,20 +254,17 @@ class DefaultController extends Controller
         $client = new Client($sid, $token);
         $client->messages->create(
         // the number you'd like to send the message to
-            '+216'.$telephone,
+            '+216' . $telephone,
             array(
                 // A Twilio phone number you purchased at twilio.com/console
                 'from' => '+13203723228',
                 // the body of the text message you'd like to send
-                'body' => $subject .":".$content
+                'body' => $subject . ":" . $content
             )
         );
         return $this->render('TunisiaMallBundle::templateadmin.html.twig');
 
     }
-
-
-
 
 
 }
