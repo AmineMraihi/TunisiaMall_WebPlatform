@@ -124,12 +124,15 @@ class DefaultController extends Controller
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
         $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+        $promotions= $em->getRepository("TunisiaMallBundle:Promotion")->findBy(array('idProduit'=>$produits));
+
 
         return $this->render("TunisiaMallBundle:evenement:clientevenement.html.twig", array(
             "evenements" => $evenements,
             "publicites" => $publicites,
             "produits" => $produits,
-            "boutiques" =>$boutiques
+            "boutiques" =>$boutiques,
+            "promotions"=>$promotions
 
         ));
     }
