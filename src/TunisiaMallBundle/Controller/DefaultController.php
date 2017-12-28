@@ -8,6 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use TunisiaMallBundle\Entity\Reclamation;
 use TunisiaMallBundle\Entity\User;
 use TunisiaMallBundle\Entity\Boutique;
@@ -23,25 +24,25 @@ class DefaultController extends Controller
     {
         if ($this->get('security.authorization_checker')->isGranted('IS_AUTHENTICATED_FULLY')) {
 
-        $user=$this->getUser();
+            $user = $this->getUser();
 
-        $reclamation=new Reclamation();
-        if($request->isMethod('POST'))
-        {
-            $reclamation->setText($request->get('description'));
-            $reclamation->setType($request->get('type'));
-            $reclamation->setIdReclamant( $user);
-            $reclamation->setIdPReclame($this->rechercheshopowner($this->Rechercheboutique($request->get('nomB'))));
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($reclamation);
-            $em->flush();
-        }}
+            $reclamation = new Reclamation();
+            if ($request->isMethod('POST')) {
+                $reclamation->setText($request->get('description'));
+                $reclamation->setType($request->get('type'));
+                $reclamation->setIdReclamant($user);
+                $reclamation->setIdPReclame($this->rechercheshopowner($this->Rechercheboutique($request->get('nomB'))));
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($reclamation);
+                $em->flush();
+            }
+        }
         $em = $this->getDoctrine()->getManager();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
 
-        $em=$this->getDoctrine()->getManager();
-        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+        $em = $this->getDoctrine()->getManager();
+        $boutiques = $em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
         $promotions= $em->getRepository("TunisiaMallBundle:Promotion")->findBy(array('idProduit'=>$produits));
 
@@ -116,8 +117,6 @@ class DefaultController extends Controller
         return $this->render('TunisiaMallBundle::publicite.html.twig');
     }
 
-
-
     public function clientevenementAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -125,12 +124,15 @@ class DefaultController extends Controller
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
         $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+        $promotions= $em->getRepository("TunisiaMallBundle:Promotion")->findBy(array('idProduit'=>$produits));
 
-        return $this->render("TunisiaMallBundle::clientevenement.html.twig", array(
+
+        return $this->render("TunisiaMallBundle:evenement:clientevenement.html.twig", array(
             "evenements" => $evenements,
             "publicites" => $publicites,
             "produits" => $produits,
-            "boutiques" =>$boutiques
+            "boutiques" =>$boutiques,
+            "promotions"=>$promotions
 
         ));
     }

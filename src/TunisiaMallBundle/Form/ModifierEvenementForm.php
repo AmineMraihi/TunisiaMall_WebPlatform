@@ -25,9 +25,9 @@ class ModifierEvenementForm extends AbstractType
                 'multiple'=>false,
             ))
             ->add("imageFile",VichImageType::class,array(
-                'required' => false,
-                'allow_delete'  => true,
-                'download_link' => true,
+//                'required' => false,
+//                'allow_delete'  => true,
+//                'download_link' => true,
             ))
             ->add("save", SubmitType::class);
 
