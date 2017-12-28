@@ -28,7 +28,7 @@ class AjoutPromotionForm extends AbstractType
             ])
             ->add("id_produit",EntityType::class,array(
                 'class'=>"TunisiaMallBundle\Entity\Produit",
-                'choice_label' => 'nom'
+                'choice_label' => 'id_produit'
 
             ))
 
