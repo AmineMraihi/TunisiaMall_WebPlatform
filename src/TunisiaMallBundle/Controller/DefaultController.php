@@ -46,7 +46,8 @@ class DefaultController extends Controller
 
         return $this->render('TunisiaMallBundle:Default:index.html.twig', array(
             "publicites" => $publicites,
-            "produits" => $produits, "boutiques"=>$boutiques
+            "produits" => $produits,
+            "boutiques"=>$boutiques
 
         ));
 

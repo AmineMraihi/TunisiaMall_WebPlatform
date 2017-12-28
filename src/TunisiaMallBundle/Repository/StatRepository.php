@@ -13,8 +13,7 @@ class StatRepository extends EntityRepository
 {
     public function findByidBoutique($idboutique)
     {
-
-        $query=$this->getEntityManager()
+          $query=$this->getEntityManager()
             ->createQuery("
         select r from TunisiaMallBundle:Produit r where r.idBoutique=:id ")
             ->setParameter('id',"$idboutique");

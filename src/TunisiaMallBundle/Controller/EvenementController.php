@@ -41,6 +41,7 @@ class EvenementController extends Controller
         $em = $this->getDoctrine()->getManager();
         $evenement = $em->getRepository("TunisiaMallBundle:Evenement")->find($id);
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
+        $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
 
 //        $form=$this->createForm(ModifierEvenementForm::class,$evenement);
 //        $form->handleRequest($request);
@@ -55,7 +56,8 @@ class EvenementController extends Controller
 
         return $this->render("TunisiaMallBundle::exempleevenement.html.twig", array(
             "evenement" => $evenement,   /*->createView()*/
-            "publicites" => $publicites
+            "publicites" => $publicites,
+            "boutiques"=>$boutiques
 
         ));
     }
@@ -85,7 +87,7 @@ class EvenementController extends Controller
 
         }
 
-        return $this->render("TunisiaMallBundle:evenement:shopownermodifierevenement.html.twig", array(
+        return $this->render("TunisiaMallBundle:evenement:modifierevenementemplate.html.twig", array(
             "form" => $form->createView()
         ));
 

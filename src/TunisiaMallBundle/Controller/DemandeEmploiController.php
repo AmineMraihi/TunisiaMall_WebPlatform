@@ -24,12 +24,15 @@ class DemandeEmploiController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $offreEmplois = $em->getRepository('TunisiaMallBundle:OffreEmploi')->findAll();
+
         $evenements = $em->getRepository("TunisiaMallBundle:Evenement")->findAll();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
         $produits = $em->getRepository("TunisiaMallBundle:Produit")->findAll();
         $boutiques=$em->getRepository("TunisiaMallBundle:Boutique")->findAll();
+
         return $this->render('TunisiaMallBundle::offreClient.html.twig', array(
             'offreEmplois' => $offreEmplois,
+
             "evenements" => $evenements,
             "publicites" => $publicites,
             "produits" => $produits,

@@ -1,132 +1,121 @@
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
 {% block robots %}
-    {{ form_start(formulaire) }}
+
+
     <section id="content">
+        <link rel="stylesheet" href="{{ asset('assets/css/vendor/promotion.css') }}">
+        <div class="page page-tables-datatables">
 
-        <div class="page page-forms-common">
+            <div class="pageheader">
+                <br>
 
+
+                <div id="titreajout">Ajouter un Responsable Boutique</div>
+
+
+            </div>
 
             <!-- row -->
             <div class="row">
-
-
                 <!-- col -->
                 <div class="col-md-12">
 
-                    <!-- tile -->
+
                     <section class="tile">
 
                         <!-- tile header -->
-                        <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Responsable Boutique </strong>Modifier</h1>
-                            <ul class="controls">
-                                <li class="dropdown">
+                        <div >
 
-                                    <a role="button" tabindex="0" class="dropdown-toggle settings"
-                                       data-toggle="dropdown">
-                                        <i class="fa fa-cog"></i>
-                                        <i class="fa fa-spinner fa-spin"></i>
-                                    </a>
 
-                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-toggle">
-                                                <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                                                <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-refresh">
-                                                <i class="fa fa-refresh"></i> Refresh
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-fullscreen">
-                                                <i class="fa fa-expand"></i> Fullscreen
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </li>
-                                <li class="remove"><a role="button" tabindex="0" class="tile-close"><i
-                                                class="fa fa-times"></i></a></li>
-                            </ul>
                         </div>
                         <!-- /tile header -->
 
-                        <!-- tile body -->
 
-                        <table class="table table-custom">
-                            <thead>
-                            <tr class="odd gradeX">
-                                <th>nom</th>
-                                <td >{{ form_widget(formulaire.nom) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>prenom</th>
-                                <td>{{ form_widget(formulaire.prenom) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>username</th>
-                                <td>{{ form_widget(formulaire.username) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>email</th>
-                                <td>{{ form_widget(formulaire.email) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>numero telephone</th>
-                                <td>{{ form_widget(formulaire.numero_telephone) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>sexe</th>
-                                <td>{{ form_widget(formulaire.sexe) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>adresse</th>
-                                <td>{{ form_widget(formulaire.adresse) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>date expiration</th>
-                                <td>{{ form_widget(formulaire.date_expiration) }}</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <th>boutique</th>
-                                <td>{{ form_widget(formulaire.idBoutique) }}</td>
-                            </tr>
 
-                            <tr>
-                                <th style="width: 160px;" class="no-sort">Actions</th>
-                                <td>{{ form_widget(formulaire.save) }}</td>
-                            </tr>
-                            </thead>
-                            <tbody>
+                        <div class="content">
+                            {{ form_start(formulaire) }}
 
-                            </tbody>
-                        </table>
+                            <div>
 
+                                {{ form_label(formulaire.nom) }} :
+                                {{ form_widget( formulaire.nom,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+                            <div>
+
+                                {{ form_label(formulaire.prenom) }} :
+                                {{ form_widget( formulaire.prenom,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(formulaire.username) }} :
+                                {{ form_widget( formulaire.username,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(formulaire.email) }} :
+                                {{ form_widget( formulaire.email,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(formulaire.numero_telephone) }} :
+                                {{ form_widget( formulaire.numero_telephone,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+
+                            <div>
+
+                                {{ form_label(formulaire.sexe) }} :
+                                {{ form_widget( formulaire.sexe,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+
+                                {{ form_label(formulaire.adresse) }} :
+                                {{ form_widget( formulaire.adresse,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+                            <div>
+                                {{ form_label(formulaire.date_expiration) }} :
+                                {{ form_widget( formulaire.date_expiration   ) }}
+                            </div>
+
+
+
+
+
+                            <div>
+                                {{ form_label(formulaire.idBoutique) }} :
+                                {{ form_widget( formulaire.idBoutique,{'attr': {'class':'form-control'}}   ) }}
+                            </div>
+
+
+
+
+
+                            <div>
+                                {{ form_widget( formulaire.save,{'attr': {'class':'form_ajouter'}}  ) }}
+
+                            </div>
+                            {{ form_end(formulaire) }}
+
+                        </div>
 
                         <!-- /tile body -->
 
                     </section>
-                    <!-- /tile -->
-
                 </div>
-                <!-- /col -->
-
-
             </div>
-            <!-- /row -->
-
-
         </div>
-        <!-- /tile body -->
+
 
     </section>
 
 
 
-
-
-    {{ form_end(formulaire) }}
 {% endblock robots %}

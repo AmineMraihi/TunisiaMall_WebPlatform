@@ -85,6 +85,7 @@
                                     </thead>
                                     <tbody>
                                     {% for evenement in evenements %}
+                                        {% if  evenement.idUser.nom == app.user.nom %}
                                         <tr class="odd gradeX">
                                             <td>{{ evenement.nom }}</td>
                                             <td>{{ evenement.description }}</td>
@@ -110,6 +111,7 @@
                                                 </a>
                                             </td>
                                         </tr>
+                                            {% endif %}
                                     {% endfor %}
 
                                     </tbody>

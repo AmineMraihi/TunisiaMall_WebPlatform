@@ -125,9 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                    aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 
                                 <ul class="dropdown-menu agile_short_dropdown">
-                                    <li><a href="Events.html.twig">Shop Events</a></li>
                                     <li><a href="{{ path('tunisia_mall_client_evenement') }}">Mall Events</a></li>
-                                    <li><a href="Events.html.twig">Kids Events</a></li>
 
                                 </ul>
 
@@ -329,7 +327,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <label>Confirm Password</label>
                                 <span></span>
                             </div>
-                            <input type="submit" value="Sign Up">
+
+
+                            {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+                            {{ form_widget(form) }}
+                            <div>
+                                <input type="submit" value="{{ 'registration.submit'|trans }}" />
+                            </div>
+
+                            {{ form_end(form) }}
+
+
+                            <input type="submit" value="Sign Up" >
+
+
+
                         </form>
                         <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
                             <li><a href="#" class="facebook">

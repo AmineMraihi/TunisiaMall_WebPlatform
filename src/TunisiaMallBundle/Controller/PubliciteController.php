@@ -10,6 +10,7 @@ namespace TunisiaMallBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Validator\Constraints\DateTime;
 use TunisiaMallBundle\Entity\DemandePub;
 use TunisiaMallBundle\Entity\Publicite;
@@ -39,15 +40,11 @@ class PubliciteController extends Controller
         $form = $this->createForm(ModifierPubliciteForm::class, $publicite);
         $form->handleRequest($request);
         if ($form->isValid()) {
-            $time = new \DateTime("now");
             if ($publicite->getDateFin() > $publicite->getDateDebut()) {
-                if ($publicite->getDateFin() > $time && $publicite->getDateDebut() > $time) {
-                    var_dump($time);
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($publicite);
-                    $em->flush();
-                    return $this->redirectToRoute('tunisia_mall_admin_publicite');
-                }
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($publicite);
+                $em->flush();
+                return $this->redirectToRoute('tunisia_mall_admin_publicite');
             } else {
                 ?>
                 <script>
@@ -88,13 +85,11 @@ class PubliciteController extends Controller
         if ($form->isValid()) {
             if ($publicite->getDateFin() > $publicite->getDateDebut()) {
                 $time = new \DateTime("now");
-                if ($publicite->getDateFin() > $time && $publicite->getDateDebut() > $time) {
-                    var_dump(date('Y-m-d'));
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($publicite);
-                    $em->flush();
-                    return $this->redirectToRoute('tunisia_mall_admin_publicite');
-                }
+                var_dump(date('Y-m-d'));
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($publicite);
+                $em->flush();
+                return $this->redirectToRoute('tunisia_mall_admin_publicite');
             } else {
                 ?>
                 <script>
@@ -116,14 +111,12 @@ class PubliciteController extends Controller
         if ($form->isValid()) {
             if ($demandepub->getDateFin() > $demandepub->getDateDebut()) {
                 $time = new \DateTime("now");
-                if ($demandepub->getDateFin() > $time && $demandepub->getDateDebut() > $time) {
-                    var_dump(date('Y-m-d'));
-                    $em = $this->getDoctrine()->getManager();
-                    $em->persist($demandepub);
-                    $em->flush();
-                    return $this->redirectToRoute('tunisia_mall_chatshop');
+                var_dump(date('Y-m-d'));
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($demandepub);
+                $em->flush();
+                return $this->redirectToRoute('tunisia_mall_chatshop');
 
-                }
             } else {
                 ?>
                 <script>
@@ -144,6 +137,13 @@ class PubliciteController extends Controller
         return $this->render("TunisiaMallBundle::listedemandepub.html.twig", array(
             "publicites" => $publicites
         ));
+    }
+
+    public function countAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $publicite = $em->getRepository("TunisiaMallBundle:DemandePub")->findAll();
+        return new Response(count($publicite));
     }
 
     public function acceptajoutpubAction($id)

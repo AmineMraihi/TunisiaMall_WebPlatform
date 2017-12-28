@@ -5,6 +5,7 @@ namespace TunisiaMallBundle\Form;
 use FOS\UserBundle\Util\LegacyFormHelper;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -20,7 +21,15 @@ class ModifierResponsableBoutiqueForm extends AbstractType
             ->add('email', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\EmailType'), array('label' => 'form.email', 'translation_domain' => 'FOSUserBundle'))
             ->add('nom')
             ->add('prenom')
-            ->add('sexe')
+            ->add('sexe', ChoiceType::class, array(
+                'choices' => array(
+                    'Male' => 'Male',
+                    'Female' => 'Female'
+                ),
+                'required'    => false,
+                'placeholder' => 'Choose your gender',
+                'empty_data'  => null
+            ))
             ->add('date_expiration',DateType::class, array(
                 'widget' => 'single_text',
                 'format' => 'yyyy-MM-dd'))
