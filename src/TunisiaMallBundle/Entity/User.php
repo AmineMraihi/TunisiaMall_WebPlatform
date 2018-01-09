@@ -439,4 +439,6 @@ class User extends BaseUser
             return $redirection = "ROLE_RESPONSABLE";
 
     }
+
+
 }

@@ -109,13 +109,15 @@ class PubliciteController extends Controller
     public
     function demandeajoutpubAction(Request $request)
     {
+//        die($this->getUser());
         $demandepub = new DemandePub();
         $form = $this->createForm(AjoutDemandePub::class, $demandepub);
         $form->handleRequest($request);
         if ($form->isValid()) {
             if ($demandepub->getDateFin() > $demandepub->getDateDebut()) {
                 $time = new \DateTime("now");
-                var_dump(date('Y-m-d'));
+//                var_dump(date('Y-m-d'));
+                $demandepub->setIdBoutique($this->getUser()->getIdBoutique());
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($demandepub);
                 $em->flush();

@@ -27,10 +27,11 @@ class UserController extends Controller
     }
 
 
-
     public function ajoutresponsableboutiqueAction(Request $request)
     {
-        $user=new User();
+        $em1 = $this->getDoctrine()->getManager();
+        $emptyboutiques = $em1->getRepository("TunisiaMallBundle:User")->returnemptyboutique();
+        $user = new User();
         $form = $this->createForm(AjoutResponsableBoutiqueForm::class, $user);
         $form->handleRequest($request);
         $user->setRoles(array('ROLE_RESPONSABLE'));
@@ -42,7 +43,8 @@ class UserController extends Controller
             return $this->redirectToRoute('tunisia_mall_admin_liste_responsable_boutique');
         }
         return $this->render("TunisiaMallBundle:responsable:ajoutresponsableboutique.html.twig", array(
-            "formulaire" => $form->createView()
+            "formulaire" => $form->createView(),
+            "emptyboutiques" => $emptyboutiques
         ));
     }
 

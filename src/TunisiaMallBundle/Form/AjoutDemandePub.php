@@ -25,11 +25,11 @@ class AjoutDemandePub extends AbstractType
                 'allow_delete' => true,
                 'download_link' => true,
             ))
-            ->add("idBoutique", EntityType::class, array(
-                'class' => "TunisiaMallBundle\Entity\Boutique",
-                'choice_label' => 'nom',
-                'multiple' => false,
-            ))
+//            ->add("idBoutique", EntityType::class, array(
+//                'class' => "TunisiaMallBundle\Entity\Boutique",
+//                'choice_label' => 'nom',
+//                'multiple' => false,
+//            ))
             ->add("ajouter", SubmitType::class);
     }
 
