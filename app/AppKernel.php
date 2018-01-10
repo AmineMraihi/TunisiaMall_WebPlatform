@@ -27,7 +27,7 @@ class AppKernel extends Kernel
             new DocDocDoc\NexmoBundle\DocDocDocNexmoBundle(),
             new MyAppMailBundle\MyAppMailBundle(),
 
-            new Ob\HighchartsBundle\ObHighchartsBundle(),
+      //      new Ob\HighchartsBundle\ObHighchartsBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

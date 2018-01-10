@@ -1,6 +1,6 @@
 tunisia_mall_reservationPlaceParking:
     resource: "@TunisiaMallBundle/Resources/config/routing/reservationpp.yml"
-    prefix:   /reservationPlaceParking
+    prefix:   /reservationPlaceParkingX
 tunisia_mall_homepage:
     path:     /
     defaults: { _controller: TunisiaMallBundle:Default:index }

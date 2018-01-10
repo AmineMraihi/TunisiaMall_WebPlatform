@@ -1,0 +1,24 @@
+reservationPlaceParking_index:
+    path:     /
+    defaults: { _controller: "TunisiaMallBundle:ReservationPP:index" }
+    methods:  GET
+
+reservationPlaceParking_show:
+    path:     /{idReservation}/show
+    defaults: { _controller: "TunisiaMallBundle:ReservationPP:show" }
+    methods:  GET
+
+reservationPlaceParking_new:
+    path:     /new
+    defaults: { _controller: "TunisiaMallBundle:ReservationPP:new" }
+    methods:  [GET, POST]
+
+reservationPlaceParking_edit:
+    path:     /{idReservation}/edit
+    defaults: { _controller: "TunisiaMallBundle:ReservationPP:edit" }
+    methods:  [GET, POST]
+
+reservationPlaceParking_delete:
+    path:     /{idReservation}/delete
+    defaults: { _controller: "TunisiaMallBundle:ReservationPP:delete" }
+    methods:  DELETE
