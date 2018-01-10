@@ -44,6 +44,10 @@ class PubliciteController extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($publicite);
                 $em->flush();
+                $this->addFlash(
+                    'update',
+                    'evenement '. $publicite->getPage().' a été modifié'
+                );
                 return $this->redirectToRoute('tunisia_mall_admin_publicite');
             } else {
                 ?>
@@ -75,6 +79,10 @@ class PubliciteController extends Controller
         $publicite = $em->getRepository("TunisiaMallBundle:Publicite")->find($id);
         $em->remove($publicite);
         $em->flush();
+        $this->addFlash(
+            'delete',
+            'publicité '. $publicite->getPage() .' a été supprimée'
+        );
         return $this->redirectToRoute('tunisia_mall_admin_publicite');
 
     }
@@ -92,6 +100,10 @@ class PubliciteController extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($publicite);
                 $em->flush();
+                $this->addFlash(
+                    'notice',
+                    'publicité '. $publicite->getPage() .' ajouté avec succés'
+                );
                 return $this->redirectToRoute('tunisia_mall_admin_publicite');
             } else {
                 ?>
@@ -109,13 +121,15 @@ class PubliciteController extends Controller
     public
     function demandeajoutpubAction(Request $request)
     {
+//        die($this->getUser());
         $demandepub = new DemandePub();
         $form = $this->createForm(AjoutDemandePub::class, $demandepub);
         $form->handleRequest($request);
         if ($form->isValid()) {
             if ($demandepub->getDateFin() > $demandepub->getDateDebut()) {
                 $time = new \DateTime("now");
-                var_dump(date('Y-m-d'));
+//                var_dump(date('Y-m-d'));
+                $demandepub->setIdBoutique($this->getUser()->getIdBoutique());
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($demandepub);
                 $em->flush();

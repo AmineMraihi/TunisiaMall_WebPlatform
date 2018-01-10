@@ -29,8 +29,21 @@ class Review11
     private $email;
 
     /**
-     * @return int
+     * @var string
+     *
+     * @ORM\Column(name="ab",  type="string", length=250, nullable=false)
      */
+    private $ab;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="contenu", type="string", length=250, nullable=false)
+     */
+    private $contenu;
+
+
 
     /**
      * @var \Produit
@@ -42,6 +55,8 @@ class Review11
      */
 
     private $idProduit;
+
+
 
 
     public function getAb()
@@ -57,19 +72,7 @@ class Review11
         $this->ab = $ab;
     }
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="ab",  type="string", length=250, nullable=false)
-     */
-    private $ab;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="contenu", type="string", length=250, nullable=false)
-     */
-    private $contenu;
 
 
     /**

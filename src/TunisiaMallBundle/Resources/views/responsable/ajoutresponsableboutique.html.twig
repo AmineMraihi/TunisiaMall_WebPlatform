@@ -6,11 +6,7 @@
 
             <div class="pageheader">
                 <br>
-
-
                 <div id="titreajout">Ajouter un Responsable Boutique</div>
-
-
             </div>
 
             <!-- row -->
@@ -22,12 +18,11 @@
                     <section class="tile">
 
                         <!-- tile header -->
-                        <div >
+                        <div>
 
 
                         </div>
                         <!-- /tile header -->
-
 
 
                         <div class="content">
@@ -86,18 +81,16 @@
                                 {{ form_widget( formulaire.date_expiration   ) }}
                             </div>
 
-
-
-
-
-                            <div>
-                                {{ form_label(formulaire.idBoutique) }} :
-                                {{ form_widget( formulaire.idBoutique,{'attr': {'class':'form-control'}}   ) }}
-                            </div>
-
-
-
-
+                            {#{% for emptyboutique in emptyboutiques %}#}
+                                <div>
+                                    {#<p>{{ formulaire.idBoutique.vars.value }}</p>#}
+                                    {#{% for choice in formulaire %}#}
+                                        {#{{ formulaire.idBoutique.vars.choices[formulaire.idBoutique.vars.value].data }}#}
+                                    {#{% endfor %}#}
+                                    {{ form_label(formulaire.idBoutique) }} :
+                                    {{ form_widget( formulaire.idBoutique,{'attr': {'class':'form-control'}}   ) }}
+                                </div>
+                            {#{% endfor %}#}
 
                             <div>
                                 {{ form_widget( formulaire.ajouter,{'attr': {'class':'form_ajouter'}}  ) }}

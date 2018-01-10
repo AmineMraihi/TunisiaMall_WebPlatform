@@ -19,11 +19,11 @@ class ModifierEvenementShopownerForm extends AbstractType
             ->add('description')
             ->add('date',DateType::class)
 //            ->add('path')
-            ->add('idUser',EntityType::class,array(
-                'class'=>"TunisiaMallBundle\Entity\User",
-                'choice_label' => 'nom',
-                'multiple'=>false,
-            ))
+//            ->add('idUser',EntityType::class,array(
+//                'class'=>"TunisiaMallBundle\Entity\User",
+//                'choice_label' => 'nom',
+//                'multiple'=>false,
+//            ))
             ->add("imageFile",VichImageType::class,array(
                 'required' => false,
                 'allow_delete'  => true,

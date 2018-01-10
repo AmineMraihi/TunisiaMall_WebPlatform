@@ -13,6 +13,9 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
+
+
 class modifierproditForm extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
@@ -23,19 +26,17 @@ class modifierproditForm extends AbstractType
             ->add("prix",MoneyType::class)
             ->add("quantite",IntegerType::class)
             ->add("prixAchatGros",MoneyType::class)
-            ->add("nbVente",IntegerType::class)
+
+            ->add("nbVente",HiddenType::class)
             ->add('imageFile', VichImageType::class, [
                 'required' => false,
                 'allow_delete'  => true,
                 'download_link' => true,
+
             ])
 
             ->add("description")
-            ->add("id_boutique",EntityType::class,array(
-                'class'=>"TunisiaMallBundle\Entity\Boutique",
-                'choice_label' => 'idBoutique'
-
-            ))
+            -> add('id_boutique', HiddenType::class)
 
 
 

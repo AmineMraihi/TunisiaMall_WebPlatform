@@ -39,22 +39,22 @@ class promotionController extends Controller
 
 
         $em=$this->getDoctrine()->getManager() ;
-        $promotion= $em->getRepository("TunisiaMallBundle\\Entity\\Promotion")->findOneBy(array('idProduit'=>$id_produit )) ;
 
+        $promotion = new promotion();
         $Form =$this->createForm(AjoutPromotionForm::class, $promotion) ;
         $Form->handleRequest($request) ;
         if($Form->isValid()) {
             $em=$this->getDoctrine()->getManager() ;
             $em->persist($promotion) ;
             $em->flush() ;
-    }
+            return $this->redirectToRoute("tunisia_mall_listProduit") ; }
         return $this->render('TunisiaMallBundle:promotion:promotiondeproduitx.html.twig', array('formulaire'=>$Form->createView())) ;
-    }
 
-    public function modifierPromotionAction($id_promotion, Request $request)
+ }
+    public function modifierPromotionAction($idPromotion, Request $request)
     {
         $em=$this->getDoctrine()->getManager() ;
-        $promotion= $em->getRepository("TunisiaMallBundle\\Entity\\Promotion")->findOneBy(array('idPromotion'=>$id_promotion )) ;
+        $promotion= $em->getRepository("TunisiaMallBundle\\Entity\\Promotion")->findOneBy(array('idPromotion'=>$idPromotion)) ;
 
         $Form =$this->createForm(ModifierPromotion::class, $promotion) ;
         $Form->handleRequest($request) ;

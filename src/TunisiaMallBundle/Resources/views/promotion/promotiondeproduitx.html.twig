@@ -63,18 +63,16 @@
 
 
                               <div>
-                            <{{ form_widget(formulaire.imageFile) }}>
+                            {{ form_widget(formulaire.imageFile) }}>
                         </div>
 
 
 
-
                             <div>
-
-                                Id de boutique :   <span></span>
-                                {{ form_widget(formulaire.id_produit)}}
-
+                                Nom de Produit
+                                {{ form_widget( formulaire.id_produit,{'attr': {'class':'form-control'}}   ) }}
                             </div>
+
 
 
                             <div>

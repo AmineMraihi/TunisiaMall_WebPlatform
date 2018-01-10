@@ -26,10 +26,14 @@ class EvenementShopownerController extends Controller
         $form = $this->createForm(AjoutevenementShopownerForm::class,$evenement);
         $form->handleRequest($request);
         if ($form->isValid()) {
-
+            $evenement->setIdUser($this->getUser());
             $em = $this->getDoctrine()->getManager();
             $em->persist($evenement);
             $em->flush();
+            $this->addFlash(
+                'notice',
+                'evenement ajouté avec succés'
+            );
             return $this->redirectToRoute('tunisia_mall_shopowner_list_evenement');
 
         }
@@ -55,9 +59,14 @@ class EvenementShopownerController extends Controller
         $form->handleRequest($request);
 
         if ($form->isValid()) {
+            $evenement->setIdUser($this->getUser());
             $em=$this->getDoctrine()->getManager();
             $em->persist($evenement);
             $em->flush();
+            $this->addFlash(
+                'update',
+                'evenement '. $evenement->getNom().' a été modifié'
+            );
             return $this->redirectToRoute('tunisia_mall_shopowner_list_evenement');
 
         }
@@ -73,6 +82,10 @@ class EvenementShopownerController extends Controller
         $evenement = $em->getRepository("TunisiaMallBundle:Evenement")->find($id);
         $em->remove($evenement);
         $em->flush();
+        $this->addFlash(
+            'delete',
+            'evenement supprimé'
+        );
         return $this->redirectToRoute('tunisia_mall_shopowner_list_evenement');
     }
 }
