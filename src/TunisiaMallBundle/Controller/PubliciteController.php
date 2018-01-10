@@ -28,7 +28,7 @@ class PubliciteController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $publicites = $em->getRepository("TunisiaMallBundle:Publicite")->findAll();
-        return $this->render("TunisiaMallBundle::publicite.html.twig", array(
+        return $this->render("TunisiaMallBundle:Publicite:publicite.html.twig", array(
             "publicites" => $publicites
         ));
     }
@@ -53,12 +53,13 @@ class PubliciteController extends Controller
                 <?php
             }
         }
-        return $this->render("TunisiaMallBundle::modifierpublicite.html.twig", array(
+        return $this->render("TunisiaMallBundle:Publicite:modifierpublicite.html.twig", array(
             "formulaire" => $form->createView()
         ));
     }
 
-    public function refuserpublicteAction($id)
+    public
+    function refuserpublicteAction($id)
     {
         $em = $this->getDoctrine()->getManager();
         $demandepublicite = $em->getRepository("TunisiaMallBundle:DemandePub")->find($id);
@@ -67,7 +68,8 @@ class PubliciteController extends Controller
         return $this->redirectToRoute('tunisia_mall_admin_liste_demande_publicite');
     }
 
-    public function supprimerpublicteAction($id)
+    public
+    function supprimerpublicteAction($id)
     {
         $em = $this->getDoctrine()->getManager();
         $publicite = $em->getRepository("TunisiaMallBundle:Publicite")->find($id);
@@ -77,7 +79,8 @@ class PubliciteController extends Controller
 
     }
 
-    public function ajoutpubAction(Request $request)
+    public
+    function ajoutpubAction(Request $request)
     {
         $publicite = new Publicite();
         $form = $this->createForm(AjoutPubliciteForm::class, $publicite);
@@ -98,12 +101,13 @@ class PubliciteController extends Controller
                 <?php
             }
         }
-        return $this->render("TunisiaMallBundle::ajoutpublicite.html.twig", array(
+        return $this->render("TunisiaMallBundle:Publicite:ajoutpublicite.html.twig", array(
             "formulaire" => $form->createView()
         ));
     }
 
-    public function demandeajoutpubAction(Request $request)
+    public
+    function demandeajoutpubAction(Request $request)
     {
         $demandepub = new DemandePub();
         $form = $this->createForm(AjoutDemandePub::class, $demandepub);
@@ -125,28 +129,31 @@ class PubliciteController extends Controller
                 <?php
             }
         }
-        return $this->render("TunisiaMallBundle::ajoutdemandepublicite.html.twig", array(
+        return $this->render("TunisiaMallBundle:Publicite:ajoutdemandepublicite.html.twig", array(
             "formulaire" => $form->createView()
         ));
     }
 
-    public function listdemandepubAction()
+    public
+    function listdemandepubAction()
     {
         $em = $this->getDoctrine()->getManager();
         $publicites = $em->getRepository("TunisiaMallBundle:DemandePub")->findAll();
-        return $this->render("TunisiaMallBundle::listedemandepub.html.twig", array(
+        return $this->render("TunisiaMallBundle:Publicite:listedemandepub.html.twig", array(
             "publicites" => $publicites
         ));
     }
 
-    public function countAction()
+    public
+    function countAction()
     {
         $em = $this->getDoctrine()->getManager();
         $publicite = $em->getRepository("TunisiaMallBundle:DemandePub")->findAll();
         return new Response(count($publicite));
     }
 
-    public function acceptajoutpubAction($id)
+    public
+    function acceptajoutpubAction($id)
     {
         $em = $this->getDoctrine()->getManager();
         $demandepublicite = $em->getRepository("TunisiaMallBundle:DemandePub")->find($id);

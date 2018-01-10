@@ -161,7 +161,7 @@ tunisia_mall_exemple_evenement:
 
 
 tunisia_mall_AjouterReview:
-    path:     /detailleprod/AjouterReview
+    path:     /detailleprod/AjouterReview/{id_dis}
     defaults: { _controller: TunisiaMallBundle:Review:AjouterReview }
 
 
@@ -321,6 +321,9 @@ tunisiamall_count:
     path:     /count
     defaults: { _controller: TunisiaMallBundle:Publicite:count }
 
+ajaxtest:
+    path:     /call
+    defaults: { _controller: TunisiaMallBundle:Default:updateData  }
 statpie:
     path:     /statpie
     defaults: { _controller: TunisiaMallBundle:Graphe:chartPie }

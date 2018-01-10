@@ -1,0 +1,75 @@
+{#{% extends "TunisiaMallBundle::layout.html.twig" %}#}
+{% extends "TunisiaMallBundle::templateC.html.twig" %}
+
+
+{% block client_event %}
+
+
+
+    <div class="new_arrivals_agile_w3ls_info">
+        <div class="container">
+            <h3 class="wthree_text_info">Evenement <span>Liste</span></h3>
+            <div id="horizontalTab">
+                <ul class="resp-tabs-list">
+                    <li></li>
+                </ul>
+                <div class="resp-tabs-container">
+                    <!--/tab_one-->
+                    <div class="tab1">
+                        {% for evenement in evenements %}
+                            <div class="col-md-3 product-men">
+                                <div class="men-pro-item simpleCart_shelfItem">
+                                    <div class="men-thumb-item">
+                                        <img src="{{ asset('images/amine/') ~ evenement.path }}" alt=""
+                                             width="500"
+                                             height="175" class="pro-image-front">
+                                        <img src="{{ asset('images/amine/') ~ evenement.path }}" alt=""
+                                             width="500"
+                                             height="175" class="pro-image-back">
+                                        <div class="men-cart-pro">
+                                            <div class="inner-men-cart-pro">
+                                                <a href="single.html" class="link-product-add-cart">Quick View</a>
+                                            </div>
+                                        </div>
+                                        <span class="product-new-top">New</span>
+
+                                    </div>
+                                    <div class="item-info-product ">
+                                        <h4><a href="{{ path('tunisia_mall_exemple_evenement',
+                                            {'id':evenement.idEvenement}) }}">{{ evenement.nom }}</a></h4>
+                                        <div class="info-product-price">
+                                            {#<span class="item_price">{{ evenement.description }}</span>#}
+                                            {#<del>TND140.99</del>#}
+                                        </div>
+                                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                                            <form action="#" method="post">
+                                                <fieldset>
+                                                    <input type="hidden" name="cmd" value="_cart"/>
+                                                    <input type="hidden" name="add" value="1"/>
+                                                    <input type="hidden" name="business" value=" "/>
+                                                    <input type="hidden" name="item_name" value="Formal Blue Shirt"/>
+                                                    <input type="hidden" name="amount" value="30.99"/>
+                                                    <input type="hidden" name="discount_amount" value="1.00"/>
+                                                    <input type="hidden" name="currency_code" value="USD"/>
+                                                    <input type="hidden" name="return" value=" "/>
+                                                    <input type="hidden" name="cancel_return" value=" "/>
+                                                    <input type="button" name="submit" value="detail"
+                                                           class="button"/>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock client_event %}
+    {#testing begins here#}

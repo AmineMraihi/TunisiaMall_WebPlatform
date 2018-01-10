@@ -119,7 +119,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                                                  href="{{ path('tunisia_mall_homepage') }}">Home
                                     <span class="sr-only">(current)</span></a></li>
                             <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="Brands.html.twig">Brands</a></li>
+
                             <li class="dropdown menu__item">
                                 <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button"
                                    aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
@@ -193,8 +193,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  width="1920"
                  height="250" alt="Los Angeles">
         </div>
+
         {% block client_publicite %}
-            {% include 'TunisiaMallBundle::publiciteclient.html.twig' %}
+            {% include 'TunisiaMallBundle:Publicite:publiciteclient.html.twig' %}
         {% endblock client_publicite %}
 
         {#<div class="item ">#}
@@ -329,13 +330,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
 
 
-                            {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-                            {{ form_widget(form) }}
-                            <div>
-                                <input type="submit" value="{{ 'registration.submit'|trans }}" />
-                            </div>
 
-                            {{ form_end(form) }}
+
+
+
 
 
                             <input type="submit" value="Sign Up" >

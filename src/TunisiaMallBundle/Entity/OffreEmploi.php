@@ -64,7 +64,7 @@ class OffreEmploi
     /**
      * @var integer
      *
-     * @ORM\Column(name="nbr_demandé", type="integer", nullable=true)
+     * @ORM\Column(name="nbr_demande", type="integer", nullable=true)
      */
     private $nbrDemande;
 

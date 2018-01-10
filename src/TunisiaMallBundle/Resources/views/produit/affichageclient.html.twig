@@ -95,7 +95,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <ul class="nav navbar-nav menu__list">
                             <li class="active menu__item menu__item--current"><a class="menu__link" href="{{ path('tunisia_mall_homepage') }}">Home <span class="sr-only">(current)</span></a></li>
                             <li class=" menu__item"><a class="menu__link" href="about.html">About</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="Brands.html.twig">Brands</a></li>
                             <li class="dropdown menu__item">
                                 <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events<span class="caret"></span></a>
 
@@ -124,6 +123,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </ul>
                             </li>
                             <li class=" menu__item"><a class="menu__link" href="{{ path('tunisia_mall_contact') }}">Contact</a></li>
+                            <li class="dropdown menu__item">
+                                <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+                                <ul class="dropdown-menu agile_short_dropdown">
+                                    <li><a href="{{ path('tunisia_mall_clientaffichageclothes') }} ">Clothes</a></li>
+                                    <li><a href="{{ path('tunisia_mall_clientaffichagewatch') }} ">Watch</a></li>
+
+
+                                </ul>
+
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -418,7 +428,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <ul>
                         <li><a href="{{ path('tunisia_mall_homepage') }}">Home</a></li>
                         <li><a href="mens.html">About</a></li>
-                        <li><a href="womens.html">Brands</a></li>
+
                         <li><a href="about.html">Events</a></li>
                         <li><a href="typography.html">Job Offer</a></li>
                         <li><a href="typography.html">Other</a></li>

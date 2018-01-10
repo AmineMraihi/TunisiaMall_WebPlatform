@@ -21,7 +21,7 @@ class AjoutProduitForum extends AbstractType
             ->add("prix",MoneyType::class)
             ->add("quantite",IntegerType::class)
             ->add("prixAchatGros",MoneyType::class)
-            ->add("nbVente",IntegerType::class)
+
             ->add('imageFile', VichImageType::class, [
                 'required' => false,
                 'allow_delete'  => true,
@@ -29,11 +29,13 @@ class AjoutProduitForum extends AbstractType
                 ])
 
             ->add("description")
-            ->add("id_boutique",EntityType::class,array(
+         ->add("id_boutique",EntityType::class,array(
                 'class'=>"TunisiaMallBundle\Entity\Boutique",
                 'choice_label' => 'idBoutique'
 
             ))
+
+
 
 
 

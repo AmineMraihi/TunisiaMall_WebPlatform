@@ -1,0 +1,45 @@
+Index: src/TunisiaMallBundle/Command/Archive2Command.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/TunisiaMallBundle/Command/Archive2Command.php	(date 1511504751000)
++++ src/TunisiaMallBundle/Command/Archive2Command.php	(revision )
+@@ -4,6 +4,7 @@
+ 
+ use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
+ use Symfony\Component\Console\Input\InputInterface;
++use TunisiaMallBundle\Entity\Review11;
+ use Symfony\Component\Console\Output\OutputInterface;
+ 
+ class Archive2Command extends ContainerAwareCommand
+@@ -18,6 +19,7 @@
+             ->setDescription('Hello PhpStorm');
+     }
+ 
++
+     /**
+      * {@inheritdoc}
+      */
+@@ -30,8 +32,21 @@
+             '',
+         ]);
+         $em = $this->getContainer()->get('doctrine')->getEntityManager();
++        $Reviews = $em->getRepository("TunisiaMallBundle:Review11")->findAll();
++        foreach ($Reviews as $review)
++        {
++            if( stristr($review ->getContenu(), "bad_word")) {
++                $em->remove($review);
++                $em->flush();
++                var_dump($review);
++            }
+ 
++        }
++        $output->writeln('this is your first thread!');
+ 
++        // outputs a message without adding a "\n" at the end of the line
++
++        $output->write('thread');
+ 
+     }
+ }

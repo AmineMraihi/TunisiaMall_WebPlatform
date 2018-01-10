@@ -19,15 +19,14 @@
                         <tr>
 
                             <th><div class="contact-right">
-                                    <p>Nom employé </p> </div></th>
+                                    <p>Nom </p> </div></th>
                             <th><div class="contact-right">
-                                    <p>Prenom employé </p> </div></th>
+                                    <p>Prenom </p> </div></th>
                             <th><div class="contact-right">
                                     <p>Date naissance</p> </div></th>
                             <th><div class="contact-right">
                                     <p>Adresse </p> </div></th>
-                            <th><div class="contact-right">
-                                    <p>Sexe </p> </div></th>
+
                             <th><div class="contact-right">
                                     <p>Email</p> </div></th>
                             <th><div class="contact-right">
@@ -48,7 +47,7 @@
                                 <td>{{ demandeEmploi.prenomEmp }}</td>
                                 <td>{% if demandeEmploi.dateNaissance %}{{ demandeEmploi.dateNaissance|date('Y-m-d') }}{% endif %}</td>
                                 <td>{{ demandeEmploi.adresse }}</td>
-                                <td>{{ demandeEmploi.sexe }}</td>
+
                                 <td>{{ demandeEmploi.email }}</td>
                                 <td>{{ demandeEmploi.numTel }}</td>
                                 <td>{{ demandeEmploi.qualification }}</td>

@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Review7
  *
- * @ORM\Table(name="review11", indexes={@ORM\Index(name="id_user", columns={"id_user"})})
+ * @ORM\Table(name="review11", indexes={@ORM\Index(name="id_produit", columns={"id_produit"})})
  * @ORM\Entity
  */
 class Review11
@@ -22,11 +22,47 @@ class Review11
     private $idReview;
 
     /**
+ * @var string
+ *
+ * @ORM\Column(name="email", type="string", length=50, nullable=false)
+ */
+    private $email;
+
+    /**
+     * @return int
+     */
+
+    /**
+     * @var \Produit
+     *
+     * @ORM\ManyToOne(targetEntity="Produit")
+     * @ORM\JoinColumns({
+     * @ORM\JoinColumn(name="id_produit", referencedColumnName="id_produit")
+     * })
+     */
+
+    private $idProduit;
+
+
+    public function getAb()
+    {
+        return $this->ab;
+    }
+
+    /**
+     * @param int $ab
+     */
+    public function setAb($ab)
+    {
+        $this->ab = $ab;
+    }
+
+    /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=50, nullable=false)
+     * @ORM\Column(name="ab",  type="string", length=250, nullable=false)
      */
-    private $email;
+    private $ab;
 
     /**
      * @var string
@@ -47,7 +83,7 @@ class Review11
     /**
      * @param int $idReview
      */
-    public function setIdReview(int $idReview)
+    public function setIdReview($idReview)
     {
         $this->idReview = $idReview;
     }
@@ -63,7 +99,7 @@ class Review11
     /**
      * @param string $email
      */
-    public function setEmail(string $email)
+    public function setEmail($email)
     {
         $this->email = $email;
     }
@@ -79,36 +115,36 @@ class Review11
     /**
      * @param string $contenu
      */
-    public function setContenu(string $contenu)
+    public function setContenu($contenu)
     {
         $this->contenu = $contenu;
     }
 
-    /**
-     * @return \User
-     */
-    public function getIdUser()
-    {
-        return $this->idUser;
-    }
+
 
     /**
-     * @param \User $idUser
-     */
-    public function setIdUser(\User $idUser)
-    {
-        $this->idUser = $idUser;
-    }
-
-    /**
-     * @var \User
+     * Set idProduit
      *
-     * @ORM\ManyToOne(targetEntity="User")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_user", referencedColumnName="id_user")
-     * })
+     * @param \TunisiaMallBundle\Entity\Produit $idProduit
+     *
+     * @return Promotion
      */
-    private $idUser;
+    public function setIdProduit($idProduit)
+    {
+        $this->idProduit = $idProduit;
+
+        return $this;
+    }
+
+    /**
+     * Get idProduit
+     *
+     * @return \TunisiaMallBundle\Entity\Produit
+     */
+    public function getIdProduit()
+    {
+        return $this->idProduit;
+    }
 
 
 }

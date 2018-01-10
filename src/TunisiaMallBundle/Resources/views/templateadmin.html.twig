@@ -41,7 +41,6 @@
     <link rel="stylesheet" href="{{ asset('assets/js/vendor/summernote/summernote.css') }}">
 
 
-
     <!-- project main css files -->
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <!--/ stylesheets -->
@@ -65,12 +64,13 @@
                 success: function (data) {
                     console.log(data);
                     nbre = data;
-
                 }
             });
             return nbre;
         }
     </script>
+
+
 
     <!-- ==========================================
     ================= Modernizr ===================
@@ -280,7 +280,7 @@
 
                     <a href class="dropdown-toggle" data-toggle="dropdown">
                         <img src="assets/images/profile-photo.jpg" alt="" class="img-circle size-30x30">
-                        <span>{{ app.user.nom }} {{ app.user.prenom  }} <i class="fa fa-angle-down"></i></span>
+                        <span>{{ app.user.nom }} {{ app.user.prenom }} <i class="fa fa-angle-down"></i></span>
                     </a>
 
                     <ul class="dropdown-menu animated littleFadeInRight" role="menu">
@@ -309,7 +309,7 @@
                             </a>
                         </li>
                         <li>
-                            <a role="button" tabindex="0">
+                            <a href="/TestUser/web/logout" role="button" tabindex="0">
                                 <i class="fa fa-sign-out"></i>Logout
                             </a>
                         </li>
@@ -376,12 +376,15 @@
                                             <span>Gestion des employers</span> <span class=""></span></a>
                                     </li>
                                     <li>
-                                        <a  role="button" tabindex="0"><i class=""></i> <span>Gestion des Boutiques</span> <span class=""></span></a>
-                                    <ul>
-                                    <li><a href="{{ path('tunisia_mall_GBoutiqueCA') }}"><i class=""></i> Ajout Boutique</a></li>
-                                    <li><a href="{{ path('tunisia_mall_list_boutique') }}"><i class=""></i> Liste Boutique</a></li>
-                                    </ul>
-                                        </li>
+                                        <a role="button" tabindex="0"><i class=""></i>
+                                            <span>Gestion des Boutiques</span> <span class=""></span></a>
+                                        <ul>
+                                            <li><a href="{{ path('tunisia_mall_GBoutiqueCA') }}"><i class=""></i> Ajout
+                                                    Boutique</a></li>
+                                            <li><a href="{{ path('tunisia_mall_list_boutique') }}"><i class=""></i>
+                                                    Liste Boutique</a></li>
+                                        </ul>
+                                    </li>
                                     <li>
                                         <a role="button" tabindex="0"><i class=""></i> <span>Gestion des clients</span>
                                             <span class=""></span></a>
@@ -394,7 +397,8 @@
 
                                     </li>
                                     <li>
-                                        <a href="{{ path('tunisia_mall_list_reclamation') }}" role="button" tabindex="0"><i class=""></i> <span>Reclamation</span> <span
+                                        <a href="{{ path('tunisia_mall_list_reclamation') }}" role="button"
+                                           tabindex="0"><i class=""></i> <span>Reclamation</span> <span
                                                     class=""></span></a>
                                     </li>
 
@@ -409,7 +413,9 @@
 
                                     </li>
 
-
+                                    <li>
+                                        <a href="{{ path('statproduit') }}" role="button" tabindex="0"><i class=""></i>
+                                            <span> Examiner </span> <span class=""></span></a>
 
 
 
@@ -576,11 +582,11 @@
 ===================================================== -->
 
 
-
 <!-- ============================================
 ============== Vendor JavaScripts ===============
 ============================================= -->
 <script src="{{ asset('assets/js/vendor/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/js/vendor/jquery-3.2.1.js') }}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js') }}"></script>
 
@@ -1094,7 +1100,6 @@
     ga('create', 'UA-XXXXX-X', 'auto');
     ga('send', 'pageview');
 </script>
-
 
 
 

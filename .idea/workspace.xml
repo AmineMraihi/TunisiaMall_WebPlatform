@@ -2,45 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ae49ae-e741-462d-9758-c90b6ce01e86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a1744e7f3cab_gaia1-823x420.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a174e75edf54_gaia1-823x420.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a174f4329ab5_logo-TM-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a1751e63b3ab_logo-TM-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a175885d7a86_background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a17d54d86292_zara.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a17de1c86058_gaia1-823x420.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_24_11_17_09_41_c.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_24_11_17_09_48_s.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/count.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/envoisms.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/numberof.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a16168367ca5_logo-TM-1.png" afterPath="$PROJECT_DIR$/web/images/amine/5a174f261f938_logo-TM-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17f9d4bbb6c_5a13102d7c0df_Screenshot_6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fa170071e_5a13102d7c0df_Screenshot_6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fb0c58138_5a130fdcebfe2_Screenshot_5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fb5dcdd9f_5a13102d7c0df_Screenshot_6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fbd0b7e9c_24019722_2015911655319758_317085175_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fc369f98b_23897546_2015912161986374_1247437674_n.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a183868486ab_Screenshot_14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a18392dd83d7_Screenshot_15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/Screenshot_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/ahmed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/watch12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/watch13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/watch14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a180b0f36e9d_download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a183648c5f3c_download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a1837da8d92b_download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a353e347e923_logo1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a354776338c8_load.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a43f298630c4_Screenshot_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a4403263113c_goodbadugly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a44033f094dd_goodbadugly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a4403aa140fe_goodbadugly.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/Croquis.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/GIFMaker.org_bOWxDE.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/Screenshot_17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/pexels-photo-248797.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp1599700454383988043..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp1694032101461421904..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp17048570110669438..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp2165471071115680502..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp2823286875263014657..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp3380203050349876358..png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5040567430632874181..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5266713108479126989..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5442847670538120520..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5844867154209245045..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6016320970316158470..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6140473446686343485..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6366532629327735910..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6773942869823429414..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6961768334784334273..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp7503820592510304260..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp8022999768629111152..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp8537286273479617808..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp8806239140328160455..jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/welcome.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_iyy.patch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fg.patch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Command/Archive2Command.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Command/DatePromotionCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/vendor/jquery-3.2.1.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/cdb8a07a-4c21-4151-8dae-2a90c9d532f1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/listevenement.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierevenement.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/ahmed/5a123fe1a01db_Screenshot_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/ahmed/5a12bc268b97e_Screenshot_6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/amine/5a11e4149d68c_gaia1-823x420.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/amine/5a14c64b9e929_Screenshot_4.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_24_11_17_09_41_c.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_27_12_17_20_01_c.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_24_11_17_09_48_s.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_27_12_17_20_00_s.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutdemandepublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/ajoutdemandepublicite.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutpublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/ajoutpublicite.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutresponsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsable/ajoutresponsableboutique.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/clientevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/clientevenement.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/exempleevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/exempleevenement.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/listedemandepub.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/listedemandepub.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierpublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/modifierpublicite.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierresponsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsable/modifierresponsableboutique.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/publicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/publicite.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/publiciteclient.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/publiciteclient.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsable/responsableboutique.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/ahmed/5a176153b1ed0_Screenshot_4.png" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fab44121f_5a130d9e2d313_Screenshot_4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a122522a93bd_background.png" afterPath="$PROJECT_DIR$/web/images/amine/5a10939e42ba6_background - Copy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a174f4329ab5_logo-TM-1.png" afterPath="$PROJECT_DIR$/web/images/amine/5a10ca63ca7e8_logo-TM-1 - Copy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a1751e63b3ab_logo-TM-1.png" afterPath="$PROJECT_DIR$/web/images/amine/5a183d9a04a69_logo-TM-1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a17d54d86292_zara.jpg" afterPath="$PROJECT_DIR$/web/images/ahmed/5a180a7808b99_test.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TestUser.iml" afterPath="$PROJECT_DIR$/.idea/TestUser.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DemandeEmploiController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DemandeEmploiController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/EvenementController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/EvenementController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ProduitController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ProduitController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/PubliciteController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/PubliciteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ReviewController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ReviewController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Boutique.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Boutique.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierResponsableBoutiqueForm.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierResponsableBoutiqueForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Repository/ResponsableBoutiqueRepository.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Repository/ResponsableBoutiqueRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Repository/StatRepository.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Repository/StatRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Evenement.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Evenement.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Review11.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Review11.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutProduitForum.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutProduitForum.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutPromotionForm.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutPromotionForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierEvenementForm.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierEvenementForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutdemandepublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutdemandepublicite.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutpublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutpublicite.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutresponsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutresponsableboutique.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/composesms.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/composesms.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/ajoutevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/ajoutevenement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/modifierevenementemplate.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/modifierevenementemplate.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/shopownerajoutevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/shopownerajoutevenement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/shopownerevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/shopownerevenement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/shopownermodifierevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/shopownermodifierevenement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierpublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierpublicite.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierresponsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierresponsableboutique.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsableboutique.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/email.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/email.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/evenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/evenement.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/merzoug_change_nomfichier.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/merzoug_change_nomfichier.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offredetailClient.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offredetailClient.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/NewProduit.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/NewProduit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/affichageclient.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/affichageclient.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/afficheprodY.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/afficheprodY.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/shop/templateshopowner.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/shop/templateshopowner.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateC.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateC.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateadmin.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateadmin.html.twig" />
@@ -111,7 +171,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding />
+              <folding>
+                <element signature="e#6#84#0#PHP" expanded="false" />
+                <element signature="e#120#179#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,10 +212,27 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="373">
+              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="e#48#94#0#PHP" expanded="true" />
+                <marker date="1514488003539" expanded="true" signature="4743:4754" ph="..." />
+                <marker date="1514488003539" expanded="true" signature="4743:4755" ph="..." />
+                <marker date="1514488003539" expanded="true" signature="4743:4763" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="4743:8125" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="4807:4983" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="5033:5264" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="5317:6252" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="5394:6146" ph="..." />
+                <marker date="1514488003539" expanded="true" signature="6289:6376" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="6442:6484" ph=" @Route(&quot;/&quot;, name=&quot;homepage&quot;) ..." />
+                <marker date="1514488003539" expanded="true" signature="6527:6709" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="6753:6837" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="6881:6970" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="7013:7289" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="7183:7279" ph="..." />
+                <marker date="1514488003539" expanded="true" signature="7342:8118" ph="{...}" />
+                <marker date="1514488003539" expanded="true" signature="7775:8023" ph="..." />
               </folding>
             </state>
           </provider>
@@ -163,9 +243,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="339">
               <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-              <folding>
-                <element signature="e#48#86#0#PHP" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -188,6 +266,7 @@
             <state relative-caret-position="68">
               <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
+                <element signature="e#6#84#0#PHP" expanded="false" />
                 <marker date="1511534345969" expanded="true" signature="345:409" ph="select r fro... TunisiaMallBundle" />
                 <marker date="1511534345969" expanded="true" signature="613:686" ph="select r,COU... TunisiaMallBundle" />
               </folding>
@@ -298,7 +377,6 @@
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/demandeShopowner.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreshopowner.html.twig" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreModifShopowner.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreAjoutShopowner.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreAjoutAdmin.html.twig" />
@@ -321,6 +399,7 @@
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DemandeEmploiController.php" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateC.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ajouterOffreForm.php" />
+        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -844,12 +923,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246006000" />
+    <option name="totallyTimeSpent" value="246016000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33358547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33358547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
@@ -862,11 +941,13 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33358547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1244,9 +1325,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#86#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1262,7 +1341,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#6#84#0#PHP" expanded="false" />
+            <element signature="e#120#179#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1305,6 +1387,7 @@
         <state relative-caret-position="68">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
+            <element signature="e#6#84#0#PHP" expanded="false" />
             <marker date="1511534345969" expanded="true" signature="345:409" ph="select r fro... TunisiaMallBundle" />
             <marker date="1511534345969" expanded="true" signature="613:686" ph="select r,COU... TunisiaMallBundle" />
           </folding>
@@ -1313,10 +1396,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="373">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#48#94#0#PHP" expanded="true" />
+            <marker date="1514488003539" expanded="true" signature="4743:4754" ph="..." />
+            <marker date="1514488003539" expanded="true" signature="4743:4755" ph="..." />
+            <marker date="1514488003539" expanded="true" signature="4743:4763" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="4743:8125" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="4807:4983" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="5033:5264" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="5317:6252" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="5394:6146" ph="..." />
+            <marker date="1514488003539" expanded="true" signature="6289:6376" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="6442:6484" ph=" @Route(&quot;/&quot;, name=&quot;homepage&quot;) ..." />
+            <marker date="1514488003539" expanded="true" signature="6527:6709" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="6753:6837" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="6881:6970" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="7013:7289" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="7183:7279" ph="..." />
+            <marker date="1514488003539" expanded="true" signature="7342:8118" ph="{...}" />
+            <marker date="1514488003539" expanded="true" signature="7775:8023" ph="..." />
           </folding>
         </state>
       </provider>

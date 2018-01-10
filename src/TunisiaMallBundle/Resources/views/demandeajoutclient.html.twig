@@ -181,8 +181,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  width="1920"
                  height="250" alt="Los Angeles">
         </div>
-        {% block client_publicite %}
-            {% include 'TunisiaMallBundle::publiciteclient.html.twig' %}
+      {% block client_publicite %}
+          {% include 'TunisiaMallBundle::publiciteclient.html.twig' %}
         {% endblock client_publicite %}
 
         {#<div class="item ">#}
@@ -272,10 +272,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <th>Adresse</th>
             <td>{{form_widget(form.adresse) }}</td>
         </tr>
-        <tr>
-            <th>Sexe</th>
-            <td>{{ form_widget(form.sexe)  }}</td>
-        </tr>
+
         <tr>
             <th>Email</th>
             <td>{{ form_widget(form.email)  }}</td>

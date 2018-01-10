@@ -27,7 +27,6 @@ class ajouterDemandeForm extends AbstractType
             ->add('prenomEmp')
             ->add('dateNaissance')
             ->add('adresse')
-            ->add('sexe')
             ->add('email',EmailType::class)
             ->add('numTel',IntegerType::class)
             ->add('qualification')

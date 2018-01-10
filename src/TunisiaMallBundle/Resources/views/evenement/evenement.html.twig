@@ -2,126 +2,136 @@
 {% extends "TunisiaMallBundle::templateadmin.html.twig" %}
 
 {#{% block debuttemplate %}#}
+
+
 {% block robots %}
 
     <section id="content">
 
         <div class="page page-tables-datatables">
-
-            <div class="pageheader">
-
-                <h2>Evenements <span>liste</span></h2>
+            <div id="amine">
 
 
-            </div>
+                <div class="pageheader">
 
-            <!-- row -->
-            <div class="row">
-                <!-- col -->
-                <div class="col-md-12">
+                    <h2>Evenements <span>liste</span></h2>
 
 
-                    <section class="tile">
+                </div>
 
-                        <!-- tile header -->
-                        <div class="tile-header dvd dvd-btm">
-                            <h1 class="custom-font"><strong>Evenement</strong> Liste</h1>
-                            <ul class="controls">
-                                <li>
-                                    <a id="add-entry" href="{{ path('tunisia_mall_ajout_evenement') }}" role="button" tabindex="0"><i
-                                                class="fa fa-plus mr-5"></i> Add
-                                        Entry</a>
-                                </li>
-                                <li class="dropdown">
+                <!-- row -->
+                <div class="row">
+                    <!-- col -->
+                    <div class="col-md-12">
 
-                                    <a role="button" tabindex="0" class="dropdown-toggle settings"
-                                       data-toggle="dropdown">
-                                        <i class="fa fa-cog"></i>
-                                        <i class="fa fa-spinner fa-spin"></i>
-                                    </a>
 
-                                    <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-toggle">
-                                                <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
-                                                <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-refresh">
-                                                <i class="fa fa-refresh"></i> Refresh
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a role="button" tabindex="0" class="tile-fullscreen">
-                                                <i class="fa fa-expand"></i> Fullscreen
-                                            </a>
-                                        </li>
-                                    </ul>
+                        <section class="tile">
 
-                                </li>
-                                <li class="remove"><a role="button" tabindex="0" class="tile-close"><i
-                                                class="fa fa-times"></i></a></li>
-                            </ul>
-                        </div>
-                        <!-- /tile header -->
+                            <!-- tile header -->
+                            <div class="tile-header dvd dvd-btm">
+                                <h1 class="custom-font"><strong>Evenement</strong> Liste</h1>
+                                <ul class="controls">
+                                    <li>
+                                        <a id="add-entry" href="{{ path('tunisia_mall_ajout_evenement') }}"
+                                           role="button" tabindex="0"><i
+                                                    class="fa fa-plus mr-5"></i> Add
+                                            Entry</a>
+                                    </li>
+                                    <li class="dropdown">
 
-                        <!-- tile body -->
-                        <div class="tile-body">
-                            <div class="table-responsive">
-                                <table class="table table-custom" id="editable-usage">
-                                    <thead>
-                                    <tr>
-                                        <th>nom</th>
-                                        <th>description</th>
-                                        <th>date</th>
-                                        <th>path</th>
-                                        <th>user</th>
-                                        <th style="width: 160px;" class="no-sort">Actions</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    {% for evenement in evenements %}
-                                        <tr class="odd gradeX">
-                                            <td>{{ evenement.nom }}</td>
-                                            <td>{{ evenement.description }}</td>
-                                            <td>{{ evenement.date | date("d-m-y") }}</td>
-                                            <td><img src="{{ asset('images/amine/') ~ evenement.path }}"
-                                                     alt=""
-                                                     width="75"
-                                                     height="75"
-                                                >
-                                            </td>
-                                            <td> </td>
-                                            <td class="actions">
-                                                <a role="button" tabindex="0"
-                                                   class="edit text-primary text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_modifier_evenement',
-                                                   {'id':evenement.idEvenement}) }}">Edit
+                                        <a role="button" tabindex="0" class="dropdown-toggle settings"
+                                           data-toggle="dropdown">
+                                            <i class="fa fa-cog"></i>
+                                            <i class="fa fa-spinner fa-spin"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu pull-right with-arrow animated littleFadeInUp">
+                                            <li>
+                                                <a role="button" tabindex="0" class="tile-toggle">
+                                                    <span class="minimize"><i class="fa fa-angle-down"></i>&nbsp;&nbsp;&nbsp;Minimize</span>
+                                                    <span class="expand"><i class="fa fa-angle-up"></i>&nbsp;&nbsp;&nbsp;Expand</span>
                                                 </a>
-                                                <a role="button" tabindex="0"
-                                                   class="delete text-danger text-uppercase text-strong text-sm mr-10"
-                                                   href="{{ path('tunisia_mall_supprimer_evenement',
-                                                   {'id':evenement.idEvenement}
-                                                   ) }}">Remove
+                                            </li>
+                                            <li>
+                                                <a role="button" tabindex="0" class="tile-refresh">
+                                                    <i class="fa fa-refresh"></i> Refresh
                                                 </a>
-                                            </td>
-                                        </tr>
-                                    {% endfor %}
+                                            </li>
+                                            <li>
+                                                <a role="button" tabindex="0" class="tile-fullscreen">
+                                                    <i class="fa fa-expand"></i> Fullscreen
+                                                </a>
+                                            </li>
+                                        </ul>
 
-                                    </tbody>
-                                </table>
+                                    </li>
+                                    <li class="remove"><a role="button" tabindex="0" class="tile-close"><i
+                                                    class="fa fa-times"></i></a></li>
+                                </ul>
                             </div>
-                        </div>
-                        <!-- /tile body -->
+                            <!-- /tile header -->
 
-                    </section>
+                            <!-- tile body -->
+                            <div class="tile-body">
+                                <div class="table-responsive">
+                                    <table class="table table-custom" id="editable-usage">
+                                        <thead>
+                                        <tr>
+                                            <th>nom</th>
+                                            <th>description</th>
+                                            <th>date</th>
+                                            <th>path</th>
+                                            <th>user</th>
+                                            <th style="width: 160px;" class="no-sort">Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <div id="aminetest">{% for evenement in evenements %}
+                                            <tr class="odd gradeX">
+                                                <td>{{ evenement.nom }}</td>
+                                                <td>{{ evenement.description }}</td>
+                                                <td>{{ evenement.date | date("d-m-y") }}</td>
+                                                <td><img src="{{ asset('images/amine/') ~ evenement.path }}"
+                                                         alt=""
+                                                         width="75"
+                                                         height="75"
+                                                    >
+                                                </td>
+                                                <td></td>
+                                                <td class="actions">
+                                                    <a role="button" tabindex="0"
+                                                       class="edit text-primary text-uppercase text-strong text-sm mr-10"
+                                                       href="{{ path('tunisia_mall_modifier_evenement',
+                                                       {'id':evenement.idEvenement}) }}">Edit
+                                                    </a>
+                                                    <a role="button" tabindex="0"
+                                                       class="delete text-danger text-uppercase text-strong text-sm mr-10"
+                                                       href="{{ path('tunisia_mall_supprimer_evenement',
+                                                       {'id':evenement.idEvenement}
+                                                       ) }}">Remove
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        {% endfor %}</div>
+                                        {#<button id="dothattestt" onclick="dothattest()">test</button>#}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- /tile body -->
+
+                        </section>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-
-
     </section>
+
+
+
 
 
 
