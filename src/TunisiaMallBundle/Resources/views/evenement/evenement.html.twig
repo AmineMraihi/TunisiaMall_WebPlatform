@@ -14,7 +14,15 @@
                 <div class="pageheader">
 
                     <h2>Evenements <span>liste</span></h2>
-
+                    {% for flash_message in app.session.flashbag.get('notice') %}
+                        <div class="alert alert-success">{{ flash_message }}</div>
+                    {% endfor %}
+                    {% for flash_message in app.session.flashbag.get('delete') %}
+                        <div class="alert alert-danger">{{ flash_message }}</div>
+                    {% endfor %}
+                    {% for flash_message in app.session.flashbag.get('update') %}
+                        <div class="alert alert-info">{{ flash_message }}</div>
+                    {% endfor %}
 
                 </div>
 
@@ -28,6 +36,7 @@
 
                             <!-- tile header -->
                             <div class="tile-header dvd dvd-btm">
+
                                 <h1 class="custom-font"><strong>Evenement</strong> Liste</h1>
                                 <ul class="controls">
                                     <li>
@@ -86,32 +95,32 @@
                                         </thead>
                                         <tbody>
                                         <div id="aminetest">{% for evenement in evenements %}
-                                            <tr class="odd gradeX">
-                                                <td>{{ evenement.nom }}</td>
-                                                <td>{{ evenement.description }}</td>
-                                                <td>{{ evenement.date | date("d-m-y") }}</td>
-                                                <td><img src="{{ asset('images/amine/') ~ evenement.path }}"
-                                                         alt=""
-                                                         width="75"
-                                                         height="75"
-                                                    >
-                                                </td>
-                                                <td></td>
-                                                <td class="actions">
-                                                    <a role="button" tabindex="0"
-                                                       class="edit text-primary text-uppercase text-strong text-sm mr-10"
-                                                       href="{{ path('tunisia_mall_modifier_evenement',
-                                                       {'id':evenement.idEvenement}) }}">Edit
-                                                    </a>
-                                                    <a role="button" tabindex="0"
-                                                       class="delete text-danger text-uppercase text-strong text-sm mr-10"
-                                                       href="{{ path('tunisia_mall_supprimer_evenement',
-                                                       {'id':evenement.idEvenement}
-                                                       ) }}">Remove
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        {% endfor %}</div>
+                                                <tr class="odd gradeX">
+                                                    <td>{{ evenement.nom }}</td>
+                                                    <td>{{ evenement.description }}</td>
+                                                    <td>{{ evenement.date | date("d-m-y") }}</td>
+                                                    <td><img src="{{ asset('images/amine/') ~ evenement.path }}"
+                                                             alt=""
+                                                             width="75"
+                                                             height="75"
+                                                        >
+                                                    </td>
+                                                    <td></td>
+                                                    <td class="actions">
+                                                        <a role="button" tabindex="0"
+                                                           class="edit text-primary text-uppercase text-strong text-sm mr-10"
+                                                           href="{{ path('tunisia_mall_modifier_evenement',
+                                                           {'id':evenement.idEvenement}) }}">Edit
+                                                        </a>
+                                                        <a role="button" tabindex="0"
+                                                           class="delete text-danger text-uppercase text-strong text-sm mr-10"
+                                                           href="{{ path('tunisia_mall_supprimer_evenement',
+                                                           {'id':evenement.idEvenement}
+                                                           ) }}">Remove
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}</div>
                                         {#<button id="dothattestt" onclick="dothattest()">test</button>#}
 
                                         </tbody>
