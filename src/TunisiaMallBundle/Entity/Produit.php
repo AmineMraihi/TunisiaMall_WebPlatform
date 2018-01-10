@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Produit
  *
- * @ORM\Table(name="produit", indexes={@ORM\Index(name="id_boutique", columns={"id_boutique"})})
+ * @ORM\Table(name="produit")
  * @ORM\Entity
  * @Vich\Uploadable
  */
@@ -95,13 +95,11 @@ class Produit
      */
     private $description;
 
+
     /**
-     * @var \Boutique
+     * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="Boutique")
-     * @ORM\JoinColumns({
-     * @ORM\JoinColumn(name="id_boutique", referencedColumnName="id_boutique")
-     * })
+     * @ORM\Column(name="id_boutique", type="integer", nullable=false)
      */
     private $idBoutique;
 
@@ -340,11 +338,12 @@ class Produit
     /**
      * Set idBoutique
      *
-     * @param \TunisiaMallBundle\Entity\Boutique $idBoutique
+     * @param integer $idBoutique
      *
-     * @return DemandePub
+     * @return Produit
      */
-    public function setIdBoutique(\TunisiaMallBundle\Entity\Boutique $idBoutique = null)
+
+    public function setIdBoutique($idBoutique)
     {
         $this->idBoutique = $idBoutique;
 
@@ -354,8 +353,9 @@ class Produit
     /**
      * Get idBoutique
      *
-     * @return \TunisiaMallBundle\Entity\Boutique
+     * @return integer
      */
+
     public function getIdBoutique()
     {
         return $this->idBoutique;

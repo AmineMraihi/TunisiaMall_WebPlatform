@@ -10,6 +10,8 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
+
 
 class AjoutProduitForum extends AbstractType
 {
@@ -21,7 +23,7 @@ class AjoutProduitForum extends AbstractType
             ->add("prix",MoneyType::class)
             ->add("quantite",IntegerType::class)
             ->add("prixAchatGros",MoneyType::class)
-            ->add("nbVente")
+            ->add("nbVente",HiddenType::class)
             ->add('imageFile', VichImageType::class, [
                 'required' => false,
                 'allow_delete'  => true,
@@ -29,8 +31,8 @@ class AjoutProduitForum extends AbstractType
                 ])
 
             ->add("description")
-        ->add("id_boutique"
-            )
+
+           -> add('id_boutique', HiddenType::class)
 
 
 

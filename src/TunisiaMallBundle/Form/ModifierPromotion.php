@@ -27,7 +27,10 @@ class ModifierPromotion extends AbstractType
             ])
             ->add("id_produit",EntityType::class,array(
                 'class'=>"TunisiaMallBundle\Entity\Produit",
-                'choice_label' => 'nom'
+                'choice_label' => 'nom',
+                'multiple' => false,
+                'disabled' => true
+
 
             ))
 

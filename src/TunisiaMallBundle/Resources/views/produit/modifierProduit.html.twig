@@ -73,13 +73,12 @@
                             </div>
 
                             <div>
-                                {{ form_label(formulaire.nbVente) }} :
-                                {{ form_widget( formulaire.nbVente,{'attr': {'class':'form-control'}}   ) }}
+                                {{ form_widget( formulaire.nbVente,{'attr': {'value':0}}   ) }}
                             </div>
 
                             <div>
 
-                                image file :   <span></span>
+
                                 <{{ form_widget(formulaire.imageFile) }}>
                             </div>
 
@@ -92,8 +91,8 @@
 
                             <div>
 
-                                Id de boutique :   <span></span>
-                                {{ form_widget(formulaire.id_boutique)}}
+
+                                {{ form_widget(formulaire.id_boutique,{'attr': {'value':app.user.idBoutique.idBoutique}}   ) }}
 
                             </div>
 

@@ -9,6 +9,7 @@
 namespace TunisiaMallBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use TunisiaMallBundle\Entity\Boutique;
 use TunisiaMallBundle\Entity\Produit;
 use Symfony\Component\HttpFoundation\Request;
 use TunisiaMallBundle\Form\AjoutProduitForum;
@@ -74,7 +75,7 @@ class ProduitController extends Controller
         if( $this->container->get( 'security.authorization_checker' )->isGranted( 'IS_AUTHENTICATED_FULLY' ) )
         {
             $user = $this->container->get('security.token_storage')->getToken()->getUser();
-            $username = $user->getUsername();
+            $username = $user->getIdBoutique();
         }
 
         $Produit = new Produit();

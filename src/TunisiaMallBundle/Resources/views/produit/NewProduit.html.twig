@@ -72,7 +72,11 @@
 
                             </div>
 
+                            <div>
 
+                                {{ form_widget( formulaire.nbVente,{'attr': {'value':0}}   ) }}
+
+                            </div>
 
                             <div>
 
@@ -95,7 +99,8 @@
                         </div>
 
                             <div>
-
+                                {{ form_widget(formulaire.id_boutique,{'attr': {'value':app.user.idBoutique.idBoutique}}   ) }}
+                                {{ form_widget(formulaire.id_boutique,{'attr': {'class':'form-control'}}   ) }}
 
 
 

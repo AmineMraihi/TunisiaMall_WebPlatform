@@ -28,7 +28,11 @@ class ReviewController extends Controller
         if ($request->isMethod('GET')){
             $Review11->setEmail($request->get('email'));
             $Review11->setContenu($request->get('contenu'));
+           ///// $Review11->setIdProduit();
             $Review11->setAb($id_dis);
+
+
+
 
 
 
@@ -41,4 +45,5 @@ class ReviewController extends Controller
 
 
 }
+
 }
