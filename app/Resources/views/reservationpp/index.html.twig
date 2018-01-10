@@ -1,0 +1,51 @@
+{% extends '@TunisiaMall/templateC.html.twig' %}
+
+{% block parking %}
+    <div class="table-responsive">
+        </br></br>
+        <h1 style="color: red">Reservation place parking</h1>
+
+        </br></br>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Nombre des voitures</th>
+                <th>Jour</th>
+                <th>Heure</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for reservationPP in reservationPPs %}
+                <tr>
+                    <td>{{ reservationPP.nbvoitures }}</td>
+                    <td>{% if reservationPP.jourheure %}{{ reservationPP.jourheure|date('Y-m-d') }}{% endif %}</td>
+                    <td>{% if reservationPP.heure %}{{ reservationPP.heure|date('H:i:s') }}{% endif %}</td>
+                    <td>
+
+
+
+
+
+
+                                <a href="{{ path('reservationPlaceParking_edit', { 'idReservation': reservationPP.idReservation }) }}">
+                                    <button class="w3view-cart" type="submit" name="submit" value=""><i
+                                                class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                </a>
+
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <ul style="text-align: center">
+            <br>
+                <a style="color: red" href="{{ path('reservationPlaceParking_new') }}">Reserve car park</a>
+                </br></br></br>
+            </li>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

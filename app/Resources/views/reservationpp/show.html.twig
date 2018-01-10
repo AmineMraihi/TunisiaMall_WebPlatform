@@ -1,0 +1,41 @@
+{% extends '@TunisiaMall/templateC.html.twig' %}
+
+{% block parking %}
+</br>
+    <h1 style="text-align: center">Reservation car park</h1style>
+        </br>
+    <table>
+        <tbody>
+            <tr>
+                <th>Idreservation</th>
+                <td>{{ reservationPP.idReservation }}</td>
+            </tr>
+            <tr>
+                <th>Nbvoitures</th>
+                <td>{{ reservationPP.nbvoitures }}</td>
+            </tr>
+            <tr>
+                <th>Jour_heure</th>
+                <td>{% if reservationPP.jourheure %}{{ reservationPP.jourheure|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Heure</th>
+                <td>{% if reservationPP.heure %}{{ reservationPP.heure|date('H:i:s') }}{% endif %}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('reservationPlaceParking_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('reservationPlaceParking_edit', { 'idReservation': reservationPP.idReservation }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

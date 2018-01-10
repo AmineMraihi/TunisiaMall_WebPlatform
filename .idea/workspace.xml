@@ -2,108 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96ae49ae-e741-462d-9758-c90b6ce01e86" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17f9d4bbb6c_5a13102d7c0df_Screenshot_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fa170071e_5a13102d7c0df_Screenshot_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fb0c58138_5a130fdcebfe2_Screenshot_5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fb5dcdd9f_5a13102d7c0df_Screenshot_6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fbd0b7e9c_24019722_2015911655319758_317085175_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fc369f98b_23897546_2015912161986374_1247437674_n.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a183868486ab_Screenshot_14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/5a18392dd83d7_Screenshot_15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/Screenshot_10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/ahmed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/watch12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/watch13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/ahmed/watch14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a180b0f36e9d_download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a183648c5f3c_download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a1837da8d92b_download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a353e347e923_logo1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a354776338c8_load.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a43f298630c4_Screenshot_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a4403263113c_goodbadugly.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a44033f094dd_goodbadugly.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/5a4403aa140fe_goodbadugly.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/Croquis.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/GIFMaker.org_bOWxDE.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/Screenshot_17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/pexels-photo-248797.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp1599700454383988043..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp1694032101461421904..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp17048570110669438..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp2165471071115680502..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp2823286875263014657..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp3380203050349876358..png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5040567430632874181..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5266713108479126989..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5442847670538120520..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp5844867154209245045..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6016320970316158470..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6140473446686343485..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6366532629327735910..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6773942869823429414..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp6961768334784334273..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp7503820592510304260..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp8022999768629111152..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp8537286273479617808..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/temp8806239140328160455..jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/images/amine/welcome.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_iyy.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fg.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Command/Archive2Command.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Command/DatePromotionCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/js/vendor/jquery-3.2.1.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/cdb8a07a-4c21-4151-8dae-2a90c9d532f1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/listevenement.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierevenement.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/ahmed/5a123fe1a01db_Screenshot_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/ahmed/5a12bc268b97e_Screenshot_6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/amine/5a11e4149d68c_gaia1-823x420.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/amine/5a14c64b9e929_Screenshot_4.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_24_11_17_09_41_c.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_27_12_17_20_01_c.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_24_11_17_09_48_s.xml" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_27_12_17_20_00_s.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutdemandepublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/ajoutdemandepublicite.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutpublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/ajoutpublicite.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/ajoutresponsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsable/ajoutresponsableboutique.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/clientevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/clientevenement.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/exempleevenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/exempleevenement.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/listedemandepub.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/listedemandepub.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierpublicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/modifierpublicite.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/modifierresponsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsable/modifierresponsableboutique.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/publicite.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/publicite.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/publiciteclient.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Publicite/publiciteclient.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsableboutique.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/responsable/responsableboutique.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/ahmed/5a176153b1ed0_Screenshot_4.png" afterPath="$PROJECT_DIR$/web/images/ahmed/5a17fab44121f_5a130d9e2d313_Screenshot_4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a122522a93bd_background.png" afterPath="$PROJECT_DIR$/web/images/amine/5a10939e42ba6_background - Copy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a174f4329ab5_logo-TM-1.png" afterPath="$PROJECT_DIR$/web/images/amine/5a10ca63ca7e8_logo-TM-1 - Copy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a1751e63b3ab_logo-TM-1.png" afterPath="$PROJECT_DIR$/web/images/amine/5a183d9a04a69_logo-TM-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/images/amine/5a17d54d86292_zara.jpg" afterPath="$PROJECT_DIR$/web/images/ahmed/5a180a7808b99_test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/parking/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/parking/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/parking/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/parking/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reservationpp/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reservationpp/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reservationpp/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/reservationpp/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/Admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ParkingController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ReservationPPController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/ReservationPP.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ParkingType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ReservationPPType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TestUser.iml" afterPath="$PROJECT_DIR$/.idea/TestUser.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/EvenementController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/EvenementController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ProduitController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ProduitController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/PubliciteController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/PubliciteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ReviewController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ReviewController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Evenement.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Evenement.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Review11.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Review11.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutProduitForum.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutProduitForum.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutPromotionForm.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/AjoutPromotionForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierEvenementForm.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierEvenementForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Parking.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Parking.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/email.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/email.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/evenement.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/evenement/evenement.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/merzoug_change_nomfichier.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/merzoug_change_nomfichier.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offredetailClient.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offredetailClient.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/NewProduit.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/NewProduit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/affichageclient.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/affichageclient.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/afficheprodY.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/produit/afficheprodY.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/shop/templateshopowner.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/shop/templateshopowner.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateC.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateC.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateadmin.html.twig" afterPath="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateadmin.html.twig" />
     </list>
     <ignored path="$PROJECT_DIR$/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/vendor/doctrine/annotations/" />
@@ -153,123 +72,104 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adminindex.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/adminindex.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="521" column="41" lean-forward="false" selection-start-line="521" selection-start-column="41" selection-end-line="521" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajouterOffreForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Form/ajouterOffreForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-              <folding>
-                <element signature="e#6#84#0#PHP" expanded="false" />
-                <element signature="e#120#179#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="526">
+              <caret line="413" column="0" lean-forward="true" selection-start-line="413" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Boutique.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Boutique.php">
+      <file leaf-file-name="Produit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Produit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModifierResponsableBoutiqueForm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierResponsableBoutiqueForm.php">
+      <file leaf-file-name="Parking.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Parking.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="254">
+              <caret line="135" column="7" lean-forward="true" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php">
+      <file leaf-file-name="ParkingType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Form/ParkingType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-              <folding>
-                <element signature="e#48#94#0#PHP" expanded="true" />
-                <marker date="1514488003539" expanded="true" signature="4743:4754" ph="..." />
-                <marker date="1514488003539" expanded="true" signature="4743:4755" ph="..." />
-                <marker date="1514488003539" expanded="true" signature="4743:4763" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="4743:8125" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="4807:4983" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="5033:5264" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="5317:6252" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="5394:6146" ph="..." />
-                <marker date="1514488003539" expanded="true" signature="6289:6376" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="6442:6484" ph=" @Route(&quot;/&quot;, name=&quot;homepage&quot;) ..." />
-                <marker date="1514488003539" expanded="true" signature="6527:6709" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="6753:6837" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="6881:6970" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="7013:7289" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="7183:7279" ph="..." />
-                <marker date="1514488003539" expanded="true" signature="7342:8118" ph="{...}" />
-                <marker date="1514488003539" expanded="true" signature="7775:8023" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OffreEmploiController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Controller/OffreEmploiController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="offreModifAdmin.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreModifAdmin.html.twig">
+      <file leaf-file-name="new.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/reservationpp/new.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#54#0#Twig" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Repository/StatRepository.php">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="e#6#84#0#PHP" expanded="false" />
-                <marker date="1511534345969" expanded="true" signature="345:409" ph="select r fro... TunisiaMallBundle" />
-                <marker date="1511534345969" expanded="true" signature="613:686" ph="select r,COU... TunisiaMallBundle" />
-              </folding>
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/Admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-612">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -349,11 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php" />
-        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ajouterOffreShopwnerForm.php" />
-        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Boutique.php" />
-        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreAjoutShoowner.html.twig" />
-        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreModifAdmin.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreAdmin.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/demandeAdmin.html.twig" />
@@ -390,7 +285,6 @@
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateadmin.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Graphe/historgramme.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Graphe/pieChart.html.twig" />
-        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/DemandeEmploi.php" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/GrapheController.php" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Produit.php" />
@@ -400,6 +294,12 @@
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/templateC.html.twig" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Form/ajouterOffreForm.php" />
         <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ParkingController.php" />
+        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Parking.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml" />
       </list>
     </option>
   </component>
@@ -409,12 +309,76 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/docdocdoc/nexmo-bundle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/smsapi/php-client" />
+      <path value="$PROJECT_DIR$/vendor/kch/smsapi-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twilio/sdk" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/blackknight467/star-rating-bundle" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-json" />
+      <path value="$PROJECT_DIR$/vendor/jmose/command-scheduler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ob/highcharts-bundle" />
+      <path value="$PROJECT_DIR$/vendor/payum/paypal-express-checkout-nvp" />
+      <path value="$PROJECT_DIR$/vendor/payum/core" />
+      <path value="$PROJECT_DIR$/vendor/league/url" />
+      <path value="$PROJECT_DIR$/vendor/payum/iso4217" />
+      <path value="$PROJECT_DIR$/vendor/true/punycode" />
+      <path value="$PROJECT_DIR$/vendor/liip/imagine-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="9" />
+    <option name="y" value="12" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -432,311 +396,106 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registration" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Redirection" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TunisiaMallBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Command" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestUser" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="reservationpp" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TunisiaMallBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TunisiaMallBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TunisiaMallBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TunisiaMallBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestUser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestUser" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="TunisiaMallBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestUser_tesnim" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestUser - Copie" />
     <property name="two.files.diff.last.used.file" value="$USER_HOME$/Downloads/layout.html.twig" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\TestUser\src\TunisiaMallBundle\Resources\views" />
-      <recent name="C:\wamp64\www\TestUser\web\assets\css\vendor" />
+      <recent name="C:\wamp\www\TestUser\app\config" />
+      <recent name="C:\wamp\www\TestUser\app\Resources\views" />
+      <recent name="C:\wamp\www\TestUser\src\TunisiaMallBundle\Form" />
+      <recent name="C:\wamp\www\TestUser\src\TunisiaMallBundle\Entity" />
+      <recent name="C:\wamp\www\TestUser\src\TunisiaMallBundle\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -752,9 +511,16 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.TestUser">
-    <configuration default="false" name="TestUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+    <configuration name="TestUser" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$" />
-      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
@@ -794,15 +560,6 @@
       <PhpTestRunnerSettings />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -823,9 +580,6 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="PHPUnit.TestUser" />
-    </list>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="PHPUnit.TestUser" />
@@ -855,6 +609,7 @@
       <workItem from="1513940095510" duration="2491000" />
       <workItem from="1514328793454" duration="12483000" />
       <workItem from="1514463413652" duration="5577000" />
+      <workItem from="1515608244479" duration="618000" />
     </task>
     <task id="LOCAL-00001" summary="Tesnim">
       <created>1511104695255</created>
@@ -923,36 +678,35 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246016000" />
+    <option name="totallyTimeSpent" value="246634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33358547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33888048" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32405892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3207856" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33358547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -993,92 +747,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/demandelistclient.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Topic1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/4éme/sems 1/PI/Sprint mobile/Projetmarwa/mobile/mobile/Social_pro/social_pro/logged.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/DemandePub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#76#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Panier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/PanierProduit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Publicite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#76#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Promotion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#44#76#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Produit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-          <folding>
-            <element signature="e#44#76#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Commentaire.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1087,48 +755,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/LoginManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1143">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/UserProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1228">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/UsernameFormType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/LoginManager.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Security/UserProvider.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserManager.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/UsernameFormType.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/UserInterface.php" />
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1136,34 +768,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-786">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="139" column="22" lean-forward="false" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php" />
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Model/User.php" />
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/Registration/confirmed.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1210,24 +817,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="345" column="0" lean-forward="false" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../crud/seletUsername.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/seletUsername.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../crud/seletUsername.php" />
+    <entry file="file://$USER_HOME$/Downloads/seletUsername.php" />
     <entry file="file://$PROJECT_DIR$/../crud/insert.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1235,13 +829,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/insert.php" />
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Repository/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1275,21 +863,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4135">
-          <caret line="56" column="16" lean-forward="false" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreModifShopowner.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="e#12#62#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1297,9 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="96" column="78" lean-forward="false" selection-start-line="96" selection-start-column="78" selection-end-line="96" selection-end-column="78" />
-          <folding>
-            <element signature="e#12#54#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,17 +887,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/offreModifAdmin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
+        <state relative-caret-position="2023">
           <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#54#0#Twig" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Controller/OffreEmploiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
+        <state relative-caret-position="2210">
           <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
@@ -1331,7 +903,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/views/adminindex.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="0">
           <caret line="521" column="41" lean-forward="false" selection-start-line="521" selection-start-column="41" selection-end-line="521" selection-end-column="41" />
           <folding />
         </state>
@@ -1341,17 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="false" />
-            <element signature="e#120#179#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1366,7 +927,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Form/ModifierResponsableBoutiqueForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
+        <state relative-caret-position="187">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
@@ -1376,9 +937,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="50" column="68" lean-forward="false" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
-          <folding>
-            <marker date="1511535252175" expanded="true" signature="3865:3874" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1386,38 +945,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#6#84#0#PHP" expanded="false" />
-            <marker date="1511534345969" expanded="true" signature="345:409" ph="select r fro... TunisiaMallBundle" />
-            <marker date="1511534345969" expanded="true" signature="613:686" ph="select r,COU... TunisiaMallBundle" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="e#48#94#0#PHP" expanded="true" />
-            <marker date="1514488003539" expanded="true" signature="4743:4754" ph="..." />
-            <marker date="1514488003539" expanded="true" signature="4743:4755" ph="..." />
-            <marker date="1514488003539" expanded="true" signature="4743:4763" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="4743:8125" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="4807:4983" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="5033:5264" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="5317:6252" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="5394:6146" ph="..." />
-            <marker date="1514488003539" expanded="true" signature="6289:6376" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="6442:6484" ph=" @Route(&quot;/&quot;, name=&quot;homepage&quot;) ..." />
-            <marker date="1514488003539" expanded="true" signature="6527:6709" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="6753:6837" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="6881:6970" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="7013:7289" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="7183:7279" ph="..." />
-            <marker date="1514488003539" expanded="true" signature="7342:8118" ph="{...}" />
-            <marker date="1514488003539" expanded="true" signature="7775:8023" ph="..." />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/ParkingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Controller/ParkingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/ReservationPP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="413" column="0" lean-forward="true" selection-start-line="413" selection-start-column="0" selection-end-line="413" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Produit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Entity/Parking.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="135" column="7" lean-forward="true" selection-start-line="135" selection-start-column="7" selection-end-line="135" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Form/ParkingType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/reservationpp/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/Admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TunisiaMallBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,45 @@
+{% extends '@TunisiaMall/templateC.html.twig' %}
+
+{% block parking %}
+    <div class="table-responsive">
+        <h1>Parkings list</h1>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Idparking</th>
+                <th>Nomparking</th>
+                <th>Nbplacetotal</th>
+                <th>Nbplacelibre</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for parking in parkings %}
+                <tr>
+                    <td><a href="{{ path('Parking_show', { 'idParking': parking.idParking }) }}">{{ parking.idParking }}</a></td>
+                    <td>{{ parking.nomParking }}</td>
+                    <td>{{ parking.nbPlaceTotal }}</td>
+                    <td>{{ parking.nbPlaceLibre }}</td>
+                    <td>
+                        <ul>
+                            <li>
+                                <a href="{{ path('Parking_show', { 'idParking': parking.idParking }) }}">show</a>
+                            </li>
+                            <li>
+                                <a href="{{ path('Parking_edit', { 'idParking': parking.idParking }) }}">edit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+        <ul>
+            <li>
+                <a href="{{ path('Parking_new') }}">Create a new parking</a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

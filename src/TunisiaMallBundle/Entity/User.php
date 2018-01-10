@@ -7,7 +7,7 @@ use FOS\UserBundle\Model\User as BaseUser;
 
 /**
  * @ORM\Table(name="user", indexes={@ORM\Index(name="id_boutique", columns={"id_boutique"})})
- * @ORM\Entity(repositoryClass="TunisiaMallBundle\Repository\ResponsableBoutiqueRepository")
+ * @ORM\Entity
  */
 class User extends BaseUser
 {
@@ -16,7 +16,7 @@ class User extends BaseUser
      *
      * @ORM\Column(name="id_user", type="integer", nullable=false)
      * @ORM\Id
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     protected $id;
 
@@ -48,6 +48,9 @@ class User extends BaseUser
      * @ORM\Column(name="sexe", type="string", length=50, nullable=false)
      */
     private $sexe;
+
+
+
 
 
     /**
@@ -91,63 +94,26 @@ class User extends BaseUser
      * @ORM\Column(name="path", type="string", length=200, nullable=true)
      */
     private $path;
-    /**
-     * @var \Boutique
-     *
-     * @ORM\ManyToOne(targetEntity="TunisiaMallBundle\Entity\Boutique")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="id_boutique", referencedColumnName="id_boutique")
-     * })
-     */
 
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id_boutique", type="integer", nullable=true)
+     */
     private $idBoutique;
 
 
-//    /**
-//     * @var array
-//     *
-//     * @ORM\Column(name="roles", type="array", nullable=false)
-//     */
-//    protected $roles;
-//
-//    /**
-//     * Set roles
-//     *
-//     * @param array $roles
-//     * @return User
-//     */
-//    public function setRoles(array $roles)
-//    {
-//        $this->roles = $roles;
-//
-//        return $this;
-//    }
-//
-//    /**
-//     * Get roles
-//     *
-//     * @return array
-//     */
-//    public function getRoles()
-//    {
-//        return $this->roles;
-//    }
-//
-
+    /**
+     * One Product has Many Features.
+     * @ORM\OneToMany(targetEntity="TunisiaMallBundle\Entity\ReservationPP", mappedBy="idUser")
+     */
+    private $reservationpp;
 
     public function __construct()
     {
         parent::__construct();
         // your own logic
 
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
     }
 
 
@@ -256,6 +222,7 @@ class User extends BaseUser
     {
         return $this->sexe;
     }
+
 
 
     /**
@@ -405,11 +372,11 @@ class User extends BaseUser
     /**
      * Set idBoutique
      *
-     * @param \TunisiaMallBundle\Entity\Boutique $idBoutique
+     * @param integer $idBoutique
      *
      * @return User
      */
-    public function setIdBoutique(\TunisiaMallBundle\Entity\Boutique $idBoutique=null)
+    public function setIdBoutique($idBoutique)
     {
         $this->idBoutique = $idBoutique;
 
@@ -419,25 +386,27 @@ class User extends BaseUser
     /**
      * Get idBoutique
      *
-     * @return \TunisiaMallBundle\Entity\Boutique
+     * @return integer
      */
     public function getIdBoutique()
     {
         return $this->idBoutique;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getReservationpp()
+    {
+        return $this->reservationpp;
+    }
 
     /**
-     * @return string
+     * @param mixed $reservationpp
      */
-    public function get_the_role()
+    public function setReservationpp($reservationpp)
     {
-        $rolesTab = $this->getRoles();
-        if (in_array('ROLE_ADMIN', $rolesTab, true))
-            return $redirection = "ROLE_ADMIN";
-        if (in_array('ROLE_RESPONSABLE', $rolesTab, true))
-            return $redirection = "ROLE_RESPONSABLE";
-
+        $this->reservationpp = $reservationpp;
     }
 
 

@@ -22,3 +22,9 @@ _liip_imagine:
 jmose_command_scheduler:
     resource: "@JMoseCommandSchedulerBundle/Resources/config/routing.yml"
     prefix:   /
+tunisia_mall_reservation_parking:
+    resource: "@TunisiaMallBundle/Resources/config/routing/reservationpp.yml"
+    prefix:   /reservationParking
+tunisia_mall_parking:
+    resource: "@TunisiaMallBundle/Controller/ParkingController.php"
+    type:     annotation

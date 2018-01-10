@@ -35,6 +35,7 @@ class Parking
      */
     private $nbPlaceTotal;
 
+
     /**
      * @var integer
      *
@@ -42,7 +43,11 @@ class Parking
      */
     private $nbPlaceLibre;
 
-
+    /**
+     * One Product has Many Features.
+     * @ORM\OneToMany(targetEntity="TunisiaMallBundle\Entity\ReservationPP", mappedBy="id_parking")
+     */
+    private $reservation;
 
     /**
      * Get idParking
@@ -125,4 +130,22 @@ class Parking
     {
         return $this->nbPlaceLibre;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getReservation()
+    {
+        return $this->reservation;
+    }
+
+    /**
+     * @param mixed $reservation
+     */
+    public function setReservation($reservation)
+    {
+        $this->reservation = $reservation;
+    }
+
+
 }

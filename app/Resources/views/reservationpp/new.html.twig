@@ -1,0 +1,22 @@
+{% extends '@TunisiaMall/templateC.html.twig' %}
+
+{% block parking %}
+    </br></br>
+    <h1 style="color: red">Create my reservation </h1>
+    </br></br>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+</br>
+</br>
+</br>
+    <ul>
+
+        <li>
+            <a  style="color: red" href="{{ path('reservationPlaceParking_index') }}">Back to my reservation's list</a>
+        </li>
+    </ul>
+    </br></br></br>
+{% endblock %}

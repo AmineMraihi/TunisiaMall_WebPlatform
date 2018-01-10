@@ -1,0 +1,40 @@
+{% extends '@TunisiaMall/templateC.html.twig' %}
+
+{% block body %}
+    <h1>Parking</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Idparking</th>
+                <td>{{ parking.idParking }}</td>
+            </tr>
+            <tr>
+                <th>Nomparking</th>
+                <td>{{ parking.nomParking }}</td>
+            </tr>
+            <tr>
+                <th>Nbplacetotal</th>
+                <td>{{ parking.nbPlaceTotal }}</td>
+            </tr>
+            <tr>
+                <th>Nbplacelibre</th>
+                <td>{{ parking.nbPlaceLibre }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('Parking_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('Parking_edit', { 'idParking': parking.idParking }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
