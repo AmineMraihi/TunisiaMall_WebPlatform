@@ -218,7 +218,7 @@ class Evenement
      *
      * @return Evenement
      */
-    public function setIdUser(\TunisiaMallBundle\Entity\User $idUser = null)
+    public function setIdUser($idUser)
     {
         $this->idUser = $idUser;
 
