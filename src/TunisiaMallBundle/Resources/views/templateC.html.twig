@@ -194,9 +194,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                  height="250" alt="Los Angeles">
         </div>
 
-        {% block client_publicite %}
-            {% include 'TunisiaMallBundle:Publicite:publiciteclient.html.twig' %}
-        {% endblock client_publicite %}
+        {#{% block client_publicite %}#}
+            {#{% include 'TunisiaMallBundle:Publicite:publiciteclient.html.twig' %}#}
+        {#{% endblock client_publicite %}#}
 
         {#<div class="item ">#}
         {#<img src="{{ asset('images/amine/') ~ "5a0f54c6eb88b_goodbadugly.jpg" }}" alt="Los Angeles">#}
@@ -487,9 +487,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <!--/tab_one-->
 
                     <div class="tab1">
-                        {% block produit_merzoug %}
-                            {% include 'TunisiaMallBundle::merzoug_change_nomfichier.html.twig' %}
-                        {% endblock produit_merzoug %}
+                        {#{% block produit_merzoug %}#}
+                            {#{% include 'TunisiaMallBundle::merzoug_change_nomfichier.html.twig' %}#}
+                        {#{% endblock produit_merzoug %}#}
 
                         <div class="col-md-3 product-men">
                             <div class="men-pro-item simpleCart_shelfItem">
@@ -1966,9 +1966,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                             <div class="styled-input ">
                                <select required="required"  class="styled-input" name="nomB">
-                                   {% for boutique in boutiques %}
-                                   <option value={{ boutique.nom }}> {{ boutique.nom }}</option>
-                                   {% endfor %}
+                                   {#{% for boutique in boutiques %}#}
+                                   {#<option value={{ boutique.nom }}> {{ boutique.nom }}</option>#}
+                                   {#{% endfor %}#}
                                </select>
                                 <label>Boutique Reclamée</label>
                                 <span></span>
